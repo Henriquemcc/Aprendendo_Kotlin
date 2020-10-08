@@ -1,21 +1,7 @@
 /**
  * Representa uma conta bancaria do Bytebank.
  * */
-class Conta {
-    //Nome do titular da conta
-    var titular = ""
-        set(titular) {
-            field = titular.toUpperCase()
-        }
-
-    //Numero de identificacao da conta
-    var numero = 0
-        set(numero) {
-            if (numero < 0) {
-                throw NumeroContaInferiorAZeroException("O número da conta não pode ser inferior a zero.")
-            }
-            field = numero
-        }
+class Conta (val titular: String, val numero: Int){
 
     //Saldo da conta
     var saldo = 0.0
@@ -25,16 +11,6 @@ class Conta {
             }
             field = saldo
         }
-
-    /**
-     * Serve para criar uma nova instancia da classe Conta.
-     * @param titular Nome do titular da conta.
-     * @param numero Numero de identificacao da conta.
-     * */
-    constructor(titular: String, numero: Int) {
-        this.titular = titular
-        this.numero = numero
-    }
 
     class DepositoInferiorAZeroException(var1: String) : IllegalArgumentException(var1)
     class SaqueMaiorQueSaldoException(var1: String) : IllegalArgumentException(var1)
