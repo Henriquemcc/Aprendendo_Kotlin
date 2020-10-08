@@ -5,10 +5,10 @@ fun main() {
     println("Criando as contas")
 
     //Criando a conta do Joao
-    val contaJoao = Conta("João", 1)
+    val contaJoao = Conta(titular ="João", numero = 1)
 
     //Criando a conta do Jose
-    val contaJose = Conta("José",2)
+    val contaJose = Conta(numero = 2, titular = "José")
 
     //Criando a conta da Maria
     val contaMaria = Conta("Maria", 3)
