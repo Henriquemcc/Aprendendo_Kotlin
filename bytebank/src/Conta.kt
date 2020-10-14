@@ -1,7 +1,7 @@
 /**
  * Representa uma conta bancaria do Bytebank.
  * */
-class Conta (var titular: String, val numero: Int){
+class Conta(var titular: String, val numero: Int) {
 
     //Saldo da conta
     var saldo = 0.0
@@ -12,6 +12,7 @@ class Conta (var titular: String, val numero: Int){
             field = saldo
         }
 
+    //Execoes relacionadas ao saque, deposito e transferencia
     class DepositoInferiorAZeroException(var1: String) : IllegalArgumentException(var1)
     class SaqueMaiorQueSaldoException(var1: String) : IllegalArgumentException(var1)
     class TransferenciaMaiorQueSaldoException(var1: String) : IllegalArgumentException(var1)
@@ -75,10 +76,15 @@ class Conta (var titular: String, val numero: Int){
     }
 
     /**
-     * Serve para converter uma instancia da classe Conta em uma string.
+     * Serve para converter uma instancia da classe Conta em uma String.
      * @return String contendo os dados da classe Conta.
      * */
     override fun toString(): String {
-        return this.titular + "\n" + this.numero + "\n" + this.saldo;
+        var str = ""
+        str += "Titular: " + this.titular + "\n"
+        str += "Numero: " + this.numero + "\n"
+        str += "Saldo: " + this.saldo
+
+        return str
     }
 }

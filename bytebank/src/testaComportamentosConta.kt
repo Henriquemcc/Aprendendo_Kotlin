@@ -1,3 +1,6 @@
+/**
+ * Serve para testar os comportamentos de uma instancia da classe Conta.
+ * */
 fun testaComportamentosConta() {
     println("Criando as contas")
 
@@ -84,6 +87,9 @@ fun testaComportamentosConta() {
     println()
 }
 
+/**
+ * Serve para executar a funcao testaComportamentoConta ao clicar para executar este arquivo.
+ * */
 private fun main() {
     testaComportamentosConta()
 }
