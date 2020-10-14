@@ -1,7 +1,7 @@
 /**
  * Representa uma conta bancaria do Bytebank.
  * */
-class Conta (val titular: String, val numero: Int){
+class Conta (var titular: String, val numero: Int){
 
     //Saldo da conta
     var saldo = 0.0

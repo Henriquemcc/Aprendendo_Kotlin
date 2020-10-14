@@ -11,8 +11,12 @@ The official source code for the course, developed by the instructor, are availa
 
 [Kotlin: primeiros passos e Orientação a Objetos](https://github.com/alura-cursos/kotlin-introducao-orientacao-a-objetos/).
 
+[Kotlin: herança, polimorfismo e Interface](https://github.com/alura-cursos/kotlin-oo-heranca-polimorfismo-interfaces/).
+
 ## Courses
 
 The courses in which these programs were developed were:
 
 [Kotlin: primeiros passos e Orientação a Objetos](https://cursos.alura.com.br/course/kotlin-orientacao-objetos).
+
+[Kotlin: herança, polimorfismo e Interface](https://cursos.alura.com.br/course/kotlin-heranca-polimorfismo-interface).

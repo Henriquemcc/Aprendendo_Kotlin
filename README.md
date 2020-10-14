@@ -11,8 +11,12 @@ Os códigos fontes oficiais do curso, desenvolvidos pelo instrutor, estão dispo
 
 [Kotlin: primeiros passos e Orientação a Objetos](https://github.com/alura-cursos/kotlin-introducao-orientacao-a-objetos/).
 
+[Kotlin: herança, polimorfismo e Interface](https://github.com/alura-cursos/kotlin-oo-heranca-polimorfismo-interfaces/).
+
 ## Cursos
 
 Os cursos em que estes programas foram feitos:
 
 [Kotlin: primeiros passos e Orientação a Objetos](https://cursos.alura.com.br/course/kotlin-orientacao-objetos).
+
+[Kotlin: herança, polimorfismo e Interface](https://cursos.alura.com.br/course/kotlin-heranca-polimorfismo-interface).
