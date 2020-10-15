@@ -3,30 +3,15 @@
  * @param nome Nome do funcionario.
  * @param cpf Cpf do funcionario.
  * @param salario Salario do funcionario.
- * @param tipo Tipo do funcionario: 0 - Funcionario comum; 1- Gerente; 2- Diretor.
  * */
-class Funcionario(val nome: String, val cpf: String, val salario: Double, val tipo: Int = 0) {
+class Funcionario(val nome: String, val cpf: String, val salario: Double) {
 
     /**
      * Serve para calcular a bonificacao de uma instancia da classe Funcionario.
      * @return Valor da bonificacao do funcionario.
      * */
-    fun bonificacao(): Double {
-        var bonificacao: Double = 0.0;
-
-        when (this.tipo)
-        {
-            0 -> {
-                bonificacao = this.salario * 0.1
-            }
-            1 -> {
-                bonificacao = this.salario * 0.2
-            }
-            3 -> {
-                bonificacao = this.salario * 0.3
-            }
-        }
-        return bonificacao
+    fun bonificacao(): Double{
+        return this.salario * 0.1
     }
 
     /**
@@ -38,7 +23,7 @@ class Funcionario(val nome: String, val cpf: String, val salario: Double, val ti
         str += "Nome: " + this.nome + "\n"
         str += "CPF: " + this.cpf + "\n"
         str += "Salario: " + this.salario + "\n"
-        str += "Tipo: " + this.tipo
+        str += "Bonificação: " + this.bonificacao()
 
         return str
     }

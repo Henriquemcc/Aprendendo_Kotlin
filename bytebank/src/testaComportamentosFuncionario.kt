@@ -7,7 +7,6 @@ fun testaComportamentosFuncionario() {
     val joao = Funcionario(nome = "João da Silva", cpf = "680.915.820-05", salario = 1000.00)
 
     println(joao.toString())
-    println("Bonificação: ${joao.bonificacao()}")
 }
 
 /**
