@@ -1,11 +1,11 @@
 /**
  *
- * @param nome Nome do gerente.
- * @param cpf Cpf do gerente.
- * @param salario Salario do gerente.
- * @param senha Senha do gerente.
+ * @param nome Nome do diretor.
+ * @param cpf Cpf do diretor.
+ * @param salario Salario do diretor.
+ * @param senha Senha do diretor.
  * */
-class Gerente (nome: String, cpf: String, salario: Double, val senha: String): Funcionario(nome = nome, cpf = cpf, salario = salario){
+class Diretor (nome: String, cpf: String, salario: Double, val senha: String, val plr: Double): Funcionario(nome = nome, cpf = cpf, salario = salario){
 
     /**
      * Serve para calcular a bonificacao de uma instancia da classe Gerente.
@@ -24,7 +24,8 @@ class Gerente (nome: String, cpf: String, salario: Double, val senha: String): F
         str += "Nome: " + this.nome + "\n"
         str += "CPF: " + this.cpf + "\n"
         str += "Salario: " + this.salario + "\n"
-        str += "Bonificação: " + this.bonificacao()
+        str += "Bonificação: " + this.bonificacao() + "\n"
+        str += "Programa de Participação nos Lucros e Resultados: " + this.plr
 
         return str
     }
