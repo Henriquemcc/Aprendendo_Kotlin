@@ -12,7 +12,7 @@ class Gerente (nome: String, cpf: String, salario: Double, val senha: String): F
      * @return Valor da bonificação do gerente.
      * */
     override val bonificacao: Double
-        get() = this.salario * 0.2
+        get() = super.bonificacao + this.salario
 
     /**
      * Serve para converter uma instancia da classe Gerente em uma String.

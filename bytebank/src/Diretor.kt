@@ -12,7 +12,7 @@ class Diretor (nome: String, cpf: String, salario: Double, val senha: String, va
      * @return Valor da bonificação do diretor.
      * */
     override val bonificacao: Double
-        get() = this.salario * 0.3
+        get() = super.bonificacao + this.salario + this.plr
 
     /**
      * Serve para converter uma instancia da classe Diretor em uma String.
