@@ -8,31 +8,30 @@
 class Diretor (nome: String, cpf: String, salario: Double, val senha: String, val plr: Double): Funcionario(nome = nome, cpf = cpf, salario = salario){
 
     /**
-     * Serve para calcular a bonificacao de uma instancia da classe Gerente.
-     * @return Valor da bonificacao do gerente.
+     * Calcula a bonificação do diretor.
+     * @return Valor da bonificação do diretor.
      * */
-//    fun bonificacao(): Double {
-//        return this.salario * 0.2
-//    }
+    override val bonificacao: Double
+        get() = this.salario * 0.3
 
     /**
-     * Serve para converter uma instancia da classe Gerente em uma String.
-     * @return String contendo os dados da classe Funcionario.
+     * Serve para converter uma instancia da classe Diretor em uma String.
+     * @return String contendo os dados da classe Diretor.
      * */
     override fun toString(): String {
         var str = ""
         str += "Nome: " + this.nome + "\n"
         str += "CPF: " + this.cpf + "\n"
         str += "Salario: " + this.salario + "\n"
-        str += "Bonificação: " + this.bonificacao() + "\n"
+        str += "Bonificação: " + this.bonificacao + "\n"
         str += "Programa de Participação nos Lucros e Resultados: " + this.plr
 
         return str
     }
 
     /**
-     * Serve para realizar a autenticação de um gerente.
-     * @param senha Senha digitada pela pessoa que quer se autenticar como gerente.
+     * Serve para realizar a autenticação de um diretor.
+     * @param senha Senha digitada pela pessoa que quer se autenticar como diretor.
      * @return Valor booleano indicando se foi autenticado.
      * */
     fun autentica(senha: String): Boolean {

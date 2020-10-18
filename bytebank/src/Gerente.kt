@@ -8,23 +8,22 @@
 class Gerente (nome: String, cpf: String, salario: Double, val senha: String): Funcionario(nome = nome, cpf = cpf, salario = salario){
 
     /**
-     * Serve para calcular a bonificacao de uma instancia da classe Gerente.
-     * @return Valor da bonificacao do gerente.
+     * Calcula a bonificação do gerente.
+     * @return Valor da bonificação do gerente.
      * */
-//    fun bonificacao(): Double {
-//        return this.salario * 0.2
-//    }
+    override val bonificacao: Double
+        get() = this.salario * 0.2
 
     /**
      * Serve para converter uma instancia da classe Gerente em uma String.
-     * @return String contendo os dados da classe Funcionario.
+     * @return String contendo os dados da classe Gerente.
      * */
     override fun toString(): String {
         var str = ""
         str += "Nome: " + this.nome + "\n"
         str += "CPF: " + this.cpf + "\n"
         str += "Salario: " + this.salario + "\n"
-        str += "Bonificação: " + this.bonificacao()
+        str += "Bonificação: " + bonificacao
 
         return str
     }

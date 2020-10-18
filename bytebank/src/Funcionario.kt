@@ -7,12 +7,11 @@
 open class Funcionario(val nome: String, val cpf: String, val salario: Double) {
 
     /**
-     * Serve para calcular a bonificacao de uma instancia da classe Funcionario.
-     * @return Valor da bonificacao do funcionario.
+     * Calcula a bonificação do funcionário.
+     * @return Valor da bonificação do funcionário.
      * */
-    fun bonificacao(): Double{
-        return this.salario * 0.1
-    }
+    open val bonificacao: Double
+        get() = this.salario * 0.1
 
     /**
      * Serve para converter uma instancia da classe Funcionario em uma String.
@@ -23,7 +22,7 @@ open class Funcionario(val nome: String, val cpf: String, val salario: Double) {
         str += "Nome: " + this.nome + "\n"
         str += "CPF: " + this.cpf + "\n"
         str += "Salario: " + this.salario + "\n"
-        str += "Bonificação: " + this.bonificacao()
+        str += "Bonificação: " + this.bonificacao
 
         return str
     }
