@@ -5,7 +5,7 @@
  * @param salario Salario do gerente.
  * @param senha Senha do gerente.
  * */
-class Gerente (nome: String, cpf: String, salario: Double, val senha: String): Funcionario(nome = nome, cpf = cpf, salario = salario){
+class Gerente(nome: String, cpf: String, salario: Double, val senha: String) : Funcionario(nome = nome, cpf = cpf, salario = salario) {
 
     /**
      * Calcula a bonificação do gerente.
@@ -36,7 +36,7 @@ class Gerente (nome: String, cpf: String, salario: Double, val senha: String): F
     fun autentica(senha: String): Boolean {
         var sucesso = false
 
-        if (this.senha.equals(senha)){
+        if (this.senha.equals(senha)) {
             sucesso = true
         }
 

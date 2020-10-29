@@ -5,7 +5,7 @@
  * @param salario Salario do diretor.
  * @param senha Senha do diretor.
  * */
-class Diretor (nome: String, cpf: String, salario: Double, val senha: String, val plr: Double): Funcionario(nome = nome, cpf = cpf, salario = salario){
+class Diretor(nome: String, cpf: String, salario: Double, val senha: String, val plr: Double) : Funcionario(nome = nome, cpf = cpf, salario = salario) {
 
     /**
      * Calcula a bonificação do diretor.
@@ -37,7 +37,7 @@ class Diretor (nome: String, cpf: String, salario: Double, val senha: String, va
     fun autentica(senha: String): Boolean {
         var sucesso = false
 
-        if (this.senha.equals(senha)){
+        if (this.senha.equals(senha)) {
             sucesso = true
         }
 
