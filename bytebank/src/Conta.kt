@@ -1,7 +1,9 @@
 /**
  * Representa uma conta bancaria do Bytebank.
+ * @param titular Nome do titular da conta.
+ * @param numero Numero de identificação da conta.
  * */
-class Conta(var titular: String, val numero: Int) {
+open class Conta(var titular: String, val numero: Int) {
 
     //Saldo da conta
     var saldo = 0.0
@@ -25,7 +27,7 @@ class Conta(var titular: String, val numero: Int) {
      * @throws DepositoInferiorAZeroException Excecao jogada caso o saque seja inferior a zero.
      * @throws SaqueMaiorQueSaldoException Excecao jogada caso o saque seja maior que o saldo da conta.
      * */
-    fun sacar(valor: Double) {
+    open fun sacar(valor: Double) {
         //Verificando se pode sacar
         if (valor < 0) {
             throw DepositoInferiorAZeroException("O valor do saque não pode ser negativo.")
