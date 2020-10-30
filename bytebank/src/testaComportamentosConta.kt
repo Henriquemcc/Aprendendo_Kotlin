@@ -1,95 +1,69 @@
-/**
- * Serve para testar os comportamentos de uma instancia da classe Conta.
- * */
 fun testaComportamentosConta() {
-    println("Criando as contas")
 
-    //Criando a conta do Joao
-    val contaJoao = Conta(titular = "João", numero = 1)
+    //Criando as contas correntes
+    val contaCorrenteDoZe = ContaCorrente("Zé", 480812885)
+    val contaCorrenteDoJoao = ContaCorrente("João", 1319396092)
 
-    //Criando a conta do Jose
-    val contaJose = Conta(numero = 2, titular = "José")
-
-    //Criando a conta da Maria
-    val contaMaria = Conta("Maria", 3)
-
-    //Criando a conta do Lucas
-    val contaLucas = Conta("Lucas", 4)
-
-    //Depositando dinheiro nas contas
-    println("Depositando dinheiro nas contas")
-    contaJoao.depositar(5000.00)
-    contaJose.depositar(7000.00)
-    contaMaria.depositar(3000.00)
-    contaLucas.depositar(1234.00)
+    //Criando as contas poupanças
+    val contaPoupancaDoFulano = ContaPoupanca("Fulano", 2108701790)
+    val contaPoupancaDoCiclano = ContaPoupanca("Ciclano", 1202166505)
 
     //Imprimindo as contas
-    println("Conta do João")
-    println(contaJoao.toString())
+    println()
+    println("Antes do depósito:")
+    println(contaCorrenteDoZe)
+    println(contaCorrenteDoJoao)
+    println(contaPoupancaDoFulano)
+    println(contaPoupancaDoCiclano)
     println()
 
-    println("Conta do José")
-    println(contaJose.toString())
-    println()
+    //Adicionando dinheiro as contas
+    contaCorrenteDoZe.depositar(2000.00)
+    contaCorrenteDoJoao.depositar(4000.00)
+    contaPoupancaDoCiclano.depositar(8000.00)
+    contaPoupancaDoFulano.depositar(16000.00)
 
-    println("Conta da Maria")
-    println(contaMaria.toString())
+    //Imprimindo as contas
     println()
-
-    println("Conta do Lucas")
-    println(contaLucas.toString())
+    println("Depois do depósito e antes do saque:")
+    println(contaCorrenteDoZe)
+    println(contaCorrenteDoJoao)
+    println(contaPoupancaDoFulano)
+    println(contaPoupancaDoCiclano)
     println()
 
     //Sacando dinheiro das contas
-    println("Sacando")
-    contaJoao.sacar(100.00)
-    contaJose.sacar(50.00)
-    contaMaria.sacar(25.00);
-    contaLucas.sacar(15.00);
+    contaCorrenteDoJoao.sacar(200.00)
+    contaCorrenteDoZe.sacar(400.00)
+    contaPoupancaDoCiclano.sacar(800.00)
+    contaPoupancaDoFulano.sacar(1600.00)
 
     //Imprimindo as contas
-    println("Conta do João")
-    println(contaJoao.toString())
+    println()
+    println("Depois do saque e antes da transferência")
+    println(contaCorrenteDoZe)
+    println(contaCorrenteDoJoao)
+    println(contaPoupancaDoFulano)
+    println(contaPoupancaDoCiclano)
     println()
 
-    println("Conta do José")
-    println(contaJose.toString())
-    println()
-
-    println("Conta da Maria")
-    println(contaMaria.toString())
-    println()
-
-    println("Conta do Lucas")
-    println(contaLucas.toString())
-    println()
-
-    println("Transferindo dinheiro entre as contas")
-    contaJoao.transferir(contaJose, 200.00)
-    contaJose.transferir(contaLucas, 100.00)
-    contaLucas.transferir(contaMaria, 50.00)
+    //Transferindo dinheiro entre as contas
+    contaCorrenteDoJoao.transferir(contaPoupancaDoCiclano, 200.00)
+    contaCorrenteDoZe.transferir(contaCorrenteDoJoao, 400.00)
+    contaPoupancaDoCiclano.transferir(contaPoupancaDoFulano, 800.00)
+    contaCorrenteDoZe.transferir(contaPoupancaDoCiclano, 600.00)
 
     //Imprimindo as contas
-    println("Conta do João")
-    println(contaJoao.toString())
+    println()
+    println("Depois da transferência")
+    println(contaCorrenteDoZe)
+    println(contaCorrenteDoJoao)
+    println(contaPoupancaDoFulano)
+    println(contaPoupancaDoCiclano)
     println()
 
-    println("Conta do José")
-    println(contaJose.toString())
-    println()
-
-    println("Conta da Maria")
-    println(contaMaria.toString())
-    println()
-
-    println("Conta do Lucas")
-    println(contaLucas.toString())
-    println()
 }
 
-/**
- * Serve para executar a funcao testaComportamentoConta ao clicar para executar este arquivo.
- * */
-private fun main() {
+fun main() {
     testaComportamentosConta()
 }

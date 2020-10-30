@@ -4,7 +4,7 @@
  * @param cpf Cpf do funcionario.
  * @param salario Salario do funcionario.
  * */
-open class Funcionario(val nome: String, val cpf: String, val salario: Double) {
+abstract class Funcionario(val nome: String, val cpf: String, val salario: Double) {
 
     /**
      * Calcula a bonificação do funcionário.

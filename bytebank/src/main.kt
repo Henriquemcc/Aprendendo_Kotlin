@@ -2,10 +2,11 @@
  * Eh a primeira funcao a ser executada ao iniciar o programa.
  * */
 fun main() {
-    testaCopiasEReferencias()
-    testaLacos()
-    testaComportamentosFuncionario()
-    testaComportamentosGerente()
-    testaComportamentosDiretor()
-    testaComportamentoCalculadoraBonificacao()
+    println("---------------------------------------------------------------------------------------------------------")
+    println("Testando comportamentos de funcionário")
+    testaComportamentosFuncionarios()
+    println("---------------------------------------------------------------------------------------------------------")
+    println("Testando comportamentos de conta")
+    testaComportamentosConta()
+    println("---------------------------------------------------------------------------------------------------------")
 }

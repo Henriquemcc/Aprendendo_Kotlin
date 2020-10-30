@@ -73,7 +73,7 @@ open class Conta(var titular: String, val numero: Int) {
         }
         //Mudando a mensagem de erro caso o valor da transferencia seja maior que o saldo da conta de origem
         catch (e: SaqueMaiorQueSaldoException) {
-            throw TransferenciaMaiorQueSaldoException("O valor da transferencia tem que ser maior que zero.")
+            throw TransferenciaMaiorQueSaldoException("O valor da transferencia tem que ser maior que o saldo.")
         }
     }
 
