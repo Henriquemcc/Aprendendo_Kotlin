@@ -1,5 +1,5 @@
 /**
- * Representa um Gerente, que é um subtipo de funcionário
+ * Representa um Gerente, que é um subtipo de Funcionario.
  */
 class Gerente : Funcionario {
 

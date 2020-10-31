@@ -1,5 +1,15 @@
 fun testaComportamentosFuncionarios(){
 
+    //Criando auxiliares
+    val rodrigo = Auxiliar("Rodrigo", "679.415.150-24", 500.00)
+    val mariana = Auxiliar("Mariana", "751.489.410-14", 500.00)
+    val raimundo = Auxiliar("Raimundo", "740.275.550-90", 500.00)
+    val vanessa = Auxiliar("Vanessa", "769.088.680-95", 500.00)
+    val felipe = Auxiliar("Felipe", "472.570.610-84", 500.00)
+    val luciana = Auxiliar("Luciana", "314.584.100-99", 500.00)
+    val eduardo = Auxiliar("Eduardo", "110.078.260-53", 500.00)
+    val julia = Auxiliar("Julia", "152.150.670-15", 500.00)
+
     //Criando os analistas
     val joao = Analista("João", "657.107.710-82", 1000.00)
     val jose = Analista("José", "740.716.030-97", 1000.00)
@@ -15,6 +25,21 @@ fun testaComportamentosFuncionarios(){
 
     //Imprimindo todos os funcionarios
     println()
+    println(rodrigo)
+    println()
+    println(mariana)
+    println()
+    println(raimundo)
+    println()
+    println(vanessa)
+    println()
+    println(felipe)
+    println()
+    println(luciana)
+    println()
+    println(eduardo)
+    println()
+    println(julia)
     println()
     println(joao)
     println()
@@ -41,6 +66,14 @@ fun testaComportamentosFuncionarios(){
     calculadoraBonificacao.registra(antonio)
     calculadoraBonificacao.registra(francisca)
     calculadoraBonificacao.registra(carlos)
+    calculadoraBonificacao.registra(rodrigo)
+    calculadoraBonificacao.registra(mariana)
+    calculadoraBonificacao.registra(raimundo)
+    calculadoraBonificacao.registra(vanessa)
+    calculadoraBonificacao.registra(felipe)
+    calculadoraBonificacao.registra(luciana)
+    calculadoraBonificacao.registra(eduardo)
+    calculadoraBonificacao.registra(julia)
 
     //Imprimindo a bonificação
     println("Valor total gasto com a bonificação dos funcionários: ${calculadoraBonificacao.total}")

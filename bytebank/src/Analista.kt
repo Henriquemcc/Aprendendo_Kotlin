@@ -1,5 +1,5 @@
 /**
- * Representa um Analista, que é um subtipo de funcionário
+ * Representa um Analista, que é um subtipo de Funcionario.
  */
 class Analista : Funcionario {
 

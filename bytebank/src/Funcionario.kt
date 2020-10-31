@@ -9,7 +9,7 @@ abstract class Funcionario {
     var salario: Double
 
     /*
-    * Serve para criar uma nova instancia de funcionario
+    * Cria uma nova instancia de Funcionario.
     * @param nome Nome do funcionario.
     * @param cpf Cpf do funcionario.
     * @param salario Salario do funcionario.
