@@ -1,4 +1,4 @@
-fun testaComportamentosFuncionarios(){
+fun testaComportamentosFuncionarios() {
 
     //Criando auxiliares
     val rodrigo = Auxiliar("Rodrigo", "679.415.150-24", 500.00)
@@ -77,8 +77,14 @@ fun testaComportamentosFuncionarios(){
 
     //Imprimindo a bonificação
     println("Valor total gasto com a bonificação dos funcionários: ${calculadoraBonificacao.total}")
+
+    //Testando autenticação
+    val sistemaInterno = SistemaInterno()
+    sistemaInterno.login(antonio, "0I\$QOUmSTt7Oujg#dVyD8gLrFWXcljOvaqz1ACldUSksnBBMe2")
+    sistemaInterno.login(francisca, "1234567890")
+    sistemaInterno.login(carlos, "lgTw4bEqSlRy#BcyMUkh#yzzpYepK1L@if\$Ojm7AHMIixHlt\$G")
 }
 
-private fun main(){
+fun main() {
     testaComportamentosFuncionarios()
 }

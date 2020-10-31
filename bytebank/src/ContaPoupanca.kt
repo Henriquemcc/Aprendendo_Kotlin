@@ -1,21 +1,21 @@
 /**
  * Representa uma conta poupança do Bytebank.
  */
-class ContaPoupanca : Conta{
+class ContaPoupanca : Conta {
 
     /**
      * Cria uma nova instância da ContaPoupanca.
      * @param titular Nome do titular da conta.
      * @param numero Numero da conta.
      */
-    constructor(titular: String, numero: Int): super(titular, numero.toString())
+    constructor(titular: String, numero: Int) : super(titular, numero.toString())
 
     /**
      * Cria uma nova instância da ContaPoupanca.
      * @param titular Nome do titular da conta.
      * @param numero Numero da conta.
      */
-    constructor(titular: String, numero: String): super(titular, numero)
+    constructor(titular: String, numero: String) : super(titular, numero)
 
     override fun sacar(valor: Double) {
         if (valor < 0)

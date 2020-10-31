@@ -4,9 +4,9 @@
 abstract class Funcionario {
 
     //Atributos
-    var nome: String;
-    var cpf: String
-    var salario: Double
+    val nome: String;
+    val cpf: String
+    val salario: Double
 
     /*
     * Cria uma nova instancia de Funcionario.
@@ -14,11 +14,12 @@ abstract class Funcionario {
     * @param cpf Cpf do funcionario.
     * @param salario Salario do funcionario.
     * */
-    constructor(nome: String, cpf: String, salario: Double){
+    constructor(nome: String, cpf: String, salario: Double) {
         this.nome = nome
         this.cpf = cpf
         this.salario = salario
     }
+
     /**
      * Calcula a bonificação do funcionário.
      * */

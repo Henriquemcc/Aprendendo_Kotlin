@@ -1,9 +1,7 @@
 /**
  * Representa um Gerente, que é um subtipo de Funcionario.
  */
-class Gerente : Funcionario {
-
-    var senha: String
+class Gerente : FuncionarioAdministrador {
 
     /**
      * Serve para criar uma nova instancia de Gerente.
@@ -12,9 +10,8 @@ class Gerente : Funcionario {
      * @param salario Salario do gerente.
      * @param senha Senha do gerente.
      * */
-    constructor(nome: String, cpf: String, salario: Double, senha: String):super(nome, cpf, salario) {
-        this.senha = senha
-    }
+    constructor(nome: String, cpf: String, salario: Double, senha: String) : super(nome, cpf, salario, senha)
+
     /**
      * Calcula a bonificação do gerente.
      * @return Valor da bonificação do gerente.
@@ -34,20 +31,5 @@ class Gerente : Funcionario {
         str += "Bonificação: " + bonificacao
 
         return str
-    }
-
-    /**
-     * Serve para realizar a autenticação de um gerente.
-     * @param senha Senha digitada pela pessoa que quer se autenticar como gerente.
-     * @return Valor booleano indicando se foi autenticado.
-     * */
-    fun autentica(senha: String): Boolean {
-        var sucesso = false
-
-        if (this.senha.equals(senha)) {
-            sucesso = true
-        }
-
-        return sucesso
     }
 }

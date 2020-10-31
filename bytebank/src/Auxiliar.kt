@@ -1,7 +1,7 @@
 /**
  * Representa um Auxiliar, que é um subtipo de Funcionario.
  */
-class Auxiliar: Funcionario {
+class Auxiliar : Funcionario {
 
     /**
      * Cria uma nova instancia de Auxiliar.

@@ -9,7 +9,8 @@ class Analista : Funcionario {
      * @param cpf Cpf do analista.
      * @param salario Salario do analista.
      * */
-    constructor(nome: String, cpf: String, salario: Double):super(nome, cpf, salario)
+    constructor(nome: String, cpf: String, salario: Double) : super(nome, cpf, salario)
+
     /**
      * Calcula a bonificação do analista.
      * @return Valor da bonificação do analista.

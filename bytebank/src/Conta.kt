@@ -46,7 +46,7 @@ abstract class Conta {
      * Exceção jogada quando o valor da transferência é inferior a zero.
      * @param var1 Mensagem de erro.
      */
-    class TransferenciaInferiorAZero(var1: String = "O valor da transferência não pode ser inferior a zero"): IllegalArgumentException(var1)
+    class TransferenciaInferiorAZero(var1: String = "O valor da transferência não pode ser inferior a zero") : IllegalArgumentException(var1)
 
     /**
      * Exceção jogada quando o valor da transferência é maior que o valor do saldo.

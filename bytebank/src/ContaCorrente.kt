@@ -8,14 +8,14 @@ class ContaCorrente : Conta {
      * @param titular Nome do titular da conta.
      * @param numero Numero da conta.
      */
-    constructor(titular: String, numero: String): super(titular, numero)
+    constructor(titular: String, numero: String) : super(titular, numero)
 
     /**
      * Cria uma nova instancia da ContaCorrente.
      * @param titular Nome do titular da conta.
      * @param numero Numero da conta.
      */
-    constructor(titular: String, numero: Int): super(titular, numero.toString())
+    constructor(titular: String, numero: Int) : super(titular, numero.toString())
 
     /**
      * Serve para realizar um saque na conta corrente.

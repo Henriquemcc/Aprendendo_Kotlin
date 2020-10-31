@@ -1,10 +1,9 @@
 /**
  * Representa um Diretor, que é um subtipo de Funcionario.
  */
-class Diretor : Funcionario {
+class Diretor : FuncionarioAdministrador {
 
-    var senha: String
-    var plr: Double
+    val plr: Double
 
     /**
      * Serve para criar uma nova instancia de Diretor.
@@ -13,8 +12,7 @@ class Diretor : Funcionario {
      * @param salario Salario do diretor.
      * @param senha Senha do diretor.
      * */
-    constructor(nome: String, cpf: String, salario: Double, senha: String, plr: Double):super(nome, cpf, salario) {
-        this.senha = senha
+    constructor(nome: String, cpf: String, salario: Double, senha: String, plr: Double) : super(nome, cpf, salario, senha) {
         this.plr = plr
     }
 
@@ -38,20 +36,5 @@ class Diretor : Funcionario {
         str += "Programa de Participação nos Lucros e Resultados: " + this.plr
 
         return str
-    }
-
-    /**
-     * Serve para realizar a autenticação de um diretor.
-     * @param senha Senha digitada pela pessoa que quer se autenticar como diretor.
-     * @return Valor booleano indicando se foi autenticado.
-     * */
-    fun autentica(senha: String): Boolean {
-        var sucesso = false
-
-        if (this.senha.equals(senha)) {
-            sucesso = true
-        }
-
-        return sucesso
     }
 }
