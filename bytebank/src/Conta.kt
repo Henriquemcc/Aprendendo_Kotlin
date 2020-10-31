@@ -1,80 +1,102 @@
 /**
  * Representa uma conta bancaria do Bytebank.
- * @param titular Nome do titular da conta.
- * @param numero Numero de identificação da conta.
  * */
-open class Conta(var titular: String, val numero: Int) {
+abstract class Conta {
 
-    //Saldo da conta
+    var titular: String
+    var numero: String
+
     var saldo = 0.0
-        private set(saldo) {
-            if (saldo < 0) {
-                throw SaldoInferiorAZeroException("O valor do atributo saldo nao pode ser inferior a zero.")
-            }
-            field = saldo
-        }
+        protected set
 
-    //Execoes relacionadas ao saque, deposito e transferencia
-    class DepositoInferiorAZeroException(var1: String) : IllegalArgumentException(var1)
-    class SaqueMaiorQueSaldoException(var1: String) : IllegalArgumentException(var1)
-    class TransferenciaMaiorQueSaldoException(var1: String) : IllegalArgumentException(var1)
-    class NumeroContaInferiorAZeroException(var1: String) : IllegalArgumentException(var1)
-    class SaldoInferiorAZeroException(var1: String) : java.lang.IllegalArgumentException(var1)
+    /*
+    * @param titular Nome do titular da conta.
+    * @param numero Numero de identificação da conta.
+    * */
+    constructor(titular: String, numero: String) {
+        if (Integer.parseInt(numero) < 0)
+            throw NumeroContaInferiorAZero()
 
-    /**
-     * Serve para realizar um saque.
-     * @param valor Valor a ser sacado.
-     * @throws DepositoInferiorAZeroException Excecao jogada caso o saque seja inferior a zero.
-     * @throws SaqueMaiorQueSaldoException Excecao jogada caso o saque seja maior que o saldo da conta.
-     * */
-    open fun sacar(valor: Double) {
-        //Verificando se pode sacar
-        if (valor < 0) {
-            throw DepositoInferiorAZeroException("O valor do saque não pode ser negativo.")
-        }
-        if (saldo < valor) {
-            throw SaqueMaiorQueSaldoException("O valor do saque não pode ser maior que o valor do saldo.")
-        }
-
-        //Sacando
-        this.saldo -= valor
-
+        this.titular = titular
+        this.numero = numero
     }
 
+    //Exceção deposito
     /**
-     * Serve para realizar um deposito na conta.
+     * Exceção jogada quando o valor do depósito é inferior a zero.
+     * @param var1 Mensagem de erro.
+     */
+    class DepositoInferiorAZero(var1: String = "O valor do depósito não pode ser inferior a zero") : IllegalArgumentException(var1)
+
+    //Exceções saque
+    /**
+     * Exceção jogada quando o valor do saque é inferior a zero.
+     * @param var1 Mensagem de erro.
+     */
+    class SaqueInferiorAZero(var1: String = "O valor do saque não pode ser inferior a zero") : IllegalArgumentException(var1)
+
+    /**
+     * Exceção jogada quando o valor do saque é maior que o valor do saldo.
+     * @param var1 Mensagem de erro.
+     */
+    class SaqueMaiorQueSaldo(var1: String = "O valor do saque não pode ser maior que o saldo da conta") : IllegalArgumentException(var1)
+
+    //Exceções Transferencia
+    /**
+     * Exceção jogada quando o valor da transferência é inferior a zero.
+     * @param var1 Mensagem de erro.
+     */
+    class TransferenciaInferiorAZero(var1: String = "O valor da transferência não pode ser inferior a zero"): IllegalArgumentException(var1)
+
+    /**
+     * Exceção jogada quando o valor da transferência é maior que o valor do saldo.
+     * @param var1 Mensagem de erro.
+     */
+    class TransferenciaMaiorQueSaldo(var1: String = "O valor da transferência não pode ser maior que o saldo da conta") : IllegalArgumentException(var1)
+
+    //Exceção numero da conta
+    /**
+     * Exceção jogada quando o número da conta é inferior a zero.
+     * @param var1 Mensagem de erro.
+     */
+    class NumeroContaInferiorAZero(var1: String = "O numero da conta não pode ser inferior a zero") : IllegalArgumentException(var1)
+
+    /**
+     * Realiza um saque da conta.
+     * @param valor Valor a ser sacado
+     * @throws SaqueInferiorAZero
+     * @throws SaqueMaiorQueSaldo
+     */
+    abstract fun sacar(valor: Double)
+
+    /**
+     * Realiza um depósito na conta.
      * @param valor Valor do deposito.
-     * @throws DepositoInferiorAZeroException Excecao jogada caso o deposito seja inferior a zero.
+     * @throws DepositoInferiorAZero
      * */
     fun depositar(valor: Double) {
-        //Verificando se pode depositar
-        if (valor < 0) {
-            throw DepositoInferiorAZeroException("O valor do deposito não pode ser negativo.")
-        }
+        if (valor < 0)
+            throw DepositoInferiorAZero()
 
         this.saldo += valor
     }
 
     /**
-     * Serve para transferir dinheiro de uma conta para outra.
+     * Realiza transferência de uma conta para outra.
      * @param destino Referencia para a o objeto da conta destino.
      * @param valor Valor a ser transferido de uma conta para outra.
-     * @throws TransferenciaMaiorQueSaldoException Excecao jogada caso o valor a ser transferido eh maior que o saldo da conta de origem.
-     * @throws DepositoInferiorAZeroException Excecao jogada caso o valor a ser transferido seja menor que zero.
+     * @throws TransferenciaMaiorQueSaldo
+     * @throws DepositoInferiorAZero
      * */
     fun transferir(destino: Conta, valor: Double) {
-        try {
-            this.sacar(valor)
-            destino.depositar(valor)
-        }
-        //Mudando a mensagem de erro caso o valor da transferencia seja menor que zero
-        catch (e: DepositoInferiorAZeroException) {
-            throw DepositoInferiorAZeroException("O valor da transferencia não pode ser inferior a zero.")
-        }
-        //Mudando a mensagem de erro caso o valor da transferencia seja maior que o saldo da conta de origem
-        catch (e: SaqueMaiorQueSaldoException) {
-            throw TransferenciaMaiorQueSaldoException("O valor da transferencia tem que ser maior que o saldo.")
-        }
+        if (valor < 0)
+            throw TransferenciaInferiorAZero()
+
+        if (valor > this.saldo)
+            throw TransferenciaMaiorQueSaldo()
+
+        this.sacar(valor)
+        destino.depositar(valor)
     }
 
     /**
