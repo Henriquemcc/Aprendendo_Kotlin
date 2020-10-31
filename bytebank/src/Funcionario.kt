@@ -1,17 +1,28 @@
 /**
- * Representa um funcionario do Bytebank.
- * @param nome Nome do funcionario.
- * @param cpf Cpf do funcionario.
- * @param salario Salario do funcionario.
+ * Representa um Funcionario do Bytebank.
  * */
-abstract class Funcionario(val nome: String, val cpf: String, val salario: Double) {
+abstract class Funcionario {
 
+    //Atributos
+    var nome: String;
+    var cpf: String
+    var salario: Double
+
+    /*
+    * Serve para criar uma nova instancia de funcionario
+    * @param nome Nome do funcionario.
+    * @param cpf Cpf do funcionario.
+    * @param salario Salario do funcionario.
+    * */
+    constructor(nome: String, cpf: String, salario: Double){
+        this.nome = nome
+        this.cpf = cpf
+        this.salario = salario
+    }
     /**
      * Calcula a bonificação do funcionário.
-     * @return Valor da bonificação do funcionário.
      * */
-    open val bonificacao: Double
-        get() = this.salario * 0.1
+    abstract val bonificacao: Double
 
     /**
      * Serve para converter uma instancia da classe Funcionario em uma String.

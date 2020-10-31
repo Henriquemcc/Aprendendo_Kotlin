@@ -1,18 +1,26 @@
 /**
- *
- * @param nome Nome do gerente.
- * @param cpf Cpf do gerente.
- * @param salario Salario do gerente.
- * @param senha Senha do gerente.
- * */
-class Gerente(nome: String, cpf: String, salario: Double, val senha: String) : Funcionario(nome = nome, cpf = cpf, salario = salario) {
+ * Representa um Gerente, que é um subtipo de funcionário
+ */
+class Gerente : Funcionario {
 
+    var senha: String
+
+    /**
+     * Serve para criar uma nova instancia de Gerente.
+     * @param nome Nome do gerente.
+     * @param cpf Cpf do gerente.
+     * @param salario Salario do gerente.
+     * @param senha Senha do gerente.
+     * */
+    constructor(nome: String, cpf: String, salario: Double, senha: String):super(nome, cpf, salario) {
+        this.senha = senha
+    }
     /**
      * Calcula a bonificação do gerente.
      * @return Valor da bonificação do gerente.
      * */
     override val bonificacao: Double
-        get() = super.bonificacao + this.salario
+        get() = this.salario * 1.1
 
     /**
      * Serve para converter uma instancia da classe Gerente em uma String.

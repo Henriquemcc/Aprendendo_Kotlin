@@ -1,11 +1,15 @@
 /**
- *
- * @param nome Nome do analista.
- * @param cpf Cpf do analista.
- * @param salario Salario do analista.
- * */
-class Analista(nome: String, cpf: String, salario: Double) : Funcionario(nome = nome, cpf = cpf, salario = salario) {
+ * Representa um Analista, que é um subtipo de funcionário
+ */
+class Analista : Funcionario {
 
+    /**
+     * Cria uma nova instancia de Analista.
+     * @param nome Nome do analista.
+     * @param cpf Cpf do analista.
+     * @param salario Salario do analista.
+     * */
+    constructor(nome: String, cpf: String, salario: Double):super(nome, cpf, salario)
     /**
      * Calcula a bonificação do analista.
      * @return Valor da bonificação do analista.

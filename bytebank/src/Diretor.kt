@@ -1,18 +1,29 @@
 /**
- *
- * @param nome Nome do diretor.
- * @param cpf Cpf do diretor.
- * @param salario Salario do diretor.
- * @param senha Senha do diretor.
- * */
-class Diretor(nome: String, cpf: String, salario: Double, val senha: String, val plr: Double) : Funcionario(nome = nome, cpf = cpf, salario = salario) {
+ * Representa um Diretor, que é um subtipo de funcionário
+ */
+class Diretor : Funcionario {
+
+    var senha: String
+    var plr: Double
+
+    /**
+     * Serve para criar uma nova instancia de Diretor.
+     * @param nome Nome do diretor.
+     * @param cpf Cpf do diretor.
+     * @param salario Salario do diretor.
+     * @param senha Senha do diretor.
+     * */
+    constructor(nome: String, cpf: String, salario: Double, senha: String, plr: Double):super(nome, cpf, salario) {
+        this.senha = senha
+        this.plr = plr
+    }
 
     /**
      * Calcula a bonificação do diretor.
      * @return Valor da bonificação do diretor.
      * */
     override val bonificacao: Double
-        get() = super.bonificacao + this.salario + this.plr
+        get() = this.salario * 1.1 + this.plr
 
     /**
      * Serve para converter uma instancia da classe Diretor em uma String.

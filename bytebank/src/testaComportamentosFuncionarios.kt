@@ -15,13 +15,21 @@ fun testaComportamentosFuncionarios(){
 
     //Imprimindo todos os funcionarios
     println()
+    println()
     println(joao)
+    println()
     println(jose)
+    println()
     println(maria)
+    println()
     println(ana)
+    println()
     println(antonio)
+    println()
     println(francisca)
+    println()
     println(carlos)
+    println()
     println()
 
     //Calculando a bonificação
