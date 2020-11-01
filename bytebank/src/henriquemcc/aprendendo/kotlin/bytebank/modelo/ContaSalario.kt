@@ -1,16 +1,16 @@
-package modelo
+package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
 class ContaSalario : Conta {
 
     /**
-     * Cria uma nova instancia de modelo.ContaSalario.
+     * Cria uma nova instancia de ContaSalario.
      * @param nome Nome do titular da conta.
      * @param numero Numero da conta.
      */
     constructor(nome: String, numero: Int) : super(nome, numero.toString())
 
     /**
-     * Cria uma nova instancia de modelo.ContaSalario.
+     * Cria uma nova instancia de ContaSalario.
      * @param nome Nome do titular da conta.
      * @param numero Numero da conta.
      */
@@ -31,8 +31,8 @@ class ContaSalario : Conta {
     }
 
     /**
-     * Serve para converter uma instancia da classe modelo.Conta em uma String.
-     * @return String contendo os dados da classe modelo.Conta.
+     * Serve para converter uma instancia da classe Conta em uma String.
+     * @return String contendo os dados da classe Conta.
      * */
     override fun toString(): String {
         var str = ""

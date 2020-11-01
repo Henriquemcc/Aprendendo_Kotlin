@@ -1,4 +1,4 @@
-package modelo
+package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
 abstract class ContaTransferivel : Conta {
 

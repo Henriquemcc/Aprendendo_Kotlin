@@ -1,12 +1,12 @@
-package modelo
+package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
 /**
- * Representa um modelo.Gerente, que é um subtipo de modelo.Funcionario.
+ * Representa um Gerente, que é um subtipo de Funcionario.
  */
 class Gerente : FuncionarioAdministrador {
 
     /**
-     * Serve para criar uma nova instancia de modelo.Gerente.
+     * Serve para criar uma nova instancia de Gerente.
      * @param nome Nome do gerente.
      * @param cpf Cpf do gerente.
      * @param salario Salario do gerente.
@@ -22,8 +22,8 @@ class Gerente : FuncionarioAdministrador {
         get() = this.salario * 1.1
 
     /**
-     * Serve para converter uma instancia da classe modelo.Gerente em uma String.
-     * @return String contendo os dados da classe modelo.Gerente.
+     * Serve para converter uma instancia da classe Gerente em uma String.
+     * @return String contendo os dados da classe Gerente.
      * */
     override fun toString(): String {
         var str = ""

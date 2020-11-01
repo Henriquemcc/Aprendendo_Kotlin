@@ -1,12 +1,12 @@
-package modelo
+package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
 /**
- * Representa um modelo.Auxiliar, que é um subtipo de modelo.Funcionario.
+ * Representa um Auxiliar, que é um subtipo de Funcionario.
  */
 class Auxiliar : Funcionario {
 
     /**
-     * Cria uma nova instancia de modelo.Auxiliar.
+     * Cria uma nova instancia de Auxiliar.
      * @param nome Nome do auxiliar.
      * @param cpf CPF do auxiliar.
      * @param salario Salario do auxiliar.
@@ -17,8 +17,8 @@ class Auxiliar : Funcionario {
         get() = 0.0
 
     /**
-     * Serve para converter uma instancia da classe modelo.Funcionario em uma String.
-     * @return String contendo os dados da classe modelo.Funcionario.
+     * Serve para converter uma instancia da classe Funcionario em uma String.
+     * @return String contendo os dados da classe Funcionario.
      * */
     override fun toString(): String {
         var str = ""

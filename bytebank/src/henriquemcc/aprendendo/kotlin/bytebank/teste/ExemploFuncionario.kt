@@ -1,9 +1,9 @@
-package teste
+package henriquemcc.aprendendo.kotlin.bytebank.teste
 
-import modelo.Analista
-import modelo.Auxiliar
-import modelo.Diretor
-import modelo.Gerente
+import henriquemcc.aprendendo.kotlin.bytebank.modelo.Analista
+import henriquemcc.aprendendo.kotlin.bytebank.modelo.Auxiliar
+import henriquemcc.aprendendo.kotlin.bytebank.modelo.Diretor
+import henriquemcc.aprendendo.kotlin.bytebank.modelo.Gerente
 
 val rodrigo: Auxiliar = Auxiliar("Rodrigo", "679.415.150-24", 500.00)
 val mariana: Auxiliar = Auxiliar("Mariana", "751.489.410-14", 500.00)

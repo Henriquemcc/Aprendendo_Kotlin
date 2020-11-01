@@ -1,6 +1,6 @@
-package teste
+package henriquemcc.aprendendo.kotlin.bytebank.teste
 
-import modelo.CalculadoraBonificacao
+import henriquemcc.aprendendo.kotlin.bytebank.modelo.CalculadoraBonificacao
 
 /**
  * Testa comportamentos da CalculadoraBonificação.

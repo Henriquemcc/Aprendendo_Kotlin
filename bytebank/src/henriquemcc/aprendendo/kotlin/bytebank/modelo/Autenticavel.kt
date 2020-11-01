@@ -1,7 +1,7 @@
-package modelo
+package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
 /**
- * Permite que uma classe possa ser autenticável no modelo.SistemaInterno.
+ * Permite que uma classe possa ser autenticável no SistemaInterno.
  */
 interface Autenticavel {
 

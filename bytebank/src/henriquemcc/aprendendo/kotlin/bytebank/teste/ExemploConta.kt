@@ -1,8 +1,8 @@
-package teste
+package henriquemcc.aprendendo.kotlin.bytebank.teste
 
-import modelo.ContaCorrente
-import modelo.ContaPoupanca
-import modelo.ContaSalario
+import henriquemcc.aprendendo.kotlin.bytebank.modelo.ContaCorrente
+import henriquemcc.aprendendo.kotlin.bytebank.modelo.ContaPoupanca
+import henriquemcc.aprendendo.kotlin.bytebank.modelo.ContaSalario
 
 val contaCorrenteDoZe = ContaCorrente("Zé", 480812885)
 val contaCorrenteDoJoao = ContaCorrente("João", 1319396092)

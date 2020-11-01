@@ -1,4 +1,4 @@
-package modelo
+package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
 /**
  * Representa uma conta bancaria do Bytebank.
@@ -12,7 +12,7 @@ abstract class Conta {
         protected set
 
     /*
-    * Inicializa os atributos de modelo.Conta.
+    * Inicializa os atributos de Conta.
     * @param titular Nome do titular da conta.
     * @param numero Numero de identificação da conta.
     * */
@@ -72,8 +72,8 @@ abstract class Conta {
     }
 
     /**
-     * Serve para converter uma instancia da classe modelo.Conta em uma String.
-     * @return String contendo os dados da classe modelo.Conta.
+     * Serve para converter uma instancia da classe Conta em uma String.
+     * @return String contendo os dados da classe Conta.
      * */
     override abstract fun toString(): String
 }

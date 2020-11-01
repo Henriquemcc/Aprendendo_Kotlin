@@ -1,7 +1,7 @@
-package modelo
+package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
 /**
- * Representa um modelo.Funcionario do Bytebank.
+ * Representa um Funcionario do Bytebank.
  * */
 abstract class Funcionario {
 
@@ -11,7 +11,7 @@ abstract class Funcionario {
     val salario: Double
 
     /*
-    * Cria uma nova instancia de modelo.Funcionario.
+    * Cria uma nova instancia de Funcionario.
     * @param nome Nome do funcionario.
     * @param cpf Cpf do funcionario.
     * @param salario Salario do funcionario.
@@ -28,8 +28,8 @@ abstract class Funcionario {
     abstract val bonificacao: Double
 
     /**
-     * Serve para converter uma instancia da classe modelo.Funcionario em uma String.
-     * @return String contendo os dados da classe modelo.Funcionario.
+     * Serve para converter uma instancia da classe Funcionario em uma String.
+     * @return String contendo os dados da classe Funcionario.
      * */
     abstract override fun toString(): String
 }

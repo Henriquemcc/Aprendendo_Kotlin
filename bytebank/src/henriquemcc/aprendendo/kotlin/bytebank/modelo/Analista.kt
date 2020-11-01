@@ -1,12 +1,12 @@
-package modelo
+package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
 /**
- * Representa um modelo.Analista, que é um subtipo de modelo.Funcionario.
+ * Representa um Analista, que é um subtipo de Funcionario.
  */
 class Analista : Funcionario {
 
     /**
-     * Cria uma nova instancia de modelo.Analista.
+     * Cria uma nova instancia de Analista.
      * @param nome Nome do analista.
      * @param cpf Cpf do analista.
      * @param salario Salario do analista.

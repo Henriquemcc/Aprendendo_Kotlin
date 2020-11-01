@@ -1,14 +1,14 @@
-package modelo
+package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
 /**
- * Representa um modelo.Diretor, que é um subtipo de modelo.Funcionario.
+ * Representa um Diretor, que é um subtipo de Funcionario.
  */
 class Diretor : FuncionarioAdministrador {
 
     val plr: Double
 
     /**
-     * Serve para criar uma nova instancia de modelo.Diretor.
+     * Serve para criar uma nova instancia de Diretor.
      * @param nome Nome do diretor.
      * @param cpf Cpf do diretor.
      * @param salario Salario do diretor.
@@ -26,8 +26,8 @@ class Diretor : FuncionarioAdministrador {
         get() = this.salario * 1.1 + this.plr
 
     /**
-     * Serve para converter uma instancia da classe modelo.Diretor em uma String.
-     * @return String contendo os dados da classe modelo.Diretor.
+     * Serve para converter uma instancia da classe Diretor em uma String.
+     * @return String contendo os dados da classe Diretor.
      * */
     override fun toString(): String {
         var str = ""

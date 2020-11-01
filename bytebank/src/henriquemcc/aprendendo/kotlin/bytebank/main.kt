@@ -1,4 +1,4 @@
-import teste.*
+import henriquemcc.aprendendo.kotlin.bytebank.teste.*
 
 /**
  * É a primeira função a ser executada ao iniciar o programa.

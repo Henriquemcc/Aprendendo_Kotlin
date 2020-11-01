@@ -1,7 +1,7 @@
-package teste
+package henriquemcc.aprendendo.kotlin.bytebank.teste
 
 /**
- * Testa comportamentos da classe modelo.Conta.
+ * Testa comportamentos da classe Conta.
  */
 fun testaComportamentosConta() {
 
@@ -65,7 +65,7 @@ fun testaComportamentosConta() {
     println(contaCorrenteDoJoao)
     println(contaPoupancaDoFulano)
     println(contaPoupancaDoCiclano)
-    println("modelo.Conta Salário não pode realizar transferência:")
+    println("Conta Salário não pode realizar transferência:")
     println(contaSalarioDoLuis)
     println(contaSalarioDaPatricia)
     println()

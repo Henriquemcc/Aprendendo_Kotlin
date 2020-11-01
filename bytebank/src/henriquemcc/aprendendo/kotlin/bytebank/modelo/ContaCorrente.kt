@@ -1,4 +1,4 @@
-package modelo
+package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
 /**
  * Representa uma conta corrente do Bytebank.
@@ -6,14 +6,14 @@ package modelo
 class ContaCorrente : ContaTransferivel {
 
     /**
-     * Cria uma nova instancia da modelo.ContaCorrente.
+     * Cria uma nova instancia da ContaCorrente.
      * @param titular Nome do titular da conta.
      * @param numero Numero da conta.
      */
     constructor(titular: String, numero: String) : super(titular, numero)
 
     /**
-     * Cria uma nova instancia da modelo.ContaCorrente.
+     * Cria uma nova instancia da ContaCorrente.
      * @param titular Nome do titular da conta.
      * @param numero Numero da conta.
      */
@@ -34,8 +34,8 @@ class ContaCorrente : ContaTransferivel {
     }
 
     /**
-     * Serve para converter uma instancia da classe modelo.Conta em uma String.
-     * @return String contendo os dados da classe modelo.Conta.
+     * Serve para converter uma instancia da classe Conta em uma String.
+     * @return String contendo os dados da classe Conta.
      * */
     override fun toString(): String {
         var str = ""

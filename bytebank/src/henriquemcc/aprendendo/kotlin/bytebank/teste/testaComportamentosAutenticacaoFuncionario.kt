@@ -1,9 +1,9 @@
-package teste
+package henriquemcc.aprendendo.kotlin.bytebank.teste
 
-import modelo.SistemaInterno
+import henriquemcc.aprendendo.kotlin.bytebank.modelo.SistemaInterno
 
 /**
- * Testa os comportamentos do método login da classe modelo.SistemaInterno.
+ * Testa os comportamentos do método login da classe SistemaInterno.
  */
 fun testarComportamentosAutenticacaoFuncionario() {
     val sistemaInterno = SistemaInterno()

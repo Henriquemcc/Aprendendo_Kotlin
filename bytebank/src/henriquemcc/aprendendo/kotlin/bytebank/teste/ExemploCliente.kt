@@ -1,6 +1,6 @@
-package teste
+package henriquemcc.aprendendo.kotlin.bytebank.teste
 
-import modelo.Cliente
+import henriquemcc.aprendendo.kotlin.bytebank.modelo.Cliente
 
 val bruno = Cliente("Bruno", "429.235.540-19", "pvOrBe^CBIvX1HOrKkybits%zUCJgfFd\$q^zkH*ozv13Y@Ztg3")
 val leticia = Cliente("Leticia", "065.146.650-47", "w8s&\\$@vUVsalj82@VtKXM3#X@PAv5D6H7^SDB2%UaGXq0rUKU8")

@@ -1,7 +1,7 @@
-package modelo
+package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
 /**
- * Serve para calcular o total gasto com a bonificação de todos Funcionário, modelo.Analista, modelo.Gerente, modelo.Diretor.
+ * Serve para calcular o total gasto com a bonificação de todos Funcionário, Analista, Gerente, Diretor.
  */
 class CalculadoraBonificacao {
 
@@ -12,7 +12,7 @@ class CalculadoraBonificacao {
 
     /**
      * Serve para somar a bonificação de todos os funcionarios
-     * @param funcionario Instancia da classe modelo.Funcionario, modelo.Analista, modelo.Gerente ou modelo.Diretor.
+     * @param funcionario Instancia da classe Funcionario, Analista, Gerente ou Diretor.
      */
     fun registra(funcionario: Funcionario) {
         this.total += funcionario.bonificacao

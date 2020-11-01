@@ -1,7 +1,7 @@
-package teste
+package henriquemcc.aprendendo.kotlin.bytebank.teste
 
 /**
- * Testa comportamentos de modelo.Funcionario.
+ * Testa comportamentos de Funcionario.
  */
 fun testaComportamentosFuncionarios() {
     println()
