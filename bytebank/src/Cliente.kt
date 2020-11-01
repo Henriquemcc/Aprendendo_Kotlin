@@ -5,7 +5,15 @@ class Cliente : Autenticavel {
 
     val nome: String
     val cpf: String
-    val senha: String
+    private var senha: String
+
+    /**
+     * Altera a senha do cliente
+     * @param senha Novo valor para senha.
+     */
+    fun setSenha(senha: String) {
+        this.senha = senha
+    }
 
     /**
      * Cria uma nova instancia de Cliente.
