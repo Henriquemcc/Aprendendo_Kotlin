@@ -28,7 +28,7 @@ class Analista : Funcionario {
         var str = ""
         str += "Nome: " + this.nome + "\n"
         str += "CPF: " + this.cpf + "\n"
-        str += "Tipo de funcionário: modelo.Analista\n"
+        str += "Tipo de funcionário: Analista\n"
         str += "Salario: " + this.salario + "\n"
         str += "Bonificação: " + bonificacao
 

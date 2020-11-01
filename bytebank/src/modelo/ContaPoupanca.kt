@@ -41,7 +41,7 @@ class ContaPoupanca : ContaTransferivel {
         var str = ""
         str += "Titular: " + this.titular + "\n"
         str += "Número: " + this.numero + "\n"
-        str += "Tipo de conta: modelo.Conta Poupança\n"
+        str += "Tipo de conta: Conta Poupança\n"
 
         return str
     }

@@ -38,7 +38,7 @@ class ContaSalario : Conta {
         var str = ""
         str += "Titular: " + this.titular + "\n"
         str += "Número: " + this.numero + "\n"
-        str += "Tipo de conta: modelo.Conta Salario\n"
+        str += "Tipo de conta: Conta Salario\n"
 
         return str
     }

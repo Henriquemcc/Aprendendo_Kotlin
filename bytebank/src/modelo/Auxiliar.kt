@@ -24,7 +24,7 @@ class Auxiliar : Funcionario {
         var str = ""
         str += "Nome: " + this.nome + "\n"
         str += "CPF: " + this.cpf + "\n"
-        str += "Tipo de funcionário: modelo.Auxiliar\n"
+        str += "Tipo de funcionário: Auxiliar\n"
         str += "Salario: " + this.salario + "\n"
         str += "Bonificação: " + this.bonificacao
 

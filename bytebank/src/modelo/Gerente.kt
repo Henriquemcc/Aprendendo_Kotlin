@@ -29,7 +29,7 @@ class Gerente : FuncionarioAdministrador {
         var str = ""
         str += "Nome: " + this.nome + "\n"
         str += "CPF: " + this.cpf + "\n"
-        str += "Tipo de funcionário: modelo.Gerente\n"
+        str += "Tipo de funcionário: Gerente\n"
         str += "Salario: " + this.salario + "\n"
         str += "Bonificação: " + bonificacao
 

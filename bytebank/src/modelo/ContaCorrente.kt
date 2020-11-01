@@ -41,7 +41,7 @@ class ContaCorrente : ContaTransferivel {
         var str = ""
         str += "Titular: " + this.titular + "\n"
         str += "Número: " + this.numero + "\n"
-        str += "Tipo de conta: modelo.Conta Corrente\n"
+        str += "Tipo de conta: Conta Corrente\n"
 
         return str
     }

@@ -33,7 +33,7 @@ class Diretor : FuncionarioAdministrador {
         var str = ""
         str += "Nome: " + this.nome + "\n"
         str += "CPF: " + this.cpf + "\n"
-        str += "Tipo de funcionário: modelo.Diretor\n"
+        str += "Tipo de funcionário: Diretor\n"
         str += "Salario: " + this.salario + "\n"
         str += "Bonificação: " + this.bonificacao + "\n"
         str += "Programa de Participação nos Lucros e Resultados: " + this.plr
