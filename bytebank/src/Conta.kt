@@ -10,6 +10,7 @@ abstract class Conta {
         protected set
 
     /*
+    * Inicializa os atributos de Conta.
     * @param titular Nome do titular da conta.
     * @param numero Numero de identificação da conta.
     * */
@@ -41,19 +42,6 @@ abstract class Conta {
      */
     class SaqueMaiorQueSaldo(var1: String = "O valor do saque não pode ser maior que o saldo da conta") : IllegalArgumentException(var1)
 
-    //Exceções Transferencia
-    /**
-     * Exceção jogada quando o valor da transferência é inferior a zero.
-     * @param var1 Mensagem de erro.
-     */
-    class TransferenciaInferiorAZero(var1: String = "O valor da transferência não pode ser inferior a zero") : IllegalArgumentException(var1)
-
-    /**
-     * Exceção jogada quando o valor da transferência é maior que o valor do saldo.
-     * @param var1 Mensagem de erro.
-     */
-    class TransferenciaMaiorQueSaldo(var1: String = "O valor da transferência não pode ser maior que o saldo da conta") : IllegalArgumentException(var1)
-
     //Exceção numero da conta
     /**
      * Exceção jogada quando o número da conta é inferior a zero.
@@ -82,33 +70,8 @@ abstract class Conta {
     }
 
     /**
-     * Realiza transferência de uma conta para outra.
-     * @param destino Referencia para a o objeto da conta destino.
-     * @param valor Valor a ser transferido de uma conta para outra.
-     * @throws TransferenciaMaiorQueSaldo
-     * @throws DepositoInferiorAZero
-     * */
-    fun transferir(destino: Conta, valor: Double) {
-        if (valor < 0)
-            throw TransferenciaInferiorAZero()
-
-        if (valor > this.saldo)
-            throw TransferenciaMaiorQueSaldo()
-
-        this.sacar(valor)
-        destino.depositar(valor)
-    }
-
-    /**
      * Serve para converter uma instancia da classe Conta em uma String.
      * @return String contendo os dados da classe Conta.
      * */
-    override fun toString(): String {
-        var str = ""
-        str += "Titular: " + this.titular + "\n"
-        str += "Numero: " + this.numero + "\n"
-        str += "Saldo: " + this.saldo
-
-        return str
-    }
+    override abstract fun toString(): String
 }

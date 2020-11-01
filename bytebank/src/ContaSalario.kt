@@ -1,24 +1,21 @@
-/**
- * Representa uma conta poupança do Bytebank.
- */
-class ContaPoupanca : ContaTransferivel {
+class ContaSalario : Conta {
 
     /**
-     * Cria uma nova instância da ContaPoupanca.
-     * @param titular Nome do titular da conta.
+     * Cria uma nova instancia de ContaSalario.
+     * @param nome Nome do titular da conta.
      * @param numero Numero da conta.
      */
-    constructor(titular: String, numero: Int) : super(titular, numero.toString())
+    constructor(nome: String, numero: Int) : super(nome, numero.toString())
 
     /**
-     * Cria uma nova instância da ContaPoupanca.
-     * @param titular Nome do titular da conta.
+     * Cria uma nova instancia de ContaSalario.
+     * @param nome Nome do titular da conta.
      * @param numero Numero da conta.
      */
-    constructor(titular: String, numero: String) : super(titular, numero)
+    constructor(nome: String, numero: String) : super(nome, numero)
 
     /**
-     * Serve para realizar um saque na conta poupanca.
+     * Serve para realizar um saque na conta salario.
      * @param valor Valor a ser sacado.
      */
     override fun sacar(valor: Double) {
@@ -39,8 +36,9 @@ class ContaPoupanca : ContaTransferivel {
         var str = ""
         str += "Titular: " + this.titular + "\n"
         str += "Número: " + this.numero + "\n"
-        str += "Tipo de conta: Conta Poupança\n"
+        str += "Tipo de conta: Conta Salario\n"
 
         return str
     }
+
 }

@@ -17,6 +17,8 @@ fun testaComportamentosConta() {
     contaCorrenteDoJoao.depositar(4000.00)
     contaPoupancaDoCiclano.depositar(8000.00)
     contaPoupancaDoFulano.depositar(16000.00)
+    contaSalarioDoLuis.depositar(32000.00)
+    contaSalarioDaPatricia.depositar(64000.00)
 
     //Imprimindo as contas
     println()
@@ -25,6 +27,8 @@ fun testaComportamentosConta() {
     println(contaCorrenteDoJoao)
     println(contaPoupancaDoFulano)
     println(contaPoupancaDoCiclano)
+    println(contaSalarioDoLuis)
+    println(contaSalarioDaPatricia)
     println()
 
     //Sacando dinheiro das contas
@@ -32,6 +36,8 @@ fun testaComportamentosConta() {
     contaCorrenteDoZe.sacar(400.00)
     contaPoupancaDoCiclano.sacar(800.00)
     contaPoupancaDoFulano.sacar(1600.00)
+    contaSalarioDoLuis.sacar(3200.00)
+    contaSalarioDaPatricia.sacar(6400.00)
 
     //Imprimindo as contas
     println()
@@ -40,6 +46,8 @@ fun testaComportamentosConta() {
     println(contaCorrenteDoJoao)
     println(contaPoupancaDoFulano)
     println(contaPoupancaDoCiclano)
+    println(contaSalarioDoLuis)
+    println(contaSalarioDaPatricia)
     println()
 
     //Transferindo dinheiro entre as contas
@@ -55,6 +63,9 @@ fun testaComportamentosConta() {
     println(contaCorrenteDoJoao)
     println(contaPoupancaDoFulano)
     println(contaPoupancaDoCiclano)
+    println("Conta Salário não pode realizar transferência:")
+    println(contaSalarioDoLuis)
+    println(contaSalarioDaPatricia)
     println()
 
 }

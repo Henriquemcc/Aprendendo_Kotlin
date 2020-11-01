@@ -1,7 +1,7 @@
 /**
  * Representa uma conta corrente do Bytebank.
  */
-class ContaCorrente : Conta {
+class ContaCorrente : ContaTransferivel {
 
     /**
      * Cria uma nova instancia da ContaCorrente.
@@ -29,5 +29,18 @@ class ContaCorrente : Conta {
             throw SaqueMaiorQueSaldo()
 
         this.saldo -= (valor + 0.01)
+    }
+
+    /**
+     * Serve para converter uma instancia da classe Conta em uma String.
+     * @return String contendo os dados da classe Conta.
+     * */
+    override fun toString(): String {
+        var str = ""
+        str += "Titular: " + this.titular + "\n"
+        str += "Número: " + this.numero + "\n"
+        str += "Tipo de conta: Conta Corrente\n"
+
+        return str
     }
 }
