@@ -15,5 +15,8 @@ fun main() {
     println("Testando comportamentos de autenticação de funcionario")
     testarComportamentosAutenticacaoFuncionario()
     println("---------------------------------------------------------------------------------------------------------")
+    println("---------------------------------------------------------------------------------------------------------")
+    println("Testando comportamentos de autenticação de cliente")
+    testarComportamentosAutenticacaoCliente()
 
 }

@@ -1,7 +1,7 @@
 /**
  * Representa um Funcionario com as propriedades de administrador.
  */
-abstract class FuncionarioAdministrador : Funcionario {
+abstract class FuncionarioAdministrador : Funcionario, Autenticavel {
 
     private var senha: String
 
@@ -25,7 +25,7 @@ abstract class FuncionarioAdministrador : Funcionario {
      * @param senha Senha do funcionário.
      * @return Valor booleano indicando se foi ou não autenticado.
      */
-    fun autenticar(senha: String): Boolean {
+    override fun autenticar(senha: String): Boolean {
         var autenticado = false
 
         if (senha.equals(this.senha))

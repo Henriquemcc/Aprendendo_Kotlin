@@ -1,7 +1,7 @@
 /**
  * Representa um cliente do bytebank.
  */
-class Cliente {
+class Cliente : Autenticavel {
 
     val nome: String
     val cpf: String
@@ -24,7 +24,7 @@ class Cliente {
      * @param senha Senha do cliente.
      * @return Valor booleano indicando se foi ou não autenticado.
      */
-    fun autenticar(senha: String): Boolean {
+    override fun autenticar(senha: String): Boolean {
         var autenticado = false
 
         if (senha.equals(this.senha))
