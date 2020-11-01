@@ -3,7 +3,11 @@
  */
 abstract class FuncionarioAdministrador : Funcionario {
 
-    val senha: String
+    private var senha: String
+
+    fun setSenha(senha: String) {
+        this.senha = senha
+    }
 
     /**
      * Cria uma instancia de FuncionarioAdministrador.

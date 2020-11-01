@@ -17,6 +17,10 @@ class ContaPoupanca : Conta {
      */
     constructor(titular: String, numero: String) : super(titular, numero)
 
+    /**
+     * Serve para realizar um saque na conta poupanca.
+     * @param valor Valor a ser sacado.
+     */
     override fun sacar(valor: Double) {
         if (valor < 0)
             throw SaqueInferiorAZero()

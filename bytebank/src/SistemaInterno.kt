@@ -14,4 +14,16 @@ class SistemaInterno {
         else
             println("Falha na autenticação")
     }
+
+    /**
+     * Realiza o login do cliente.
+     * @param cliente Cliente que está autenticando.
+     * @param senha Senha digitada pelo Cliente.
+     */
+    fun login(cliente: Cliente, senha: String) {
+        if (cliente.autenticar(senha))
+            println("Autenticado com sucesso")
+        else
+            println("Falha na autenticação")
+    }
 }

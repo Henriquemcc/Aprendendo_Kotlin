@@ -29,13 +29,5 @@ abstract class Funcionario {
      * Serve para converter uma instancia da classe Funcionario em uma String.
      * @return String contendo os dados da classe Funcionario.
      * */
-    override fun toString(): String {
-        var str = ""
-        str += "Nome: " + this.nome + "\n"
-        str += "CPF: " + this.cpf + "\n"
-        str += "Salario: " + this.salario + "\n"
-        str += "Bonificação: " + this.bonificacao
-
-        return str
-    }
+    abstract override fun toString(): String
 }

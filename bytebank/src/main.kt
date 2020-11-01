@@ -1,5 +1,5 @@
 /**
- * Eh a primeira funcao a ser executada ao iniciar o programa.
+ * É a primeira função a ser executada ao iniciar o programa.
  * */
 fun main() {
     println("---------------------------------------------------------------------------------------------------------")
@@ -9,4 +9,11 @@ fun main() {
     println("Testando comportamentos de conta")
     testaComportamentosConta()
     println("---------------------------------------------------------------------------------------------------------")
+    println("Testando comportamentos de calculadora de bonificação")
+    testaComportamentosCalculadoraBonificacao()
+    println("---------------------------------------------------------------------------------------------------------")
+    println("Testando comportamentos de autenticação de funcionario")
+    testarComportamentosAutenticacaoFuncionario()
+    println("---------------------------------------------------------------------------------------------------------")
+
 }

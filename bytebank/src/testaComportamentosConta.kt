@@ -1,12 +1,7 @@
+/**
+ * Testa comportamentos da classe Conta.
+ */
 fun testaComportamentosConta() {
-
-    //Criando as contas correntes
-    val contaCorrenteDoZe = ContaCorrente("Zé", 480812885)
-    val contaCorrenteDoJoao = ContaCorrente("João", 1319396092)
-
-    //Criando as contas poupanças
-    val contaPoupancaDoFulano = ContaPoupanca("Fulano", 2108701790)
-    val contaPoupancaDoCiclano = ContaPoupanca("Ciclano", 1202166505)
 
     //Imprimindo as contas
     println()
@@ -64,6 +59,9 @@ fun testaComportamentosConta() {
 
 }
 
+/**
+ * Executa este arquivo.
+ */
 fun main() {
     testaComportamentosConta()
 }
