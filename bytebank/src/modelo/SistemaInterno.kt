@@ -1,3 +1,5 @@
+package modelo
+
 /**
  * Representa um sistema do bytebank no qual funcionários com atribuições administrativas podem acessar.
  */

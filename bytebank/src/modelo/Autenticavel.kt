@@ -1,5 +1,7 @@
+package modelo
+
 /**
- * Permite que uma classe possa ser autenticável no SistemaInterno.
+ * Permite que uma classe possa ser autenticável no modelo.SistemaInterno.
  */
 interface Autenticavel {
 

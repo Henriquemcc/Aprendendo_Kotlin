@@ -1,5 +1,9 @@
+package teste
+
+import modelo.SistemaInterno
+
 /**
- * Testa os comportamentos do método login da classe SistemaInterno.
+ * Testa os comportamentos do método login da classe modelo.SistemaInterno.
  */
 fun testarComportamentosAutenticacaoCliente() {
     val sistemaInterno = SistemaInterno()

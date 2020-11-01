@@ -1,3 +1,7 @@
+package teste
+
+import modelo.CalculadoraBonificacao
+
 /**
  * Testa comportamentos da CalculadoraBonificação.
  */

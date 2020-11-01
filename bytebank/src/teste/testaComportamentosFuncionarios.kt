@@ -1,5 +1,7 @@
+package teste
+
 /**
- * Testa comportamentos de Funcionario.
+ * Testa comportamentos de modelo.Funcionario.
  */
 fun testaComportamentosFuncionarios() {
     println()

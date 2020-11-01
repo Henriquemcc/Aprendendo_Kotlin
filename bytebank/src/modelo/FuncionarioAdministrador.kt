@@ -1,5 +1,7 @@
+package modelo
+
 /**
- * Representa um Funcionario com as propriedades de administrador.
+ * Representa um modelo.Funcionario com as propriedades de administrador.
  */
 abstract class FuncionarioAdministrador : Funcionario, Autenticavel {
 
@@ -14,7 +16,7 @@ abstract class FuncionarioAdministrador : Funcionario, Autenticavel {
     }
 
     /**
-     * Cria uma instancia de FuncionarioAdministrador.
+     * Cria uma instancia de modelo.FuncionarioAdministrador.
      * @param nome Nome do funcionário
      * @param cpf CPF do funcionário
      * @param salario Salario do funcionário

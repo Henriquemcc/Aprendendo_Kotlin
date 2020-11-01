@@ -1,17 +1,19 @@
+package modelo
+
 /**
  * Representa uma conta poupança do Bytebank.
  */
 class ContaPoupanca : ContaTransferivel {
 
     /**
-     * Cria uma nova instância da ContaPoupanca.
+     * Cria uma nova instância da modelo.ContaPoupanca.
      * @param titular Nome do titular da conta.
      * @param numero Numero da conta.
      */
     constructor(titular: String, numero: Int) : super(titular, numero.toString())
 
     /**
-     * Cria uma nova instância da ContaPoupanca.
+     * Cria uma nova instância da modelo.ContaPoupanca.
      * @param titular Nome do titular da conta.
      * @param numero Numero da conta.
      */
@@ -32,14 +34,14 @@ class ContaPoupanca : ContaTransferivel {
     }
 
     /**
-     * Serve para converter uma instancia da classe Conta em uma String.
-     * @return String contendo os dados da classe Conta.
+     * Serve para converter uma instancia da classe modelo.Conta em uma String.
+     * @return String contendo os dados da classe modelo.Conta.
      * */
     override fun toString(): String {
         var str = ""
         str += "Titular: " + this.titular + "\n"
         str += "Número: " + this.numero + "\n"
-        str += "Tipo de conta: Conta Poupança\n"
+        str += "Tipo de conta: modelo.Conta Poupança\n"
 
         return str
     }

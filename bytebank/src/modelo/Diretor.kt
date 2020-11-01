@@ -1,12 +1,14 @@
+package modelo
+
 /**
- * Representa um Diretor, que é um subtipo de Funcionario.
+ * Representa um modelo.Diretor, que é um subtipo de modelo.Funcionario.
  */
 class Diretor : FuncionarioAdministrador {
 
     val plr: Double
 
     /**
-     * Serve para criar uma nova instancia de Diretor.
+     * Serve para criar uma nova instancia de modelo.Diretor.
      * @param nome Nome do diretor.
      * @param cpf Cpf do diretor.
      * @param salario Salario do diretor.
@@ -24,14 +26,14 @@ class Diretor : FuncionarioAdministrador {
         get() = this.salario * 1.1 + this.plr
 
     /**
-     * Serve para converter uma instancia da classe Diretor em uma String.
-     * @return String contendo os dados da classe Diretor.
+     * Serve para converter uma instancia da classe modelo.Diretor em uma String.
+     * @return String contendo os dados da classe modelo.Diretor.
      * */
     override fun toString(): String {
         var str = ""
         str += "Nome: " + this.nome + "\n"
         str += "CPF: " + this.cpf + "\n"
-        str += "Tipo de funcionário: Diretor\n"
+        str += "Tipo de funcionário: modelo.Diretor\n"
         str += "Salario: " + this.salario + "\n"
         str += "Bonificação: " + this.bonificacao + "\n"
         str += "Programa de Participação nos Lucros e Resultados: " + this.plr

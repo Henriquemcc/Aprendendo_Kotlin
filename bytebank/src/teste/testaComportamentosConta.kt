@@ -1,5 +1,7 @@
+package teste
+
 /**
- * Testa comportamentos da classe Conta.
+ * Testa comportamentos da classe modelo.Conta.
  */
 fun testaComportamentosConta() {
 
@@ -63,7 +65,7 @@ fun testaComportamentosConta() {
     println(contaCorrenteDoJoao)
     println(contaPoupancaDoFulano)
     println(contaPoupancaDoCiclano)
-    println("Conta Salário não pode realizar transferência:")
+    println("modelo.Conta Salário não pode realizar transferência:")
     println(contaSalarioDoLuis)
     println(contaSalarioDaPatricia)
     println()

@@ -1,3 +1,5 @@
+package modelo
+
 /**
  * Representa uma conta bancaria do Bytebank.
  * */
@@ -10,7 +12,7 @@ abstract class Conta {
         protected set
 
     /*
-    * Inicializa os atributos de Conta.
+    * Inicializa os atributos de modelo.Conta.
     * @param titular Nome do titular da conta.
     * @param numero Numero de identificação da conta.
     * */
@@ -70,8 +72,8 @@ abstract class Conta {
     }
 
     /**
-     * Serve para converter uma instancia da classe Conta em uma String.
-     * @return String contendo os dados da classe Conta.
+     * Serve para converter uma instancia da classe modelo.Conta em uma String.
+     * @return String contendo os dados da classe modelo.Conta.
      * */
     override abstract fun toString(): String
 }

@@ -1,3 +1,10 @@
+package teste
+
+import modelo.Analista
+import modelo.Auxiliar
+import modelo.Diretor
+import modelo.Gerente
+
 val rodrigo: Auxiliar = Auxiliar("Rodrigo", "679.415.150-24", 500.00)
 val mariana: Auxiliar = Auxiliar("Mariana", "751.489.410-14", 500.00)
 val raimundo: Auxiliar = Auxiliar("Raimundo", "740.275.550-90", 500.00)

@@ -1,3 +1,5 @@
+package modelo
+
 /**
  * Representa um cliente do bytebank.
  */
@@ -16,7 +18,7 @@ class Cliente : Autenticavel {
     }
 
     /**
-     * Cria uma nova instancia de Cliente.
+     * Cria uma nova instancia de modelo.Cliente.
      * @param nome Nome do cliente.
      * @param cpf CPF do cliente.
      * @param senha Senha do cliente.

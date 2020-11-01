@@ -1,3 +1,9 @@
+package teste
+
+import modelo.ContaCorrente
+import modelo.ContaPoupanca
+import modelo.ContaSalario
+
 val contaCorrenteDoZe = ContaCorrente("Zé", 480812885)
 val contaCorrenteDoJoao = ContaCorrente("João", 1319396092)
 val contaPoupancaDoFulano = ContaPoupanca("Fulano", 2108701790)

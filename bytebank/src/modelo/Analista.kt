@@ -1,10 +1,12 @@
+package modelo
+
 /**
- * Representa um Analista, que é um subtipo de Funcionario.
+ * Representa um modelo.Analista, que é um subtipo de modelo.Funcionario.
  */
 class Analista : Funcionario {
 
     /**
-     * Cria uma nova instancia de Analista.
+     * Cria uma nova instancia de modelo.Analista.
      * @param nome Nome do analista.
      * @param cpf Cpf do analista.
      * @param salario Salario do analista.
@@ -26,7 +28,7 @@ class Analista : Funcionario {
         var str = ""
         str += "Nome: " + this.nome + "\n"
         str += "CPF: " + this.cpf + "\n"
-        str += "Tipo de funcionário: Analista\n"
+        str += "Tipo de funcionário: modelo.Analista\n"
         str += "Salario: " + this.salario + "\n"
         str += "Bonificação: " + bonificacao
 
