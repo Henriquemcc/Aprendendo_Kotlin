@@ -1,5 +1,8 @@
 package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
+/**
+ *
+ */
 class ContaSalario : Conta {
 
     /**
@@ -35,12 +38,11 @@ class ContaSalario : Conta {
      * @return String contendo os dados da classe Conta.
      * */
     override fun toString(): String {
-        var str = ""
-        str += "Titular: \n" + this.titular + "\n"
-        str += "Número: " + this.numero + "\n"
-        str += "Tipo de conta: Conta Salario\n"
 
-        return str
+        return """# Conta Salário
+Titular:
+${this.titular}
+Número: ${this.numero}"""
     }
 
 }

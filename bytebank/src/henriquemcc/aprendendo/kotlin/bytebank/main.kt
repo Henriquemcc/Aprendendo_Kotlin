@@ -1,3 +1,5 @@
+package henriquemcc.aprendendo.kotlin.bytebank
+
 import henriquemcc.aprendendo.kotlin.bytebank.teste.*
 
 /**

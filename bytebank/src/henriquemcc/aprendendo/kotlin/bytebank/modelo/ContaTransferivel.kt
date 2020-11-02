@@ -1,13 +1,11 @@
 package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
-abstract class ContaTransferivel : Conta {
-
-    /**
-     * Chama o construtor superior.
-     * @param titular Titular da conta
-     * @param numero Numero da conta
-     */
-    constructor(titular: Cliente, numero: String) : super(titular, numero)
+abstract class ContaTransferivel
+/**
+ * Chama o construtor superior.
+ * @param titular Titular da conta
+ * @param numero Numero da conta
+ */(titular: Cliente, numero: String) : Conta(titular, numero) {
 
     //Exceções Transferencia
     /**
@@ -27,7 +25,7 @@ abstract class ContaTransferivel : Conta {
      * @param destino Referencia para a o objeto da conta destino.
      * @param valor Valor a ser transferido de uma conta para outra.
      * @throws TransferenciaMaiorQueSaldo
-     * @throws DepositoInferiorAZero
+     * @throws TransferenciaInferiorAZero
      * */
     fun transferir(destino: Conta, valor: Double) {
         if (valor < 0)

@@ -3,25 +3,28 @@ package henriquemcc.aprendendo.kotlin.bytebank.modelo
 /**
  * Representa uma conta bancaria do Bytebank.
  * */
-abstract class Conta {
-
-    var titular: Cliente
-    var numero: String
-
-    var saldo = 0.0
-        protected set
-
-    /*
+abstract class Conta/*
     * Inicializa os atributos de Conta.
     * @param titular Nome do titular da conta.
     * @param numero Numero de identificação da conta.
-    * */
-    constructor(titular: Cliente, numero: String) {
+    * */(
+        /**
+         *
+         */
+        var titular: Cliente,/**
+         *
+         */
+        var numero: String) {
+
+    /**
+     *
+     */
+    var saldo: Double = 0.0
+        protected set
+
+    init {
         if (Integer.parseInt(numero) < 0)
             throw NumeroContaInferiorAZero()
-
-        this.titular = titular
-        this.numero = numero
     }
 
     //Exceção deposito
@@ -75,5 +78,5 @@ abstract class Conta {
      * Serve para converter uma instancia da classe Conta em uma String.
      * @return String contendo os dados da classe Conta.
      * */
-    override abstract fun toString(): String
+    abstract override fun toString(): String
 }

@@ -38,11 +38,10 @@ class ContaPoupanca : ContaTransferivel {
      * @return String contendo os dados da classe Conta.
      * */
     override fun toString(): String {
-        var str = ""
-        str += "Titular: \n" + this.titular + "\n"
-        str += "Número: " + this.numero + "\n"
-        str += "Tipo de conta: Conta Poupança\n"
 
-        return str
+        return """# Conta Poupança
+Titular:
+${this.titular}
+Número: ${this.numero}"""
     }
 }

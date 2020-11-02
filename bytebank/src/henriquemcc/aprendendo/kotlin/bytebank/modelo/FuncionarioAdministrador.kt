@@ -3,26 +3,20 @@ package henriquemcc.aprendendo.kotlin.bytebank.modelo
 /**
  * Representa um Funcionario com as propriedades de administrador.
  */
-abstract class FuncionarioAdministrador : Funcionario, Autenticavel {
-
-    private var senha: String
+abstract class FuncionarioAdministrador
+/**
+ * Cria uma instancia de FuncionarioAdministrador.
+ * @param nome Nome do funcionário
+ * @param cpf CPF do funcionário
+ * @param salario Salario do funcionário
+ * @param senha Senha do funcionário
+ */(nome: String, cpf: String, salario: Double, private var senha: String) : Funcionario(nome, cpf, salario), Autenticavel {
 
     /**
      * Altera a senha do funcionário.
      * @param senha Novo valor para senha.
      */
     fun setSenha(senha: String) {
-        this.senha = senha
-    }
-
-    /**
-     * Cria uma instancia de FuncionarioAdministrador.
-     * @param nome Nome do funcionário
-     * @param cpf CPF do funcionário
-     * @param salario Salario do funcionário
-     * @param senha Senha do funcionário
-     */
-    constructor(nome: String, cpf: String, salario: Double, senha: String) : super(nome, cpf, salario) {
         this.senha = senha
     }
 
@@ -34,7 +28,7 @@ abstract class FuncionarioAdministrador : Funcionario, Autenticavel {
     override fun autenticar(senha: String): Boolean {
         var autenticado = false
 
-        if (senha.equals(this.senha))
+        if (senha == this.senha)
             autenticado = true
 
         return autenticado

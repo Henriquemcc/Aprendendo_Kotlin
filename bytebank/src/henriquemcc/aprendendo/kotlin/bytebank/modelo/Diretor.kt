@@ -3,20 +3,14 @@ package henriquemcc.aprendendo.kotlin.bytebank.modelo
 /**
  * Representa um Diretor, que é um subtipo de Funcionario.
  */
-class Diretor : FuncionarioAdministrador {
-
-    val plr: Double
-
-    /**
-     * Serve para criar uma nova instancia de Diretor.
-     * @param nome Nome do diretor.
-     * @param cpf Cpf do diretor.
-     * @param salario Salario do diretor.
-     * @param senha Senha do diretor.
-     * */
-    constructor(nome: String, cpf: String, salario: Double, senha: String, plr: Double) : super(nome, cpf, salario, senha) {
-        this.plr = plr
-    }
+class Diretor
+/**
+ * Serve para criar uma nova instancia de Diretor.
+ * @param nome Nome do diretor.
+ * @param cpf Cpf do diretor.
+ * @param salario Salario do diretor.
+ * @param senha Senha do diretor.
+ * */(nome: String, cpf: String, salario: Double, senha: String, private val plr: Double) : FuncionarioAdministrador(nome, cpf, salario, senha) {
 
     /**
      * Calcula a bonificação do diretor.
@@ -30,14 +24,12 @@ class Diretor : FuncionarioAdministrador {
      * @return String contendo os dados da classe Diretor.
      * */
     override fun toString(): String {
-        var str = ""
-        str += "Nome: " + this.nome + "\n"
-        str += "CPF: " + this.cpf + "\n"
-        str += "Tipo de funcionário: Diretor\n"
-        str += "Salario: " + this.salario + "\n"
-        str += "Bonificação: " + this.bonificacao + "\n"
-        str += "Programa de Participação nos Lucros e Resultados: " + this.plr
 
-        return str
+        return """# Diretor:
+Nome: ${this.nome}
+CPF: ${this.cpf}
+Salário: ${this.salario}
+Bonificação: ${this.bonificacao}
+Programa de Participação nos Lucros e Resultados: ${this.plr}"""
     }
 }

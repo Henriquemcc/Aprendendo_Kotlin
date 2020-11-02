@@ -5,7 +5,9 @@ package henriquemcc.aprendendo.kotlin.bytebank.modelo
  */
 class CalculadoraBonificacao {
 
-    //Valor total gasto com a bonificação de todos os funcionarios
+    /**
+     *
+     *///Valor total gasto com a bonificação de todos os funcionarios
     var total: Double = 0.0
         private set
 
