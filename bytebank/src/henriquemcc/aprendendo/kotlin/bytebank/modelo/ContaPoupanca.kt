@@ -10,14 +10,14 @@ class ContaPoupanca : ContaTransferivel {
      * @param titular Nome do titular da conta.
      * @param numero Numero da conta.
      */
-    constructor(titular: String, numero: Int) : super(titular, numero.toString())
+    constructor(titular: Cliente, numero: Int) : super(titular, numero.toString())
 
     /**
      * Cria uma nova instância da ContaPoupanca.
      * @param titular Nome do titular da conta.
      * @param numero Numero da conta.
      */
-    constructor(titular: String, numero: String) : super(titular, numero)
+    constructor(titular: Cliente, numero: String) : super(titular, numero)
 
     /**
      * Serve para realizar um saque na conta poupanca.
@@ -39,7 +39,7 @@ class ContaPoupanca : ContaTransferivel {
      * */
     override fun toString(): String {
         var str = ""
-        str += "Titular: " + this.titular + "\n"
+        str += "Titular: \n" + this.titular + "\n"
         str += "Número: " + this.numero + "\n"
         str += "Tipo de conta: Conta Poupança\n"
 

@@ -5,7 +5,7 @@ package henriquemcc.aprendendo.kotlin.bytebank.modelo
  * */
 abstract class Conta {
 
-    var titular: String
+    var titular: Cliente
     var numero: String
 
     var saldo = 0.0
@@ -16,7 +16,7 @@ abstract class Conta {
     * @param titular Nome do titular da conta.
     * @param numero Numero de identificação da conta.
     * */
-    constructor(titular: String, numero: String) {
+    constructor(titular: Cliente, numero: String) {
         if (Integer.parseInt(numero) < 0)
             throw NumeroContaInferiorAZero()
 

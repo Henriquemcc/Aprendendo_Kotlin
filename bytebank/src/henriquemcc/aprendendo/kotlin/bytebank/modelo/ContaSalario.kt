@@ -7,14 +7,14 @@ class ContaSalario : Conta {
      * @param nome Nome do titular da conta.
      * @param numero Numero da conta.
      */
-    constructor(nome: String, numero: Int) : super(nome, numero.toString())
+    constructor(nome: Cliente, numero: Int) : super(nome, numero.toString())
 
     /**
      * Cria uma nova instancia de ContaSalario.
      * @param nome Nome do titular da conta.
      * @param numero Numero da conta.
      */
-    constructor(nome: String, numero: String) : super(nome, numero)
+    constructor(nome: Cliente, numero: String) : super(nome, numero)
 
     /**
      * Serve para realizar um saque na conta salario.
@@ -36,7 +36,7 @@ class ContaSalario : Conta {
      * */
     override fun toString(): String {
         var str = ""
-        str += "Titular: " + this.titular + "\n"
+        str += "Titular: \n" + this.titular + "\n"
         str += "Número: " + this.numero + "\n"
         str += "Tipo de conta: Conta Salario\n"
 

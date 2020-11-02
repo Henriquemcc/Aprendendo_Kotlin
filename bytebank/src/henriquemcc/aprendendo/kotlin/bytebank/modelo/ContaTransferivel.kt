@@ -7,7 +7,7 @@ abstract class ContaTransferivel : Conta {
      * @param titular Titular da conta
      * @param numero Numero da conta
      */
-    constructor(titular: String, numero: String) : super(titular, numero)
+    constructor(titular: Cliente, numero: String) : super(titular, numero)
 
     //Exceções Transferencia
     /**

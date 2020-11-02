@@ -7,15 +7,7 @@ class Cliente : Autenticavel {
 
     val nome: String
     val cpf: String
-    private var senha: String
-
-    /**
-     * Altera a senha do cliente
-     * @param senha Novo valor para senha.
-     */
-    fun setSenha(senha: String) {
-        this.senha = senha
-    }
+    private val senha: String
 
     /**
      * Cria uma nova instancia de Cliente.
@@ -41,5 +33,13 @@ class Cliente : Autenticavel {
             autenticado = true
 
         return autenticado
+    }
+
+    override fun toString(): String {
+        var str = ""
+        str += "Nome: " + this.nome + "\n"
+        str += "CPF:" + this.cpf
+
+        return str
     }
 }
