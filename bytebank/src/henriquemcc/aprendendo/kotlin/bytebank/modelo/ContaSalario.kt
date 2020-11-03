@@ -1,7 +1,7 @@
 package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
 /**
- *
+ * Representa uma conta salário do bytebank.
  */
 class ContaSalario : Conta {
 

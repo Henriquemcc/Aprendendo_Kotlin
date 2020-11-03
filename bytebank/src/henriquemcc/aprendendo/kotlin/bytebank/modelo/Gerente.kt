@@ -10,7 +10,8 @@ class Gerente
  * @param cpf Cpf do gerente.
  * @param salario Salario do gerente.
  * @param senha Senha do gerente.
- * */(nome: String, cpf: String, salario: Double, senha: String) : FuncionarioAdministrador(nome, cpf, salario, senha) {
+ * */
+(nome: String, cpf: String, salario: Double, senha: String) : FuncionarioAdministrador(nome, cpf, salario, senha) {
 
     /**
      * Calcula a bonificação do gerente.

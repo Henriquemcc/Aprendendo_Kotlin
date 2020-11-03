@@ -10,7 +10,8 @@ class Diretor
  * @param cpf Cpf do diretor.
  * @param salario Salario do diretor.
  * @param senha Senha do diretor.
- * */(nome: String, cpf: String, salario: Double, senha: String, private val plr: Double) : FuncionarioAdministrador(nome, cpf, salario, senha) {
+ * */
+(nome: String, cpf: String, salario: Double, senha: String, private val plr: Double) : FuncionarioAdministrador(nome, cpf, salario, senha) {
 
     /**
      * Calcula a bonificação do diretor.

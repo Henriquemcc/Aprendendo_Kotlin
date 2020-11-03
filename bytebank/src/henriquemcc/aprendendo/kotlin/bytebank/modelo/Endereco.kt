@@ -1,18 +1,13 @@
 package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
-import jdk.nashorn.internal.runtime.regexp.joni.exception.ValueException
-
 /**
- *
+ * Representa um endereço
  */
 class Endereco {
     private var estado: String = ""
         set(value) {
             field = value.toUpperCase()
         }
-    /**
-     *
-     */
     var cidade: String = ""
         set(value) {
             field = value.toUpperCase()
@@ -27,29 +22,51 @@ class Endereco {
         }
     private var numero: String = ""
         set(value) {
-            if ((!value.trim().chars().allMatch(Character::isDigit)) && (value.isNotEmpty()))
-                throw ValueException("Não é um número")
+            if (value != "")
+                try {
+                    Integer.parseInt(value)
+                }
+                catch (e: NumberFormatException) {
+                    throw IllegalArgumentException("Não é um número")
+                }
 
             field = value.trim()
         }
     private var complemento: String = ""
         set(value) {
-            if ((!value.trim().chars().allMatch(Character::isDigit)) && (value.isNotEmpty()))
-                throw ValueException("Não é um número")
+            if (value != "")
+                try {
+                    Integer.parseInt(value)
+                }
+                catch (e: NumberFormatException) {
+                    throw IllegalArgumentException("Não é um número")
+                }
 
             field = value.trim()
         }
     private var cep: String = ""
         set(value) {
-            value.replace("-", "")
-            if ((!value.trim().chars().allMatch(Character::isDigit)) && (value.isNotEmpty()))
-                throw ValueException("Não é um número")
+            val newValue = value.replace("-", "")
+            if (newValue != "")
+                try {
+                    Integer.parseInt(newValue)
+                }
+                catch (e: NumberFormatException) {
+                    throw IllegalArgumentException("Não é um número")
+                }
 
-            field = value.trim()
+            field = newValue.trim()
         }
 
     /**
-     *
+     * Cria uma nova instância de Endereco
+     * @param estado Estado do endereço.
+     * @param cidade Cidade do endereço.
+     * @param bairro Bairro do endereço.
+     * @param logradouro Logradouro do endereço.
+     * @param numero Número do endereço.
+     * @param complemento Complemento do endereço.
+     * @param cep Código postal do endereço.
      */
     constructor(estado: String, cidade: String, bairro: String, logradouro: String, numero: String, complemento: String, cep: String) {
         this.estado = estado
@@ -61,8 +78,14 @@ class Endereco {
         this.cep = cep
     }
 
+    /**
+     * Cria uma nova instância de Endereço sem nenhum valor.
+     */
     constructor()
 
+    /**
+     * Converte uma instância de Endereco em uma String com os dados do endereço.
+     */
     override fun toString(): String {
         var str = "# Endereço:\n"
         if (this.estado.isNotBlank())

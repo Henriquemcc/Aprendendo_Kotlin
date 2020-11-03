@@ -9,7 +9,8 @@ class Analista
  * @param nome Nome do analista.
  * @param cpf Cpf do analista.
  * @param salario Salario do analista.
- * */(nome: String, cpf: String, salario: Double) : Funcionario(nome, cpf, salario) {
+ * */
+(nome: String, cpf: String, salario: Double) : Funcionario(nome, cpf, salario) {
 
     /**
      * Calcula a bonificação do analista.

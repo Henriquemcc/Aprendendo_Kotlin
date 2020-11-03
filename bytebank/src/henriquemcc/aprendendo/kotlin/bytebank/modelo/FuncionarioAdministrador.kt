@@ -10,7 +10,8 @@ abstract class FuncionarioAdministrador
  * @param cpf CPF do funcionário
  * @param salario Salario do funcionário
  * @param senha Senha do funcionário
- */(nome: String, cpf: String, salario: Double, private var senha: String) : Funcionario(nome, cpf, salario), Autenticavel {
+ */
+(nome: String, cpf: String, salario: Double, private var senha: String) : Funcionario(nome, cpf, salario), Autenticavel {
 
     /**
      * Altera a senha do funcionário.

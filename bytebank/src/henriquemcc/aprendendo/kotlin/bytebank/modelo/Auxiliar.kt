@@ -9,7 +9,8 @@ class Auxiliar
  * @param nome Nome do auxiliar.
  * @param cpf CPF do auxiliar.
  * @param salario Salario do auxiliar.
- */(nome: String, cpf: String, salario: Double) : Funcionario(nome, cpf, salario) {
+ */
+(nome: String, cpf: String, salario: Double) : Funcionario(nome, cpf, salario) {
 
     override val bonificacao: Double
         get() = 0.0

@@ -2,23 +2,11 @@ package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
 /**
  * Representa um Funcionario do Bytebank.
+ * @param nome Nome do funcionário.
+ * @param cpf CPF do funcionário.
+ * @param salario Salário do funcionário.
  * */
-abstract class Funcionario/*
-    * Cria uma nova instancia de Funcionario.
-    * @param nome Nome do funcionario.
-    * @param cpf Cpf do funcionario.
-    * @param salario Salario do funcionario.
-    * */(//Atributos
-        /**
-         *
-         */
-        val nome: String,/**
-         *
-         */
-        val cpf: String,/**
-         *
-         */
-        val salario: Double) {
+abstract class Funcionario (val nome: String, val cpf: String, val salario: Double) {
 
     /**
      * Calcula a bonificação do funcionário.

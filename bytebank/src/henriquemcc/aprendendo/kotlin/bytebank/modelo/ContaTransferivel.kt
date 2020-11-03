@@ -1,11 +1,15 @@
 package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
+/**
+ * Incorpora as caracterísitcas abstratas de uma conta em que é possível realizar transferências.
+ */
 abstract class ContaTransferivel
 /**
  * Chama o construtor superior.
  * @param titular Titular da conta
  * @param numero Numero da conta
- */(titular: Cliente, numero: String) : Conta(titular, numero) {
+ */
+(titular: Cliente, numero: String) : Conta(titular, numero) {
 
     //Exceções Transferencia
     /**
