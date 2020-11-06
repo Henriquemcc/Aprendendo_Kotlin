@@ -1,31 +1,42 @@
 package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
+
+var qtdContas = 0
+    private set
+
 /**
  * Representa uma conta bancaria do Bytebank.
  * */
-abstract class Conta/*
+abstract class Conta {
+
+    /**
+     * Instancia de Cliente que contém os dados do titular.
+     */
+    var titular: Cliente
+
+    /**
+     * String contendo o número da conta
+     */
+    var numero: String
+        set(value) {
+            if (Integer.parseInt(value.trim()) < 0)
+                throw NumeroContaInferiorAZero()
+            field = value.trim();
+        }
+
+    /*
     * Inicializa os atributos de Conta.
     * @param titular Nome do titular da conta.
     * @param numero Numero de identificação da conta.
-    * */(
-        /**
-         *
-         */
-        var titular: Cliente,/**
-         *
-         */
-        var numero: String) {
+    * */
+    constructor (titular: Cliente, numero: String) {
+        this.titular = titular
+        this.numero = numero
+        qtdContas++
+    }
 
-    /**
-     *
-     */
     var saldo: Double = 0.0
         protected set
-
-    init {
-        if (Integer.parseInt(numero) < 0)
-            throw NumeroContaInferiorAZero()
-    }
 
     //Exceção deposito
     /**
