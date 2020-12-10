@@ -3,7 +3,7 @@ package henriquemcc.aprendendo.kotlin.bytebank.teste
 import henriquemcc.aprendendo.kotlin.bytebank.modelo.Autenticavel
 import henriquemcc.aprendendo.kotlin.bytebank.modelo.SistemaInterno
 
-fun testaComportamentosObjetoAnonimo()
+fun testaComportamentosObjectExpressions()
 {
     val paulo = object : Autenticavel
     {
@@ -25,5 +25,5 @@ fun testaComportamentosObjetoAnonimo()
 
 fun main()
 {
-    testaComportamentosObjetoAnonimo()
+    testaComportamentosObjectExpressions()
 }

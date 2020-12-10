@@ -1,6 +1,6 @@
 package henriquemcc.aprendendo.kotlin.bytebank.teste
 
-import henriquemcc.aprendendo.kotlin.bytebank.modelo.qtdContas
+import henriquemcc.aprendendo.kotlin.bytebank.modelo.Conta
 
 /**
  * Testa comportamentos da classe Conta.
@@ -20,7 +20,7 @@ fun testaComportamentosConta()
     println()
     println(contaPoupancaDoCiclano)
     println()
-    println("Quantidade de contas que foram criadas: ${qtdContas}")
+    println("Quantidade de contas que foram criadas: ${Conta.qtdContas}")
 
     //Adicionando dinheiro as contas
     contaCorrenteDoZe.depositar(2000.00)
@@ -95,9 +95,6 @@ fun testaComportamentosConta()
     println(contaSalarioDoLuis)
     println()
     println(contaSalarioDaPatricia)
-    println()
-    println()
-    println("Quantidade de contas que foram criadas: ${qtdContas}")
     println()
 
 }

@@ -25,7 +25,7 @@ fun main()
     testarComportamentosAutenticacaoCliente()
     println("---------------------------------------------------------------------------------------------------------")
     println("---------------------------------------------------------------------------------------------------------")
-    println("Testando comportamentos de objeto anônimo")
-    testaComportamentosObjetoAnonimo()
+    println("Testando comportamentos de object expressions")
+    testaComportamentosObjectExpressions()
 
 }

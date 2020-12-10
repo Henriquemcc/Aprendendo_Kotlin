@@ -1,9 +1,5 @@
 package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
-
-var qtdContas = 0
-    private set
-
 /**
  * Representa uma conta bancaria do Bytebank.
  * */
@@ -25,6 +21,12 @@ abstract class Conta
                 throw NumeroContaInferiorAZero()
             field = value.trim();
         }
+
+    companion object
+    {
+        var qtdContas = 0
+            private set
+    }
 
     /*
     * Inicializa os atributos de Conta.
