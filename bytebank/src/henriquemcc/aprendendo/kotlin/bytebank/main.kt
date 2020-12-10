@@ -27,5 +27,9 @@ fun main()
     println("---------------------------------------------------------------------------------------------------------")
     println("Testando comportamentos de object expressions")
     testaComportamentosObjectExpressions()
+    println("---------------------------------------------------------------------------------------------------------")
+    println("---------------------------------------------------------------------------------------------------------")
+    println("Testando comportamentos de any")
+    testaComportamentosAny()
 
 }
