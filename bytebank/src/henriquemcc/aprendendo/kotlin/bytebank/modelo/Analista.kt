@@ -10,7 +10,7 @@ class Analista
  * @param cpf Cpf do analista.
  * @param salario Salario do analista.
  * */
-(nome: String, cpf: String, salario: Double) : Funcionario(nome, cpf, salario)
+(nome: String, cpf: String, salario: Double, senha: String = "") : FuncionarioAdministrador(nome, cpf, salario, senha)
 {
 
     /**

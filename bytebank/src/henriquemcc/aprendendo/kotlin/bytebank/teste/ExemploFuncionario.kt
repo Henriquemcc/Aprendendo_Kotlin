@@ -53,17 +53,17 @@ val joao: Analista = Analista("João", "657.107.710-82", 1000.00)
 /**
  *
  */
-val jose: Analista = Analista("José", "740.716.030-97", 1000.00)
+val jose: Analista = Analista("José", "740.716.030-97", 1000.00, "lOdWG5#sW6C*sVZ*PKOpd5&WBt5Ba4usD@wldmOh3*dsF%KQ8w")
 
 /**
  *
  */
-val maria: Analista = Analista("Maria", "993.056.680-54", 1000.00)
+val maria: Analista = Analista("Maria", "993.056.680-54", 1000.00, "VHXwV1riOyDjiRxTuMKZC8MpjCFCA1YS#BOyAWefal!omS03D%")
 
 /**
  *
  */
-val ana: Analista = Analista("Ana", "431.298.790-48", 1000.00)
+val ana: Analista = Analista("Ana", "431.298.790-48", 1000.00, "#rAChV3E1a5n#ej1Yhei32FEoirvlYQ3*WjxYREWfVh*@ac&j3")
 
 /**
  *

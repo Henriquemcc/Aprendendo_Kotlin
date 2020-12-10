@@ -14,8 +14,35 @@ class SistemaInterno
     fun login(autenticavel: Autenticavel, senha: String)
     {
         if (autenticavel.autenticar(senha))
+        {
             println("Autenticado com sucesso")
+        }
         else
+        {
             println("Falha na autenticação")
+        }
+
+        when (autenticavel)
+        {
+            is Diretor  ->
+            {
+                println("Opções de Funcionário Diretor")
+            }
+
+            is Gerente  ->
+            {
+                println("Opções de Funcionário Gerente")
+            }
+
+            is Analista ->
+            {
+                println("Opções de Funcionário Analista")
+            }
+
+            else        ->
+            {
+                println("Opções Reduzidas")
+            }
+        }
     }
 }

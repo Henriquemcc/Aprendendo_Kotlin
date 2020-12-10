@@ -39,5 +39,9 @@ fun main()
     println("---------------------------------------------------------------------------------------------------------")
     println("Testando comportamentos de casting parte 2")
     testaComportamentosCastingParte2()
+    println("---------------------------------------------------------------------------------------------------------")
+    println("---------------------------------------------------------------------------------------------------------")
+    println("Testando autenticação de tipos diferentes")
+    testaAutenticacaoTiposDiferentes()
 
 }
