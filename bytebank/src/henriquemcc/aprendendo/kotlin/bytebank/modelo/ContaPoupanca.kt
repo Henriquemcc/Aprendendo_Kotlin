@@ -3,7 +3,8 @@ package henriquemcc.aprendendo.kotlin.bytebank.modelo
 /**
  * Representa uma conta poupança do Bytebank.
  */
-class ContaPoupanca : ContaTransferivel {
+class ContaPoupanca : ContaTransferivel
+{
 
     /**
      * Cria uma nova instância da ContaPoupanca.
@@ -23,7 +24,8 @@ class ContaPoupanca : ContaTransferivel {
      * Serve para realizar um saque na conta poupanca.
      * @param valor Valor a ser sacado.
      */
-    override fun sacar(valor: Double) {
+    override fun sacar(valor: Double)
+    {
         if (valor < 0)
             throw SaqueInferiorAZero()
 
@@ -37,7 +39,8 @@ class ContaPoupanca : ContaTransferivel {
      * Serve para converter uma instancia da classe Conta em uma String.
      * @return String contendo os dados da classe Conta.
      * */
-    override fun toString(): String {
+    override fun toString(): String
+    {
 
         return """# Conta Poupança
 Titular:

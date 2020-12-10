@@ -5,7 +5,8 @@ import henriquemcc.aprendendo.kotlin.bytebank.modelo.SistemaInterno
 /**
  * Testa os comportamentos do método login da classe SistemaInterno.
  */
-fun testarComportamentosAutenticacaoCliente() {
+fun testarComportamentosAutenticacaoCliente()
+{
     val sistemaInterno = SistemaInterno()
     sistemaInterno.login(bruno, "pvOrBe^CBIvX1HOrKkybits%zUCJgfFd\$q^zkH*ozv13Y@Ztg3")
     sistemaInterno.login(leticia, "nCrGhPX*b6^l7!QlnBCMQj^Li7b7&ELL9vzX#Fd5Kx0An7B@Jy")
@@ -22,6 +23,7 @@ fun testarComportamentosAutenticacaoCliente() {
 /**
  * Executa este arquivo.
  */
-fun main() {
+fun main()
+{
     testarComportamentosAutenticacaoCliente()
 }

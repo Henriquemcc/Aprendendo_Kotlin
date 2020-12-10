@@ -5,7 +5,8 @@ import henriquemcc.aprendendo.kotlin.bytebank.teste.*
 /**
  * É a primeira função a ser executada ao iniciar o programa.
  * */
-fun main() {
+fun main()
+{
     println("---------------------------------------------------------------------------------------------------------")
     println("Testando comportamentos de funcionário")
     testaComportamentosFuncionarios()
@@ -22,5 +23,9 @@ fun main() {
     println("---------------------------------------------------------------------------------------------------------")
     println("Testando comportamentos de autenticação de cliente")
     testarComportamentosAutenticacaoCliente()
+    println("---------------------------------------------------------------------------------------------------------")
+    println("---------------------------------------------------------------------------------------------------------")
+    println("Testando comportamentos de objeto anônimo")
+    testaComportamentosObjetoAnonimo()
 
 }

@@ -11,7 +11,8 @@ class Gerente
  * @param salario Salario do gerente.
  * @param senha Senha do gerente.
  * */
-(nome: String, cpf: String, salario: Double, senha: String) : FuncionarioAdministrador(nome, cpf, salario, senha) {
+(nome: String, cpf: String, salario: Double, senha: String) : FuncionarioAdministrador(nome, cpf, salario, senha)
+{
 
     /**
      * Calcula a bonificação do gerente.
@@ -24,7 +25,8 @@ class Gerente
      * Serve para converter uma instancia da classe Gerente em uma String.
      * @return String contendo os dados da classe Gerente.
      * */
-    override fun toString(): String {
+    override fun toString(): String
+    {
 
         return """# Gerente
 Nome: ${this.nome}

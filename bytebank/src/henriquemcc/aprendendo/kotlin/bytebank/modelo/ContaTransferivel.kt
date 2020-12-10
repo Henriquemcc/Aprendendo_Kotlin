@@ -9,7 +9,8 @@ abstract class ContaTransferivel
  * @param titular Titular da conta
  * @param numero Numero da conta
  */
-(titular: Cliente, numero: String) : Conta(titular, numero) {
+(titular: Cliente, numero: String) : Conta(titular, numero)
+{
 
     //Exceções Transferencia
     /**
@@ -31,7 +32,8 @@ abstract class ContaTransferivel
      * @throws TransferenciaMaiorQueSaldo
      * @throws TransferenciaInferiorAZero
      * */
-    fun transferir(destino: Conta, valor: Double) {
+    fun transferir(destino: Conta, valor: Double)
+    {
         if (valor < 0)
             throw TransferenciaInferiorAZero()
 

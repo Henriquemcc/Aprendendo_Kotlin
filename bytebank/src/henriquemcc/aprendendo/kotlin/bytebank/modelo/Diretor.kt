@@ -11,7 +11,8 @@ class Diretor
  * @param salario Salario do diretor.
  * @param senha Senha do diretor.
  * */
-(nome: String, cpf: String, salario: Double, senha: String, private val plr: Double) : FuncionarioAdministrador(nome, cpf, salario, senha) {
+(nome: String, cpf: String, salario: Double, senha: String, private val plr: Double) : FuncionarioAdministrador(nome, cpf, salario, senha)
+{
 
     /**
      * Calcula a bonificação do diretor.
@@ -24,7 +25,8 @@ class Diretor
      * Serve para converter uma instancia da classe Diretor em uma String.
      * @return String contendo os dados da classe Diretor.
      * */
-    override fun toString(): String {
+    override fun toString(): String
+    {
 
         return """# Diretor:
 Nome: ${this.nome}

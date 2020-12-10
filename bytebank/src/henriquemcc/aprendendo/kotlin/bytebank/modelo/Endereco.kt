@@ -3,55 +3,69 @@ package henriquemcc.aprendendo.kotlin.bytebank.modelo
 /**
  * Representa um endereço
  */
-class Endereco {
+class Endereco
+{
     private var estado: String = ""
-        set(value) {
+        set(value)
+        {
             field = value.toUpperCase()
         }
     var cidade: String = ""
-        set(value) {
+        set(value)
+        {
             field = value.toUpperCase()
         }
     private var bairro: String = ""
-        set(value) {
+        set(value)
+        {
             field = value.toUpperCase()
         }
     private var logradouro: String = ""
-        set(value) {
+        set(value)
+        {
             field = value.toUpperCase()
         }
     private var numero: String = ""
-        set(value) {
+        set(value)
+        {
             if (value != "")
-                try {
+                try
+                {
                     Integer.parseInt(value)
                 }
-                catch (e: NumberFormatException) {
+                catch (e: NumberFormatException)
+                {
                     throw IllegalArgumentException("Não é um número")
                 }
 
             field = value.trim()
         }
     private var complemento: String = ""
-        set(value) {
+        set(value)
+        {
             if (value != "")
-                try {
+                try
+                {
                     Integer.parseInt(value)
                 }
-                catch (e: NumberFormatException) {
+                catch (e: NumberFormatException)
+                {
                     throw IllegalArgumentException("Não é um número")
                 }
 
             field = value.trim()
         }
     private var cep: String = ""
-        set(value) {
+        set(value)
+        {
             val newValue = value.replace("-", "")
             if (newValue != "")
-                try {
+                try
+                {
                     Integer.parseInt(newValue)
                 }
-                catch (e: NumberFormatException) {
+                catch (e: NumberFormatException)
+                {
                     throw IllegalArgumentException("Não é um número")
                 }
 
@@ -68,7 +82,8 @@ class Endereco {
      * @param complemento Complemento do endereço.
      * @param cep Código postal do endereço.
      */
-    constructor(estado: String, cidade: String, bairro: String, logradouro: String, numero: String, complemento: String, cep: String) {
+    constructor(estado: String, cidade: String, bairro: String, logradouro: String, numero: String, complemento: String, cep: String)
+    {
         this.estado = estado
         this.cidade = cidade
         this.bairro = bairro
@@ -86,7 +101,8 @@ class Endereco {
     /**
      * Converte uma instância de Endereco em uma String com os dados do endereço.
      */
-    override fun toString(): String {
+    override fun toString(): String
+    {
         var str = "# Endereço:\n"
         if (this.estado.isNotBlank())
             str += "Estado: " + this.estado + "\n"

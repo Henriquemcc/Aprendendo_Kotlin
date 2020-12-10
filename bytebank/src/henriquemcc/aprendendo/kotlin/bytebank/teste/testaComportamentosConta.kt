@@ -1,12 +1,12 @@
 package henriquemcc.aprendendo.kotlin.bytebank.teste
 
-import henriquemcc.aprendendo.kotlin.bytebank.modelo.Conta
 import henriquemcc.aprendendo.kotlin.bytebank.modelo.qtdContas
 
 /**
  * Testa comportamentos da classe Conta.
  */
-fun testaComportamentosConta() {
+fun testaComportamentosConta()
+{
 
     //Imprimindo as contas
     println()
@@ -105,6 +105,7 @@ fun testaComportamentosConta() {
 /**
  * Executa este arquivo.
  */
-fun main() {
+fun main()
+{
     testaComportamentosConta()
 }

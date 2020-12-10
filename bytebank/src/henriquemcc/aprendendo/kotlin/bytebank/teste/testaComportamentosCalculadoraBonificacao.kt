@@ -5,7 +5,8 @@ import henriquemcc.aprendendo.kotlin.bytebank.modelo.CalculadoraBonificacao
 /**
  * Testa comportamentos da CalculadoraBonificação.
  */
-fun testaComportamentosCalculadoraBonificacao() {
+fun testaComportamentosCalculadoraBonificacao()
+{
     val calculadoraBonificacao = CalculadoraBonificacao()
     calculadoraBonificacao.registra(joao)
     calculadoraBonificacao.registra(jose)
@@ -29,7 +30,8 @@ fun testaComportamentosCalculadoraBonificacao() {
 /**
  * Executa este arquivo.
  */
-fun main() {
+fun main()
+{
 
     testaComportamentosCalculadoraBonificacao()
 }

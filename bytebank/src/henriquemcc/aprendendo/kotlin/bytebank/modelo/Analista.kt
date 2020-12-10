@@ -10,7 +10,8 @@ class Analista
  * @param cpf Cpf do analista.
  * @param salario Salario do analista.
  * */
-(nome: String, cpf: String, salario: Double) : Funcionario(nome, cpf, salario) {
+(nome: String, cpf: String, salario: Double) : Funcionario(nome, cpf, salario)
+{
 
     /**
      * Calcula a bonificação do analista.
@@ -23,7 +24,8 @@ class Analista
      * Serve para converter uma instancia da classe analista em uma String.
      * @return String contendo os dados da classe analista.
      * */
-    override fun toString(): String {
+    override fun toString(): String
+    {
 
         return """# Analista
 Nome: ${this.nome}

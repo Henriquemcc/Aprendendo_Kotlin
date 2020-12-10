@@ -3,9 +3,11 @@ package henriquemcc.aprendendo.kotlin.bytebank.modelo
 /**
  * Representa um cliente do bytebank.
  */
-class Cliente : Autenticavel {
+class Cliente : Autenticavel
+{
     var nome: String
-        set(value) {
+        set(value)
+        {
             field = value.toUpperCase()
         }
     val cpf: String
@@ -19,7 +21,8 @@ class Cliente : Autenticavel {
      * @param senha Senha do cliente.
      * @param endereco Endereço do cliente.
      */
-    constructor(nome: String, cpf: String, senha: String, endereco: Endereco) {
+    constructor(nome: String, cpf: String, senha: String, endereco: Endereco)
+    {
         this.nome = nome
         this.cpf = cpf
         this.senha = senha
@@ -31,7 +34,8 @@ class Cliente : Autenticavel {
      * @param senha Senha do cliente.
      * @return Valor booleano indicando se foi ou não autenticado.
      */
-    override fun autenticar(senha: String): Boolean {
+    override fun autenticar(senha: String): Boolean
+    {
         var autenticado = false
 
         if (senha == this.senha)
@@ -44,7 +48,8 @@ class Cliente : Autenticavel {
      * Converte uma instância de Cliente em uma String.
      * @return String contendo os dados de cliente.
      */
-    override fun toString(): String {
+    override fun toString(): String
+    {
 
         return """# Cliente
 Nome: ${this.nome}

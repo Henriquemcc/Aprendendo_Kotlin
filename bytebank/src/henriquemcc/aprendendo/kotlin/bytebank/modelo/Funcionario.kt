@@ -6,7 +6,8 @@ package henriquemcc.aprendendo.kotlin.bytebank.modelo
  * @param cpf CPF do funcionário.
  * @param salario Salário do funcionário.
  * */
-abstract class Funcionario (val nome: String, val cpf: String, val salario: Double) {
+abstract class Funcionario(val nome: String, val cpf: String, val salario: Double)
+{
 
     /**
      * Calcula a bonificação do funcionário.

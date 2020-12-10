@@ -3,7 +3,8 @@ package henriquemcc.aprendendo.kotlin.bytebank.teste
 /**
  * Testa comportamentos de Funcionario.
  */
-fun testaComportamentosFuncionarios() {
+fun testaComportamentosFuncionarios()
+{
     println()
     println(rodrigo)
     println()
@@ -41,7 +42,8 @@ fun testaComportamentosFuncionarios() {
 /**
  * Executa este arquivo.
  */
-fun main() {
+fun main()
+{
     testaComportamentosFuncionarios()
     testarComportamentosAutenticacaoFuncionario()
     testaComportamentosCalculadoraBonificacao()

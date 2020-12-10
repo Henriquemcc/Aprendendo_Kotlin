@@ -10,7 +10,8 @@ class Auxiliar
  * @param cpf CPF do auxiliar.
  * @param salario Salario do auxiliar.
  */
-(nome: String, cpf: String, salario: Double) : Funcionario(nome, cpf, salario) {
+(nome: String, cpf: String, salario: Double) : Funcionario(nome, cpf, salario)
+{
 
     override val bonificacao: Double
         get() = 0.0
@@ -19,7 +20,8 @@ class Auxiliar
      * Serve para converter uma instancia da classe Funcionario em uma String.
      * @return String contendo os dados da classe Funcionario.
      * */
-    override fun toString(): String {
+    override fun toString(): String
+    {
 
         return """# Auxiliar
 Nome: ${this.nome}

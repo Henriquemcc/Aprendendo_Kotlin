@@ -3,7 +3,8 @@ package henriquemcc.aprendendo.kotlin.bytebank.modelo
 /**
  * Permite que uma classe possa ser autenticável no SistemaInterno.
  */
-interface Autenticavel {
+interface Autenticavel
+{
 
     /**
      * Verifica se a senha do é válida.

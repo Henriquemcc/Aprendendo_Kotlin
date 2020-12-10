@@ -7,7 +7,8 @@ var qtdContas = 0
 /**
  * Representa uma conta bancaria do Bytebank.
  * */
-abstract class Conta {
+abstract class Conta
+{
 
     /**
      * Instancia de Cliente que contém os dados do titular.
@@ -18,7 +19,8 @@ abstract class Conta {
      * String contendo o número da conta
      */
     var numero: String
-        set(value) {
+        set(value)
+        {
             if (Integer.parseInt(value.trim()) < 0)
                 throw NumeroContaInferiorAZero()
             field = value.trim();
@@ -29,7 +31,8 @@ abstract class Conta {
     * @param titular Nome do titular da conta.
     * @param numero Numero de identificação da conta.
     * */
-    constructor (titular: Cliente, numero: String) {
+    constructor (titular: Cliente, numero: String)
+    {
         this.titular = titular
         this.numero = numero
         qtdContas++
@@ -78,7 +81,8 @@ abstract class Conta {
      * @param valor Valor do deposito.
      * @throws DepositoInferiorAZero
      * */
-    fun depositar(valor: Double) {
+    fun depositar(valor: Double)
+    {
         if (valor < 0)
             throw DepositoInferiorAZero()
 

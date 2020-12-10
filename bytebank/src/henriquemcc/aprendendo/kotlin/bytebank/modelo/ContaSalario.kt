@@ -3,7 +3,8 @@ package henriquemcc.aprendendo.kotlin.bytebank.modelo
 /**
  * Representa uma conta salário do bytebank.
  */
-class ContaSalario : Conta {
+class ContaSalario : Conta
+{
 
     /**
      * Cria uma nova instancia de ContaSalario.
@@ -23,7 +24,8 @@ class ContaSalario : Conta {
      * Serve para realizar um saque na conta salario.
      * @param valor Valor a ser sacado.
      */
-    override fun sacar(valor: Double) {
+    override fun sacar(valor: Double)
+    {
         if (valor < 0)
             throw SaqueInferiorAZero()
 
@@ -37,7 +39,8 @@ class ContaSalario : Conta {
      * Serve para converter uma instancia da classe Conta em uma String.
      * @return String contendo os dados da classe Conta.
      * */
-    override fun toString(): String {
+    override fun toString(): String
+    {
 
         return """# Conta Salário
 Titular:
