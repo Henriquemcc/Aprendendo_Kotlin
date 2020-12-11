@@ -1,18 +1,36 @@
 package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
+import java.util.*
+
 /**
  * Representa um Diretor, que é um subtipo de Funcionario.
  */
-class Diretor
-/**
- * Serve para criar uma nova instancia de Diretor.
- * @param nome Nome do diretor.
- * @param cpf Cpf do diretor.
- * @param salario Salario do diretor.
- * @param senha Senha do diretor.
- * */
-(nome: String, cpf: String, salario: Double, senha: String, private val plr: Double) : FuncionarioAdministrador(nome, cpf, salario, senha)
+class Diretor : FuncionarioAdministrador
 {
+    var plr: Double
+        private set(value)
+        {
+            if (value < 0)
+            {
+                throw InputMismatchException("O valor da plr não pode ser inferior a zero")
+            }
+
+            field = value
+        }
+
+
+    /**
+     * Cria uma nova instância da classe Diretor
+     * @param nome Nome do diretor.
+     * @param cpf CPF do diretor.
+     * @param salario Salário do diretor.
+     * @param senha Senha do diretor.
+     * @param plr PLR do diretor.
+     */
+    constructor(nome: String = "", cpf: String = "", salario: Double = 0.0, senha: String = "", plr: Double = 0.0) : super(nome, cpf, salario, senha)
+    {
+        this.plr = plr
+    }
 
     /**
      * Calcula a bonificação do diretor.
@@ -21,24 +39,11 @@ class Diretor
     override val bonificacao: Double
         get() = this.salario * 1.1 + this.plr
 
-    /**
-     * Converte uma instância desta classe em uma String.
-     * @return String contendo os dados da instância desta classe.
-     */
-    override fun toString(): String
-    {
-        return """Diretor
-            |(
-            |plr=$plr,
-            |bonificacao=$bonificacao
-            |)
-            |${super.toString()}""".trimMargin()
-    }
 
     /**
-     * Compara duas instâncias desta classe par ver se são iguais.
-     * @param other Outra instância desta classe a ser comparada.
-     * @return Valor booleano indicando se as instâncias são iguais.
+     * Verifica se duas instâncias desta classe são iguais.
+     * @param other Outra instância que será comparada.
+     * @return Valor booleano indicando se as duas instâncias são iguais.
      */
     override fun equals(other: Any?): Boolean
     {
@@ -53,8 +58,8 @@ class Diretor
     }
 
     /**
-     * Obtém o hash code desta instância desta classe.
-     * @return Número inteiro com o hash desta instância desta classe.
+     * Gera o código hash de uma instância desta classe.
+     * @return Número inteiro contendo o código hash de uma instância desta classe.
      */
     override fun hashCode(): Int
     {
@@ -62,6 +67,15 @@ class Diretor
         result = 31 * result + plr.hashCode()
         result = 31 * result + bonificacao.hashCode()
         return result
+    }
+
+    /**
+     * Gera uma representação no formato de uma string dos atributos de uma instância desta classe.
+     * @return Representação no formato de uma string dos atributos de uma instância desta classe.
+     */
+    override fun toString(): String
+    {
+        return "Diretor(plr=$plr, bonificacao=$bonificacao) ${super.toString()}"
     }
 
 

@@ -3,14 +3,14 @@ package henriquemcc.aprendendo.kotlin.bytebank.modelo
 /**
  * Incorpora as caracterísitcas abstratas de uma conta em que é possível realizar transferências.
  */
-abstract class ContaTransferivel
-/**
- * Chama o construtor superior.
- * @param titular Titular da conta
- * @param numero Numero da conta
- */
-(titular: Cliente, numero: String) : Conta(titular, numero)
+abstract class ContaTransferivel : Conta
 {
+    /**
+     * Chama o construtor superior.
+     * @param titular Titular da conta
+     * @param numero Numero da conta
+     */
+    constructor(titular: Cliente, numero: String = "") : super(titular, numero)
 
     //Exceções Transferencia
     /**
@@ -45,12 +45,13 @@ abstract class ContaTransferivel
     }
 
     /**
-     * Converte uma instância desta classe em uma String.
-     * @return String contendo os dados da instância desta classe.
+     * Gera uma representação no formato de uma string dos atributos de uma instância desta classe.
+     * @return Representação no formato de uma string dos atributos de uma instância desta classe.
      */
     override fun toString(): String
     {
-        return """ContaTransferivel()
-            |${super.toString()}""".trimMargin()
+        return "ContaTransferivel() ${super.toString()}"
     }
+
+
 }

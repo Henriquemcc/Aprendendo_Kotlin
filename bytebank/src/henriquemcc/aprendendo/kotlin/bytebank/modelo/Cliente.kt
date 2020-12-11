@@ -8,9 +8,15 @@ class Cliente : Autenticavel
     var nome: String
         set(value)
         {
-            field = value.toUpperCase()
+            field = value.capitalize().trim()
         }
-    val cpf: String
+
+    var cpf: String
+        set(value)
+        {
+            field = value.replace(".", "").replace("-", "")
+        }
+
     val senha: String
     val endereco: Endereco
 
@@ -21,7 +27,7 @@ class Cliente : Autenticavel
      * @param senha Senha do cliente.
      * @param endereco Endereço do cliente.
      */
-    constructor(nome: String, cpf: String, senha: String, endereco: Endereco)
+    constructor(nome: String = "", cpf: String = "", senha: String = "", endereco: Endereco)
     {
         this.nome = nome
         this.cpf = cpf
@@ -44,20 +50,6 @@ class Cliente : Autenticavel
         return autenticado
     }
 
-    /**
-     * Converte uma instância desta classe em uma String.
-     * @return String contendo os dados da instância desta classe.
-     */
-    override fun toString(): String
-    {
-        return """Cliente
-            |(
-            |nome='$nome',
-            |cpf='$cpf',
-            |senha='$senha',
-            |endereco=$endereco
-            |)""".trimMargin()
-    }
 
     /**
      * Compara duas instâncias desta classe par ver se são iguais.
@@ -90,6 +82,15 @@ class Cliente : Autenticavel
         result = 31 * result + senha.hashCode()
         result = 31 * result + endereco.hashCode()
         return result
+    }
+
+    /**
+     * Gera uma representação no formato de uma string dos atributos de uma instância desta classe.
+     * @return Representação no formato de uma string dos atributos de uma instância desta classe.
+     */
+    override fun toString(): String
+    {
+        return "Cliente(nome='$nome', cpf='$cpf', endereco=$endereco)"
     }
 
 

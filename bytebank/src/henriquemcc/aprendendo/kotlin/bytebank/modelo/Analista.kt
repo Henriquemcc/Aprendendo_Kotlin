@@ -3,15 +3,18 @@ package henriquemcc.aprendendo.kotlin.bytebank.modelo
 /**
  * Representa um Analista, que é um subtipo de Funcionario.
  */
-class Analista
-/**
- * Cria uma nova instancia de Analista.
- * @param nome Nome do analista.
- * @param cpf Cpf do analista.
- * @param salario Salario do analista.
- * */
-(nome: String, cpf: String, salario: Double, senha: String = "") : FuncionarioAdministrador(nome, cpf, salario, senha)
+class Analista : FuncionarioAdministrador
 {
+
+    /**
+     * Cria uma nova instância da classe Analista
+     * @param nome Nome do analista.
+     * @param cpf CPF do analista
+     * @param salario Salário do analista.
+     * @param senha Senha do analista.
+     */
+    constructor(nome: String = "", cpf: String = "", salario: Double = 0.0, senha: String = "") : super(nome, cpf, salario, senha)
+
 
     /**
      * Calcula a bonificação do analista.
@@ -20,30 +23,17 @@ class Analista
     override val bonificacao: Double
         get() = this.salario * 0.2
 
-    /**
-     * Converte uma instância desta classe em uma String.
-     * @return String contendo os dados da instância desta classe.
-     */
-    override fun toString(): String
-    {
-        return """Analista
-            |(
-            |bonificacao=$bonificacao
-            |)
-            |${super.toString()}""".trimMargin()
-    }
 
     /**
-     * Compara duas instâncias desta classe par ver se são iguais.
-     * @param other Outra instância desta classe a ser comparada.
-     * @return Valor booleano indicando se as instâncias são iguais.
+     * Verifica se duas instâncias desta classe são iguais.
+     * @param other Outra instância que será comparada.
+     * @return Valor booleano indicando se as duas instâncias são iguais.
      */
     override fun equals(other: Any?): Boolean
     {
         if (this === other) return true
-        if (javaClass != other?.javaClass) return false
-
-        other as Analista
+        if (other !is Analista) return false
+        if (!super.equals(other)) return false
 
         if (bonificacao != other.bonificacao) return false
 
@@ -51,12 +41,24 @@ class Analista
     }
 
     /**
-     * Obtém o hash code desta instância desta classe.
-     * @return Número inteiro com o hash desta instância desta classe.
+     * Gera o código hash de uma instância desta classe.
+     * @return Número inteiro contendo o código hash de uma instância desta classe.
      */
     override fun hashCode(): Int
     {
-        return bonificacao.hashCode()
+        var result = super.hashCode()
+        result = 31 * result + bonificacao.hashCode()
+        return result
+    }
+
+
+    /**
+     * Gera uma representação no formato de uma string dos atributos de uma instância desta classe.
+     * @return Representação no formato de uma string dos atributos de uma instância desta classe.
+     */
+    override fun toString(): String
+    {
+        return "Analista(bonificacao=$bonificacao) ${super.toString()}"
     }
 
 

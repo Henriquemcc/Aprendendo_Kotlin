@@ -1,38 +1,57 @@
 package henriquemcc.aprendendo.kotlin.bytebank.modelo
 
+import java.util.*
+
 /**
  * Representa um Funcionario do Bytebank.
- * @param nome Nome do funcionário.
- * @param cpf CPF do funcionário.
- * @param salario Salário do funcionário.
- * */
-abstract class Funcionario(val nome: String, val cpf: String, val salario: Double)
+ */
+abstract class Funcionario
 {
+    var nome: String
+        protected set(value)
+        {
+            field = value.capitalize()
+        }
+
+    var cpf: String
+        protected set(value)
+        {
+            field = value.replace(".", "").replace("-", "")
+        }
+
+
+    var salario: Double = 0.0
+        protected set(value)
+        {
+            if (salario < 0)
+            {
+                throw InputMismatchException("O valor do salário não pode ser menor que zero")
+            }
+
+            field = value
+        }
 
     /**
-     * Calcula a bonificação do funcionário.
-     * */
-    abstract val bonificacao: Double
-
-    /**
-     * Converte uma instância desta classe em uma String.
-     * @return String contendo os dados da instância desta classe.
+     * Cria uma nova instância da classe Funcionário.
+     * @param cpf CPF do Fucionário.
+     * @param nome Nome do Funcionário.
+     * @param salario Salário do Funcionário.
      */
-    override fun toString(): String
+    constructor(nome: String = "", cpf: String = "", salario: Double = 0.0)
     {
-        return """Funcionario
-            |(
-            |nome='$nome',
-            |cpf='$cpf',
-            |salario=$salario,
-            |bonificacao=$bonificacao
-            |)""".trimMargin()
+        this.nome = nome
+        this.cpf = cpf
+        this.salario = salario
     }
 
+    //Calcula a bonificação do funcionário.
+    abstract val bonificacao: Double
+
+
     /**
-     * Compara duas instâncias desta classe par ver se são iguais.
-     * @param other Outra instância desta classe a ser comparada.
-     * @return Valor booleano indicando se as instâncias são iguais.
+     * Verifica se duas instâncias desta classe são iguais.
+     * @param other Outra instância que será comparada.
+     * @return Valor booleano indicando se as duas instâncias são iguais.
      */
     override fun equals(other: Any?): Boolean
     {
@@ -48,8 +67,8 @@ abstract class Funcionario(val nome: String, val cpf: String, val salario: Doubl
     }
 
     /**
-     * Obtém o hash code desta instância desta classe.
-     * @return Número inteiro com o hash desta instância desta classe.
+     * Gera o código hash de uma instância desta classe.
+     * @return Número inteiro contendo o código hash de uma instância desta classe.
      */
     override fun hashCode(): Int
     {
@@ -58,6 +77,15 @@ abstract class Funcionario(val nome: String, val cpf: String, val salario: Doubl
         result = 31 * result + salario.hashCode()
         result = 31 * result + bonificacao.hashCode()
         return result
+    }
+
+    /**
+     * Gera uma representação no formato de uma string dos atributos de uma instância desta classe.
+     * @return Representação no formato de uma string dos atributos de uma instância desta classe.
+     */
+    override fun toString(): String
+    {
+        return "Funcionario(nome='$nome', cpf='$cpf', salario=$salario, bonificacao=$bonificacao)"
     }
 
 

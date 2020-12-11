@@ -5,28 +5,32 @@ package henriquemcc.aprendendo.kotlin.bytebank.modelo
  */
 class Endereco
 {
-    private var estado: String = ""
-        set(value)
+    var estado: String = ""
+        private set(value)
         {
-            field = value.toUpperCase()
+            field = value.toUpperCase().trim()
         }
+
     var cidade: String = ""
         set(value)
         {
-            field = value.toUpperCase()
+            field = value.capitalize().trim()
         }
-    private var bairro: String = ""
-        set(value)
+
+    var bairro: String = ""
+        private set(value)
         {
-            field = value.toUpperCase()
+            field = value.capitalize().trim()
         }
-    private var logradouro: String = ""
-        set(value)
+
+    var logradouro: String = ""
+        private set(value)
         {
-            field = value.toUpperCase()
+            field = value.capitalize().trim()
         }
-    private var numero: String = ""
-        set(value)
+
+    var numero: String = ""
+        private set(value)
         {
             if (value != "")
                 try
@@ -40,8 +44,8 @@ class Endereco
 
             field = value.trim()
         }
-    private var complemento: String = ""
-        set(value)
+    var complemento: String = ""
+        private set(value)
         {
             if (value != "")
                 try
@@ -55,8 +59,8 @@ class Endereco
 
             field = value.trim()
         }
-    private var cep: String = ""
-        set(value)
+    var cep: String = ""
+        private set(value)
         {
             val newValue = value.replace("-", "")
             if (newValue != "")
@@ -93,28 +97,11 @@ class Endereco
         this.cep = cep
     }
 
-    /**
-     * Converte uma instância desta classe em uma String.
-     * @return String contendo os dados da instância desta classe.
-     */
-    override fun toString(): String
-    {
-        return """Endereco
-            |(
-            |estado='$estado',
-            |cidade='$cidade',
-            |bairro='$bairro',
-            |logradouro='$logradouro',
-            |numero='$numero',
-            |complemento='$complemento',
-            |cep='$cep'
-            |)""".trimMargin()
-    }
 
     /**
-     * Compara duas instâncias desta classe par ver se são iguais.
-     * @param other Outra instância desta classe a ser comparada.
-     * @return Valor booleano indicando se as instâncias são iguais.
+     * Verifica se duas instâncias desta classe são iguais.
+     * @param other Outra instância que será comparada.
+     * @return Valor booleano indicando se as duas instâncias são iguais.
      */
     override fun equals(other: Any?): Boolean
     {
@@ -133,8 +120,8 @@ class Endereco
     }
 
     /**
-     * Obtém o hash code desta instância desta classe.
-     * @return Número inteiro com o hash desta instância desta classe.
+     * Gera o código hash de uma instância desta classe.
+     * @return Número inteiro contendo o código hash de uma instância desta classe.
      */
     override fun hashCode(): Int
     {
@@ -146,6 +133,15 @@ class Endereco
         result = 31 * result + complemento.hashCode()
         result = 31 * result + cep.hashCode()
         return result
+    }
+
+    /**
+     * Gera uma representação no formato de uma string dos atributos de uma instância desta classe.
+     * @return Representação no formato de uma string dos atributos de uma instância desta classe.
+     */
+    override fun toString(): String
+    {
+        return "Endereco(estado='$estado', cidade='$cidade', bairro='$bairro', logradouro='$logradouro', numero='$numero', complemento='$complemento', cep='$cep')"
     }
 
 

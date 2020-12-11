@@ -11,14 +11,14 @@ class ContaCorrente : ContaTransferivel
      * @param titular Nome do titular da conta.
      * @param numero Numero da conta.
      */
-    constructor(titular: Cliente, numero: String) : super(titular, numero)
+    constructor(titular: Cliente, numero: String = "") : super(titular, numero)
 
     /**
      * Cria uma nova instancia da ContaCorrente.
      * @param titular Nome do titular da conta.
      * @param numero Numero da conta.
      */
-    constructor(titular: Cliente, numero: Int) : super(titular, numero.toString())
+    constructor(titular: Cliente, numero: Int = 0) : super(titular, numero.toString())
 
     /**
      * Serve para realizar um saque na conta corrente.
@@ -36,12 +36,13 @@ class ContaCorrente : ContaTransferivel
     }
 
     /**
-     * Converte uma instância desta classe em uma String.
-     * @return String contendo os dados da instância desta classe.
+     * Gera uma representação no formato de uma string dos atributos de uma instância desta classe.
+     * @return Representação no formato de uma string dos atributos de uma instância desta classe.
      */
     override fun toString(): String
     {
-        return """ContaCorrente()
-            |${super.toString()}""".trimMargin()
+        return "ContaCorrente() ${super.toString()}"
     }
+
+
 }
