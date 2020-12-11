@@ -19,7 +19,7 @@ abstract class Conta
         {
             if (Integer.parseInt(value.trim()) < 0)
                 throw NumeroContaInferiorAZero()
-            field = value.trim();
+            field = value.trim()
         }
 
     companion object
@@ -92,8 +92,47 @@ abstract class Conta
     }
 
     /**
-     * Serve para converter uma instancia da classe Conta em uma String.
-     * @return String contendo os dados da classe Conta.
-     * */
-    abstract override fun toString(): String
+     * Converte uma instância desta classe em uma String.
+     * @return String contendo os dados da instância desta classe.
+     */
+    override fun toString(): String
+    {
+        return """Conta
+            |(
+            |titular=$titular,
+            |numero='$numero',
+            |saldo=$saldo
+            |)""".trimMargin()
+    }
+
+    /**
+     * Compara duas instâncias desta classe par ver se são iguais.
+     * @param other Outra instância desta classe a ser comparada.
+     * @return Valor booleano indicando se as instâncias são iguais.
+     */
+    override fun equals(other: Any?): Boolean
+    {
+        if (this === other) return true
+        if (other !is Conta) return false
+
+        if (titular != other.titular) return false
+        if (numero != other.numero) return false
+        if (saldo != other.saldo) return false
+
+        return true
+    }
+
+    /**
+     * Obtém o hash code desta instância desta classe.
+     * @return Número inteiro com o hash desta instância desta classe.
+     */
+    override fun hashCode(): Int
+    {
+        var result = titular.hashCode()
+        result = 31 * result + numero.hashCode()
+        result = 31 * result + saldo.hashCode()
+        return result
+    }
+
+
 }

@@ -17,18 +17,21 @@ fun testaComportamentosAny()
     val any0_ = recebeEDevolveAny(any0)
     println("Objeto any0 é igual ao objeto any0_ : " + any0.equals(any0_))
 
-    val poupanca0 = ContaPoupanca(amanda,  "0")
+    val poupanca0 = ContaPoupanca(amanda, "0")
     val poupanca0_ = recebeEDevolveAny(poupanca0)
     println("Objeto poupanca0 é igual ao objeto poupanca0_ : " + poupanca0.equals(poupanca0_))
 
-    val objetoDeAny0 = object {
+    val objetoDeAny0 = object
+    {
         val atributoA = "A"
         val atributoB = 'B'
         val atributoC = false
         val atributoD = 0.0
         val atributoE = 0
 
-        fun fazNada() {}
+        fun fazNada()
+        {
+        }
     }
 
     val objetoDeAny0_ = recebeEDevolveAny(objetoDeAny0)

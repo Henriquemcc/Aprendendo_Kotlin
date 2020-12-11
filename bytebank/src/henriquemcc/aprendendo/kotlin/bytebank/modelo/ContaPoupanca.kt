@@ -36,15 +36,13 @@ class ContaPoupanca : ContaTransferivel
     }
 
     /**
-     * Serve para converter uma instancia da classe Conta em uma String.
-     * @return String contendo os dados da classe Conta.
-     * */
+     * Converte uma instância desta classe em uma String.
+     * @return String contendo os dados da instância desta classe.
+     */
     override fun toString(): String
     {
-
-        return """# Conta Poupança
-Titular:
-${this.titular}
-Número: ${this.numero}"""
+        return """ContaPoupanca()
+            |${super.toString()}""".trimMargin()
     }
+
 }

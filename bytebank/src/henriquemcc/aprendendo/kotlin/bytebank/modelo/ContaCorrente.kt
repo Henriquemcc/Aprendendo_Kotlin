@@ -36,15 +36,12 @@ class ContaCorrente : ContaTransferivel
     }
 
     /**
-     * Serve para converter uma instancia da classe Conta em uma String.
-     * @return String contendo os dados da classe Conta.
-     * */
+     * Converte uma instância desta classe em uma String.
+     * @return String contendo os dados da instância desta classe.
+     */
     override fun toString(): String
     {
-
-        return """# Conta Corrente
-Titular:
-${this.titular}
-Número: ${this.numero}"""
+        return """ContaCorrente()
+            |${super.toString()}""".trimMargin()
     }
 }

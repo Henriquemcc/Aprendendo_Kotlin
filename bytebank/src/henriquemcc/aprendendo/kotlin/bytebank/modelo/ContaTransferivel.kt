@@ -43,4 +43,14 @@ abstract class ContaTransferivel
         this.sacar(valor)
         destino.depositar(valor)
     }
+
+    /**
+     * Converte uma instância desta classe em uma String.
+     * @return String contendo os dados da instância desta classe.
+     */
+    override fun toString(): String
+    {
+        return """ContaTransferivel()
+            |${super.toString()}""".trimMargin()
+    }
 }
