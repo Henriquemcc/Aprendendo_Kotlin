@@ -43,5 +43,9 @@ fun main()
     println("---------------------------------------------------------------------------------------------------------")
     println("Testando autenticação de tipos diferentes")
     testaAutenticacaoTiposDiferentes()
+    println("---------------------------------------------------------------------------------------------------------")
+    println("---------------------------------------------------------------------------------------------------------")
+    println("Testando o equals e o hash code de endereço")
+    testaEqualsEHashCodeDeEndereco()
 
 }
