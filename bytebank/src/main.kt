@@ -2,6 +2,7 @@ import modelo.Endereco
 
 fun main() {
     println("início main")
+    9385 / 0
     funcao1()
     println("fim main")
 }
