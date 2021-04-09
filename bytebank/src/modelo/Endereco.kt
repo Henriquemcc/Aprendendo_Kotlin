@@ -10,15 +10,7 @@ class Endereco(
         var complemento: String = ""
 ) {
     override fun toString(): String {
-        return """
-Endereço(logradouro='$logradouro', 
-numero=$numero, 
-bairro='$bairro', 
-cidade='$cidade', 
-estado='$estado', 
-cep='$cep', 
-complemento='$complemento')
-""".trimIndent()
+        return "Endereço(logradouro='$logradouro', \nnumero=$numero, \nbairro='$bairro', \ncidade='$cidade', \nestado='$estado', \ncep='$cep', \ncomplemento='$complemento')"
     }
 
     override fun equals(other: Any?): Boolean {
