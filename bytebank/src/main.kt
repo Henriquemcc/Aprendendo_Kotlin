@@ -1,35 +1,26 @@
-import modelo.Endereco
-
 fun main() {
-    println("início main")
-    funcao1()
-    try {
-        9385 / 0
-    } catch (e: ArithmeticException) {
-        println("Exceção ArithmeticException foi capturada")
+    println("Exemplo 1")
+    funcaoDoExemplo("abcdefghijklmnopqrstuvwxyz")
+    println("---------------------------")
+    println("Exemplo 2")
+    funcaoDoExemplo("19345678.0456")
+}
+
+fun funcaoDoExemplo(entrada: String) {
+    val valor = try {
+        entrada.toDouble()
+    } catch (e: NumberFormatException) {
         e.printStackTrace()
+        null
     }
 
-    println("fim main")
-}
+    println("Valor da entrada convertido para double: $valor")
 
-fun funcao1() {
-    println("início função1")
-    funcao2()
-    println("fim função1")
-}
-
-fun funcao2() {
-    println("início função2")
-    for (i in 1..5) {
-        println(i)
-        val endereco = Any()
-        try {
-            endereco as Endereco
-        } catch (e: ClassCastException) {
-            println("Exceção ClassCastException foi capturada.")
-            e.printStackTrace()
-        }
+    val valorComTaxa = if (valor != null) {
+        valor * 1.01
+    } else {
+        null
     }
-    println("fim função2")
+
+    println("Valor com taxa: $valorComTaxa")
 }
