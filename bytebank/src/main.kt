@@ -2,8 +2,14 @@ import modelo.Endereco
 
 fun main() {
     println("início main")
-    9385 / 0
     funcao1()
+    try {
+        9385 / 0
+    } catch (e: ArithmeticException) {
+        println("Exceção ArithmeticException foi capturada")
+        e.printStackTrace()
+    }
+
     println("fim main")
 }
 
@@ -18,7 +24,12 @@ fun funcao2() {
     for (i in 1..5) {
         println(i)
         val endereco = Any()
-        endereco as Endereco
+        try {
+            endereco as Endereco
+        } catch (e: ClassCastException) {
+            println("Exceção ClassCastException foi capturada.")
+            e.printStackTrace()
+        }
     }
     println("fim função2")
 }
