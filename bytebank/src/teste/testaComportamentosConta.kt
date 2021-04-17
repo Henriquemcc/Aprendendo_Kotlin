@@ -1,5 +1,6 @@
 package teste
 
+import exception.SaldoInsuficienteException
 import modelo.Cliente
 import modelo.ContaCorrente
 import modelo.ContaPoupanca
@@ -50,11 +51,13 @@ fun testaComportamentosConta() {
 
     println("Transferência da conta da Fran para o Alex")
 
-    if (contaFran.transfere(destino = contaAlex, valor = 300.0)) {
+    try {
+        contaFran.transfere(destino = contaAlex, valor = 300.0)
         println("Transferência sucedida")
-    } else {
+    } catch (e: SaldoInsuficienteException) {
         println("Falha na transferência")
     }
+
 
     println(contaAlex.saldo)
     println(contaFran.saldo)
