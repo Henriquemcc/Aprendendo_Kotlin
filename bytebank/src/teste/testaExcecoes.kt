@@ -1,9 +1,12 @@
 package teste
 
-fun testarExcecoes() {
+import exception.SaldoInsuficienteException
+
+fun testaExcecoes() {
     testarClassCastException()
     testarArithmeticException()
     testarNumberFormatException()
+    testarSaldoInsuficienteException()
 }
 
 fun testarClassCastException() {
@@ -51,5 +54,21 @@ private fun testarNumberFormatExceptionParte2() {
     for (i in 1..5) {
         println(i)
         throw NumberFormatException()
+    }
+}
+
+fun testarSaldoInsuficienteException() {
+    println("Testando SaldoInsuficienteException")
+    try {
+        testarSaldoInsuficienteExceptionParte2()
+    } catch (e: SaldoInsuficienteException) {
+        e.printStackTrace()
+    }
+}
+
+private fun testarSaldoInsuficienteExceptionParte2() {
+    for (i in 1..5) {
+        println(i)
+        throw SaldoInsuficienteException()
     }
 }

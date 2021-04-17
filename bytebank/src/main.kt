@@ -1,5 +1,5 @@
-﻿import teste.testaComportamentosConta
+﻿import teste.testaExcecoes
 
 fun main() {
-    testaComportamentosConta()
+    testaExcecoes()
 }
