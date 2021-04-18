@@ -1,9 +1,9 @@
-﻿import teste.testaComportamentosConta
+﻿import teste.testaReferenciasNulas
 
 fun main() {
 //    testaAny()
 //    testaAutenticacao()
-    testaComportamentosConta()
+//    testaComportamentosConta()
 //    testaContasDiferentes()
 //    testaCopiasEReferencias()
 //    testaExcecoes()
@@ -11,4 +11,5 @@ fun main() {
 //    testaFuncionarios()
 //    testaLacos()
 //    testaObjects()
+    testaReferenciasNulas()
 }
