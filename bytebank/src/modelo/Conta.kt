@@ -29,6 +29,10 @@ abstract class Conta(
     abstract fun saca(valor: Double)
 
     fun transfere(valor: Double, destino: Conta, senha: String) {
+
+        // Testando a captura de uma exceção desconhecida
+        //throw IllegalAccessException()
+
         if (saldo < valor)
             throw SaldoInsuficienteException("O saldo é insuficiente: Saldo: $saldo, Valor da transferência: $valor")
 
