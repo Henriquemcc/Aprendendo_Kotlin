@@ -4,9 +4,9 @@ import exception.FalhaAutenticacaoException
 import exception.SaldoInsuficienteException
 
 abstract class Conta(
-        var titular: Cliente,
+        val titular: Cliente,
         val numero: Int
-) : Autenticavel {
+) : Autenticavel by titular {
     var saldo = 0.0
         protected set
 
@@ -41,10 +41,6 @@ abstract class Conta(
 
         saldo -= valor
         destino.deposita(valor)
-    }
-
-    override fun autentica(senha: String): Boolean {
-        return this.titular.autentica(senha)
     }
 }
 
