@@ -21,7 +21,7 @@ fun testaFuncionarios() {
             nome = "Fran",
             cpf = "222.222.222-22",
             salario = 2000.0,
-            senha = 1234
+            senha = "1234"
     )
 
     println("nome ${fran.nome}")
@@ -29,7 +29,7 @@ fun testaFuncionarios() {
     println("salário ${fran.salario}")
     println("bonificação ${fran.bonificacao}")
 
-    if (fran.autentica(1234)) {
+    if (fran.autentica("1234")) {
         println("autenticou com sucesso")
     } else {
         println("falha na autenticação")
@@ -39,7 +39,7 @@ fun testaFuncionarios() {
             nome = "Gui",
             cpf = "333.333.333-33",
             salario = 4000.0,
-            senha = 4000,
+            senha = "4000",
             plr = 200.0
     )
 
@@ -49,7 +49,7 @@ fun testaFuncionarios() {
     println("bonificação ${gui.bonificacao}")
     println("plr ${gui.plr}")
 
-    if (gui.autentica(4000)) {
+    if (gui.autentica("4000")) {
         println("autenticou com sucesso")
     } else {
         println("falha na autenticação")

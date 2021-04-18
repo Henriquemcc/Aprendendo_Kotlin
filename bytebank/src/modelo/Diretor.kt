@@ -4,7 +4,7 @@ class Diretor(
         nome: String,
         cpf: String,
         salario: Double,
-        senha: Int,
+        senha: String,
         val plr: Double
 ) : FuncionarioAdmin(
         nome = nome,

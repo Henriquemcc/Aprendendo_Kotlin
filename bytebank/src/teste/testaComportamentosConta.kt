@@ -1,5 +1,6 @@
 package teste
 
+import exception.FalhaAutenticacaoException
 import exception.SaldoInsuficienteException
 import modelo.Cliente
 import modelo.ContaCorrente
@@ -7,12 +8,12 @@ import modelo.ContaPoupanca
 
 fun testaComportamentosConta() {
 
-    val alex = Cliente(nome = "Alex", cpf = "", senha = 1)
+    val alex = Cliente(nome = "Alex", cpf = "", senha = "1")
 
     val contaAlex = ContaCorrente(titular = alex, numero = 1000)
     contaAlex.deposita(200.0)
 
-    val fran = Cliente(nome = "Fran", cpf = "", senha = 2)
+    val fran = Cliente(nome = "Fran", cpf = "", senha = "2")
 
     val contaFran = ContaPoupanca(numero = 1001, titular = fran)
     contaFran.deposita(300.0)
@@ -52,10 +53,14 @@ fun testaComportamentosConta() {
     println("Transferência da conta da Fran para o Alex")
 
     try {
-        contaFran.transfere(destino = contaAlex, valor = 300.0)
+        contaFran.transfere(destino = contaAlex, valor = 300.0, senha = "3")
         println("Transferência sucedida")
     } catch (e: SaldoInsuficienteException) {
         println("Falha na transferência")
+        e.printStackTrace()
+    } catch (e: FalhaAutenticacaoException) {
+        println("Falha na autenticação")
+        e.printStackTrace()
     }
 
 

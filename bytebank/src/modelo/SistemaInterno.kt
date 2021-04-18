@@ -2,7 +2,7 @@ package modelo
 
 class SistemaInterno {
 
-    fun entra(admin: Autenticavel, senha: Int) {
+    fun entra(admin: Autenticavel, senha: String) {
         if (admin.autentica(senha)) {
             println("Bem vindo ao Bytebank")
         } else {

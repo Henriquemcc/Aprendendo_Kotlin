@@ -12,14 +12,14 @@ fun testaCopiasEReferencias() {
     println("numeroX $numeroX")
     println("numeroY $numeroY")
 
-    val joao = Cliente(nome = "João", cpf = "", senha = 1)
+    val joao = Cliente(nome = "João", cpf = "", senha = "1")
 
     val contaJoao = ContaCorrente(joao, 1002)
     contaJoao.titular.nome = "João"
     val contaMaria = ContaPoupanca(Cliente(
             nome = "Maria",
             cpf = "",
-            senha = 2
+            senha = "2"
     ), 1003)
     contaMaria.titular.nome = "Maria"
     contaJoao.titular.nome = "João"

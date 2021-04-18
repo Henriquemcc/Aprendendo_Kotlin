@@ -4,7 +4,7 @@ class Gerente(
         nome: String,
         cpf: String,
         salario: Double,
-        senha: Int
+        senha: String
 ) : FuncionarioAdmin(
         nome = nome,
         cpf = cpf,

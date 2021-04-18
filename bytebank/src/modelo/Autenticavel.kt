@@ -2,6 +2,6 @@ package modelo
 
 interface Autenticavel {
 
-    fun autentica(senha: Int): Boolean
+    fun autentica(senha: String): Boolean
 
 }
