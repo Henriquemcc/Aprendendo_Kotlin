@@ -17,4 +17,18 @@ fun testaReferenciasNulas() {
         println(it.logradouro.hashCode())
     }
 
+    //devolver a quantidade de caracteres do complemento e, caso seja nulo, devolver outro valor padrão
+    val string: String? = "ieuwrhewiufhui"
+    val quantidade: Int = string?.length ?: 0
+    println(quantidade)
+
+    //lançar uma exception caso o complemento for nulo;
+    val qtd: Int = string?.length ?: throw Exception()
+    println(qtd)
+
+    //realizar um cast que pode ser um inteiro que recebe nulo.
+    val qtd2 = string.length as Int?
+    println(qtd2)
+
+
 }
