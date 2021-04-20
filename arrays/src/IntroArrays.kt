@@ -8,7 +8,7 @@ fun main() {
     parte6()
 }
 
-fun parte0() {
+private fun parte0() {
     println("Utilizando variáveis separadas para obter a maior idade")
 
     val idade1 = 25
@@ -38,8 +38,9 @@ fun parte0() {
 
 }
 
-fun parte1() {
+private fun parte1() {
     println("Utilizando array ao invés de variáveis separadas para obter a maior idade")
+
     val idades = IntArray(4)
     idades[0] = 25
     idades[1] = 19
@@ -62,8 +63,9 @@ fun parte1() {
     println("---------------------------------------------------------------------------------------------------------------")
 }
 
-fun parte2() {
+private fun parte2() {
     println("Utilizando array e um loop for ao invés de variáveis separadas e ifs para obter a maior idade")
+
     val idades = intArrayOf(25, 19, 33, 20)
     println("Idades: ${idades.contentToString()}")
 
@@ -76,8 +78,9 @@ fun parte2() {
     println("---------------------------------------------------------------------------------------------------------------")
 }
 
-fun parte3() {
+private fun parte3() {
     println("Utilizando array e um loop for para obter a menor idade")
+
     val idades = intArrayOf(25, 19, 33, 20)
     println("Idades: ${idades.contentToString()}")
 
@@ -90,8 +93,9 @@ fun parte3() {
     println("---------------------------------------------------------------------------------------------------------------")
 }
 
-fun parte4() {
+private fun parte4() {
     println("Utilizando array e um loop for para aumentar o salário dos funcionários")
+
     val salarios = doubleArrayOf(1500.50, 2300.0, 5000.0, 8000.0, 10000.0)
     println("Salários: ${salarios.contentToString()}")
 
@@ -103,8 +107,9 @@ fun parte4() {
     println("---------------------------------------------------------------------------------------------------------------")
 }
 
-fun parte5() {
+private fun parte5() {
     println("Utilizando a função forEach, que recebe uma expressão lambda para aumentar o salário dos funcionários")
+
     val salarios = doubleArrayOf(1500.50, 2300.0, 5000.0, 8000.0, 10000.0)
     println("Salários: ${salarios.contentToString()}")
 
@@ -119,8 +124,9 @@ fun parte5() {
     println("---------------------------------------------------------------------------------------------------------------")
 }
 
-fun parte6() {
+private fun parte6() {
     println("Utilizando a função forEachIndexed, que recebe uma expressão lambda para aumentar o salário dos funcionários")
+
     val salarios = doubleArrayOf(1500.50, 2300.0, 5000.0, 8000.0, 10000.0)
     println("Salários: ${salarios.contentToString()}")
 
