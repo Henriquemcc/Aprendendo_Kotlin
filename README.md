@@ -6,15 +6,20 @@ Este repositório contém os arquivos de código fonte dos programas em Kotlin d
 
 ## Repositório Oficial da Alura
 
-Os códigos fontes oficiais do curso, desenvolvidos pelo instrutor, estão disponíveis no repositório do Github deste curso da Alura:
+Os códigos fontes oficiais do curso, desenvolvidos pelo instrutor, estão disponíveis no repositório do Github deste
+curso da Alura:
 
-[Kotlin: primeiros passos e Orientação a Objetos](https://github.com/alura-cursos/kotlin-introducao-orientacao-a-objetos/).
+[Kotlin: primeiros passos e Orientação a Objetos](https://github.com/alura-cursos/kotlin-introducao-orientacao-a-objetos/)
+.
 
 [Kotlin: herança, polimorfismo e Interface](https://github.com/alura-cursos/kotlin-oo-heranca-polimorfismo-interfaces/).
 
-[Kotlin: recursos da linguagem com pacotes e composição](https://github.com/alura-cursos/kotlin-pacotes-composicao-objects/).
+[Kotlin: recursos da linguagem com pacotes e composição](https://github.com/alura-cursos/kotlin-pacotes-composicao-objects/)
+.
 
 [Kotlin: lidando com exceptions e referências nulas](https://github.com/alura-cursos/kotlin-exceptions-null-safety).
+
+[Kotlin: Desenvolva com coleções, arrays e listas](https://github.com/alura-cursos/KotlinCollectionsAlura).
 
 ## Cursos
 
