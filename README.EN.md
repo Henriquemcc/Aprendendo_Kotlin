@@ -24,6 +24,10 @@ The courses in which these programs were developed were:
 
 [Kotlin: herança, polimorfismo e Interface](https://cursos.alura.com.br/course/kotlin-heranca-polimorfismo-interface).
 
-[Kotlin: recursos da linguagem com pacotes e composição](https://cursos.alura.com.br/course/kotlin-recursos-da-linguagem-com-pacotes-e-composicao).
+[Kotlin: recursos da linguagem com pacotes e composição](https://cursos.alura.com.br/course/kotlin-recursos-da-linguagem-com-pacotes-e-composicao)
+.
 
 [Kotlin: lidando com exceptions e referências nulas](https://cursos.alura.com.br/course/kotlin-exceptions-null-safety).
+
+[Kotlin: Desenvolva com coleções, arrays e listas](https://cursos.alura.com.br/course/kotlin-introducao-collections-arrays-listas)
+.

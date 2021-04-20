@@ -4,9 +4,13 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5853b6ee-2f16-4cc1-8ee3-ed775850e278" name="Default Changelist" comment="Parte 4 da aula 5 do curso Kotlin: lidando com exceptions e referências nulas">
+    <list default="true" id="5853b6ee-2f16-4cc1-8ee3-ed775850e278" name="Default Changelist" comment="Parte 6 da aula 5 do curso Kotlin: lidando com exceptions e referências nulas">
+      <change afterPath="$PROJECT_DIR$/arrays/src/ConstruindoArrays.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arrays/src/IntroArrays.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/teste/testaReferenciasNulas.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/teste/testaReferenciasNulas.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aprendendo_Kotlin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Aprendendo_Kotlin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.EN.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.EN.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +38,33 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.IntroArraysKt">
+    <configuration name="ConstruindoArraysKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="Aprendendo_Kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ConstruindoArraysKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntroArraysKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="Aprendendo_Kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="IntroArraysKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="Aprendendo_Kotlin" />
       <option name="VM_PARAMETERS" />
@@ -50,6 +80,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IntroArraysKt" />
+        <item itemvalue="Application.ConstruindoArraysKt" />
         <item itemvalue="Application.MainKt" />
       </list>
     </recent_temporary>
@@ -112,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618772254823</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Parte 6 da aula 5 do curso Kotlin: lidando com exceptions e referências nulas">
+      <created>1618773125755</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1618773125755</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -139,7 +178,8 @@
     <MESSAGE value="Parte 6 da aula 4 do curso Kotlin: lidando com exceptions e referências nulas" />
     <MESSAGE value="Parte 2 da aula 5 do curso Kotlin: lidando com exceptions e referências nulas" />
     <MESSAGE value="Parte 4 da aula 5 do curso Kotlin: lidando com exceptions e referências nulas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Parte 4 da aula 5 do curso Kotlin: lidando com exceptions e referências nulas" />
+    <MESSAGE value="Parte 6 da aula 5 do curso Kotlin: lidando com exceptions e referências nulas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parte 6 da aula 5 do curso Kotlin: lidando com exceptions e referências nulas" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
