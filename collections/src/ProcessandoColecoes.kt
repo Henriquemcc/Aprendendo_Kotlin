@@ -1,4 +1,6 @@
 fun main() {
+    println("Processando Coleções")
+
     val pedidos = longArrayOf(1300012, 1100013, 1200199, 1200222, 1100345, 1000012)
     println("Pedidos: ${pedidos.contentToString()}")
 

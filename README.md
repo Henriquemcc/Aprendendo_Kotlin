@@ -2,7 +2,8 @@
 
 # Aprendendo a programar em Kotlin
 
-Este repositório contém os arquivos de código fonte dos programas em Kotlin desenvolvidos durante o curso online de Kotlin realizado na plataforma [Alura Cursos Online](https://alura.com.br/).
+Este repositório contém os arquivos de código fonte dos programas em Kotlin desenvolvidos durante o curso online de
+Kotlin realizado na plataforma [Alura Cursos Online](https://alura.com.br/).
 
 ## Repositório Oficial da Alura
 

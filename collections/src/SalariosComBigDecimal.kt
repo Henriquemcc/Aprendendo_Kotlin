@@ -2,6 +2,8 @@ import java.math.BigDecimal
 import java.math.RoundingMode
 
 fun main() {
+    println("Salários com BigDecimal")
+
     println("Utilizando a função map, que recebe uma expressão lambda para aumentar o salário dos funcionários")
 
     val salarios = bigDecimalArrayOf("1500.55", "2000.00", "5000.00", "10000.00")

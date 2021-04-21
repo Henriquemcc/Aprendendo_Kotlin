@@ -1,4 +1,6 @@
 fun main() {
+    println("Construindo Arrays")
+
     val contatos = arrayOf("Roberto", "Ana", "Paula")
     println(contatos.contentToString())
     println("--------------------------------------")

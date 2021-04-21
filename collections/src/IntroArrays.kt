@@ -1,4 +1,6 @@
 fun main() {
+    println("Introdução a Arrays")
+
     parte0()
     parte1()
     parte2()
