@@ -4,18 +4,10 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5853b6ee-2f16-4cc1-8ee3-ed775850e278" name="Default Changelist" comment="Parte 6 da aula 2 do curso Kotlin: Desenvolva com coleções, arrays e listas.">
-      <change afterPath="$PROJECT_DIR$/collections/src/CompondoOperacoes.kt" afterDir="false" />
+    <list default="true" id="5853b6ee-2f16-4cc1-8ee3-ed775850e278" name="Default Changelist" comment="Parte 5 da aula 3 do curso Kotlin: Desenvolva com coleções, arrays e listas.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aprendendo_Kotlin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Aprendendo_Kotlin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.EN.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.EN.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrays/src/ConstruindoArrays.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/ConstruindoArrays.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrays/src/FuncoesBigDecimal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/FuncoesBigDecimal.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrays/src/IntroArrays.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/IntroArrays.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrays/src/ProcessandoColecoes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/ProcessandoColecoes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrays/src/Ranges.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/Ranges.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrays/src/SalariosComBigDecimal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/SalariosComBigDecimal.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/src/FuncoesBigDecimal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/FuncoesBigDecimal.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/src/SalariosComBigDecimal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/SalariosComBigDecimal.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +36,7 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
   </component>
-  <component name="RunManager" selected="Application.IntroArraysKt">
+  <component name="RunManager" selected="Application.SalariosComBigDecimalKt">
     <configuration name="CompondoOperacoesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="Aprendendo_Kotlin" />
       <option name="VM_PARAMETERS" />
@@ -112,10 +104,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SalariosComBigDecimalKt" />
         <item itemvalue="Application.IntroArraysKt" />
         <item itemvalue="Application.ProcessandoColecoesKt" />
         <item itemvalue="Application.RangesKt" />
-        <item itemvalue="Application.SalariosComBigDecimalKt" />
         <item itemvalue="Application.CompondoOperacoesKt" />
       </list>
     </recent_temporary>
@@ -213,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618962747516</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Parte 5 da aula 3 do curso Kotlin: Desenvolva com coleções, arrays e listas.">
+      <created>1619043052531</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1619043052531</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -245,7 +244,8 @@
     <MESSAGE value="Adicionando o link para o repositório do curso da Alura no Github." />
     <MESSAGE value="Parte 5 da aula 2 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
     <MESSAGE value="Parte 6 da aula 2 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
-    <option name="LAST_COMMIT_MESSAGE" value="Parte 6 da aula 2 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
+    <MESSAGE value="Parte 5 da aula 3 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Parte 5 da aula 3 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
