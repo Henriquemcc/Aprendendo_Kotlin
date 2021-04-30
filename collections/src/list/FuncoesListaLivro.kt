@@ -4,8 +4,8 @@ package list
  * Obtém uma string com os dados dos livros da lista de forma formatada.
  * @return String com os dados dos livros formatados.
  */
-fun List<Livro>.toStringFormatted(): String {
-    return this.joinToString(separator = "\n") {
+fun List<Livro?>.toStringFormatted(): String {
+    return this.filterNotNull().joinToString(separator = "\n") {
         " - ${it.titulo} de ${it.autor} em ${it.anoPublicacao}" + if (it.editora != null) " publicado por ${it.editora}" else ""
     }
 }
@@ -13,7 +13,7 @@ fun List<Livro>.toStringFormatted(): String {
 /**
  * Imprime a lista de livros de forma formatada.
  */
-fun List<Livro>.printlnFormatted() {
+fun List<Livro?>.printlnFormatted() {
     println()
     println(" ### Lista de Livros ### ")
     println(this.toStringFormatted())
@@ -25,5 +25,6 @@ fun List<Livro>.printlnFormatted() {
  * @return Lista de strings com os títulos dos livros.
  */
 fun List<Livro>.tituloPorAnoPublicacaoAutor(prefixoAutor: String): List<String> {
-    return this.filter { it.autor.startsWith(prefixoAutor) }.sortedBy { it.anoPublicacao }.map { it.titulo }
+    return this.filter { it.autor.startsWith(prefixoAutor) }
+        .sortedBy { it.anoPublicacao }.map { it.titulo }
 }

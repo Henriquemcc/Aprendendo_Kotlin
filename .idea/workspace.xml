@@ -6,10 +6,39 @@
     <option name="CUSTOM_SCOPE_NAME" value="Selected directory" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5853b6ee-2f16-4cc1-8ee3-ed775850e278" name="Default Changelist" comment="Parte 6 da aula 4 do curso Kotlin: Desenvolva com coleções, arrays e listas.">
-      <change afterPath="$PROJECT_DIR$/collections/src/list/livros.kt" afterDir="false" />
+    <list default="true" id="5853b6ee-2f16-4cc1-8ee3-ed775850e278" name="Default Changelist" comment="Parte 8 da aula 4 do curso Kotlin: Desenvolva com coleções, arrays e listas.">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collections/src/list/LivrosComAtributoNulo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collections/src/list/Prateleira.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collections/src/list/UsaPrateleira.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.EN.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.EN.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/exception/FalhaAutenticacaoException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/exception/FalhaAutenticacaoException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/exception/SaldoInsuficienteException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/exception/SaldoInsuficienteException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Analista.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Analista.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Auxiliar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Auxiliar.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Cliente.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Cliente.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Conta.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Conta.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/ContaCorrente.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/ContaCorrente.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/ContaPoupanca.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/ContaPoupanca.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Diretor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Diretor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Endereco.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Endereco.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Funcionario.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Funcionario.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/FuncionarioAdmin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/FuncionarioAdmin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Gerente.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Gerente.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/teste/testaAny.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/teste/testaAny.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/teste/testaAutenticacao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/teste/testaAutenticacao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/teste/testaContasDiferentes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/teste/testaContasDiferentes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/teste/testaCopiasEReferencias.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/teste/testaCopiasEReferencias.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bytebank/src/teste/testaFuncionarios.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/teste/testaFuncionarios.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/src/array/IntroArrays.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/array/IntroArrays.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/src/array/Ranges.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/array/Ranges.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/src/array/SalariosComBigDecimal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/array/SalariosComBigDecimal.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/src/list/FuncoesListaLivro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/list/FuncoesListaLivro.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collections/src/list/ListaDeLivros.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/list/ListaDeLivros.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/src/list/Livro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/list/Livro.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/src/list/TransformandoListas.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/list/TransformandoListas.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +48,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
-        <option value="Kotlin Data Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -37,9 +66,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
-  <component name="RunManager" selected="Application.ListaDeLivrosKt">
+  <component name="RunManager" selected="Application.UsaPrateleiraKt">
     <configuration name="IntroArraysKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="Aprendendo_Kotlin" />
       <option name="VM_PARAMETERS" />
@@ -61,19 +90,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="list.ListaDeLivrosKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProcessandoColecoesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="Aprendendo_Kotlin" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ProcessandoColecoesKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,13 +121,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UsaPrateleiraKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="Aprendendo_Kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="list.UsaPrateleiraKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UsaPrateleiraKt" />
         <item itemvalue="Application.ListaDeLivrosKt" />
         <item itemvalue="Application.TransformandoListasKt" />
         <item itemvalue="Application.SalariosComBigDecimalKt" />
         <item itemvalue="Application.IntroArraysKt" />
-        <item itemvalue="Application.ProcessandoColecoesKt" />
       </list>
     </recent_temporary>
   </component>
@@ -229,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619228342561</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Parte 8 da aula 4 do curso Kotlin: Desenvolva com coleções, arrays e listas.">
+      <created>1619799869825</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1619799869825</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -264,7 +300,8 @@
     <MESSAGE value="Parte 5 da aula 3 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
     <MESSAGE value="Parte 6 da aula 3 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
     <MESSAGE value="Parte 6 da aula 4 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
-    <option name="LAST_COMMIT_MESSAGE" value="Parte 6 da aula 4 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
+    <MESSAGE value="Parte 8 da aula 4 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Parte 8 da aula 4 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -1,11 +1,11 @@
 package modelo
 
 class ContaCorrente(
-        titular: Cliente,
-        numero: Int
+    titular: Cliente,
+    numero: Int
 ) : Conta(
-        titular = titular,
-        numero = numero
+    titular = titular,
+    numero = numero
 ) {
     override fun saca(valor: Double) {
         val valorComTaxa = valor + 0.1

@@ -4,8 +4,8 @@ import exception.FalhaAutenticacaoException
 import exception.SaldoInsuficienteException
 
 abstract class Conta(
-        val titular: Cliente,
-        val numero: Int
+    val titular: Cliente,
+    val numero: Int
 ) : Autenticavel by titular {
     var saldo = 0.0
         protected set

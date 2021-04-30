@@ -1,14 +1,14 @@
 package modelo
 
 abstract class FuncionarioAdmin(
-        nome: String,
-        cpf: String,
-        salario: Double,
-        protected val senha: String
+    nome: String,
+    cpf: String,
+    salario: Double,
+    protected val senha: String
 ) : Funcionario(
-        nome = nome,
-        cpf = cpf,
-        salario = salario
+    nome = nome,
+    cpf = cpf,
+    salario = salario
 ), Autenticavel {
 
     override fun autentica(senha: String): Boolean {
