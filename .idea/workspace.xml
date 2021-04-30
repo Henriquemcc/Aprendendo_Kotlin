@@ -6,39 +6,9 @@
     <option name="CUSTOM_SCOPE_NAME" value="Selected directory" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5853b6ee-2f16-4cc1-8ee3-ed775850e278" name="Default Changelist" comment="Parte 8 da aula 4 do curso Kotlin: Desenvolva com coleções, arrays e listas.">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collections/src/list/LivrosComAtributoNulo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collections/src/list/Prateleira.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collections/src/list/UsaPrateleira.kt" afterDir="false" />
+    <list default="true" id="5853b6ee-2f16-4cc1-8ee3-ed775850e278" name="Default Changelist" comment="Parte 7 da aula 5 do curso Kotlin: Desenvolva com coleções, arrays e listas.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.EN.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.EN.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/exception/FalhaAutenticacaoException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/exception/FalhaAutenticacaoException.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/exception/SaldoInsuficienteException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/exception/SaldoInsuficienteException.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Analista.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Analista.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Auxiliar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Auxiliar.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Cliente.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Cliente.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Conta.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Conta.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/ContaCorrente.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/ContaCorrente.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/ContaPoupanca.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/ContaPoupanca.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Diretor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Diretor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Endereco.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Endereco.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Funcionario.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Funcionario.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/FuncionarioAdmin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/FuncionarioAdmin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/modelo/Gerente.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/modelo/Gerente.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/teste/testaAny.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/teste/testaAny.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/teste/testaAutenticacao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/teste/testaAutenticacao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/teste/testaContasDiferentes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/teste/testaContasDiferentes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/teste/testaCopiasEReferencias.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/teste/testaCopiasEReferencias.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bytebank/src/teste/testaFuncionarios.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bytebank/src/teste/testaFuncionarios.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/array/IntroArrays.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/array/IntroArrays.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/array/Ranges.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/array/Ranges.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/array/SalariosComBigDecimal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/array/SalariosComBigDecimal.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/list/FuncoesListaLivro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/list/FuncoesListaLivro.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/list/ListaDeLivros.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/list/ListaDeLivros.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/list/Livro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/list/Livro.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/list/TransformandoListas.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/list/TransformandoListas.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/src/list/Prateleira.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/list/Prateleira.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619799869825</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Parte 7 da aula 5 do curso Kotlin: Desenvolva com coleções, arrays e listas.">
+      <created>1619800997866</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1619800997866</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -301,7 +278,8 @@
     <MESSAGE value="Parte 6 da aula 3 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
     <MESSAGE value="Parte 6 da aula 4 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
     <MESSAGE value="Parte 8 da aula 4 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
-    <option name="LAST_COMMIT_MESSAGE" value="Parte 8 da aula 4 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
+    <MESSAGE value="Parte 7 da aula 5 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Parte 7 da aula 5 do curso Kotlin: Desenvolva com coleções, arrays e listas." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
