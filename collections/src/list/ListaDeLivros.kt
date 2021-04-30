@@ -63,8 +63,8 @@ fun parte1() {
     listaLivros.add(livro5)
     println("Lista de livros após adicionar o livro 5: $listaLivros")
 
-    listaLivros.remove(livro3)
-    println("Lista de livros após remover o livro 3: $listaLivros")
+    listaLivros.remove(livro1)
+    println("Lista de livros após remover o livro 1: $listaLivros")
 
     println("--------------------------------------")
 }
@@ -82,8 +82,8 @@ fun parte2() {
     listaLivros.printlnFormatted()
     println()
 
-    listaLivros.remove(livro3)
-    println("Lista de livros após remover o livro 3:")
+    listaLivros.remove(livro1)
+    println("Lista de livros após remover o livro 1:")
     listaLivros.printlnFormatted()
     println()
 
@@ -95,7 +95,7 @@ fun parte3() {
 
     val listaLivros = mutableListOf(livro1, livro2, livro3, livro4)
     listaLivros.add(livro5)
-    listaLivros.remove(livro3)
+    listaLivros.remove(livro1)
 
     println("Lista de livros:")
     listaLivros.printlnFormatted()
@@ -114,7 +114,7 @@ fun parte4() {
 
     val listaLivros = mutableListOf(livro1, livro2, livro3, livro4)
     listaLivros.add(livro5)
-    listaLivros.remove(livro3)
+    listaLivros.remove(livro1)
 
     println("Lista de livros:")
     listaLivros.printlnFormatted()
@@ -133,7 +133,7 @@ fun parte5() {
 
     val listaLivros = mutableListOf(livro1, livro2, livro3, livro4)
     listaLivros.add(livro5)
-    listaLivros.remove(livro3)
+    listaLivros.remove(livro1)
 
     println("Lista de livros:")
     listaLivros.printlnFormatted()
@@ -152,7 +152,7 @@ fun parte6() {
 
     val listaLivros = mutableListOf(livro1, livro2, livro3, livro4)
     listaLivros.add(livro5)
-    listaLivros.remove(livro3)
+    listaLivros.remove(livro1)
 
     println("Lista de livros:")
     listaLivros.printlnFormatted()

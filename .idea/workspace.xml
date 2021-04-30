@@ -7,10 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5853b6ee-2f16-4cc1-8ee3-ed775850e278" name="Default Changelist" comment="Parte 6 da aula 4 do curso Kotlin: Desenvolva com coleções, arrays e listas.">
-      <change afterPath="$PROJECT_DIR$/collections/src/list/FuncoesListaLivro.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collections/src/list/ListaDeLivros.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collections/src/list/livros.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/list/Livro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/list/Livro.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/src/list/ListaDeLivros.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/list/ListaDeLivros.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
