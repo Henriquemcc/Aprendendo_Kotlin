@@ -26,6 +26,8 @@ no repositório do Github deste curso da Alura:
 [Kotlin: Desenvolva com coleções, arrays e listas](https://github.com/alura-cursos/KotlinCollectionsAlura)
 .
 
+[Kotlin Collections: Set e Map](https://github.com/alura-cursos/kotlin-collections).
+
 ## Cursos
 
 Os cursos em que estes programas foram feitos:
@@ -44,3 +46,5 @@ Os cursos em que estes programas foram feitos:
 
 [Kotlin: Desenvolva com coleções, arrays e listas](https://cursos.alura.com.br/course/kotlin-introducao-collections-arrays-listas)
 .
+
+[Kotlin Collections: Set e Map](https://cursos.alura.com.br/course/kotlin-collections-set-map).
