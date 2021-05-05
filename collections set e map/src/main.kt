@@ -3,6 +3,25 @@ fun main() {
     testarLista()
     testarCollection()
     testarIterable()
+    testarBancoDeNomes()
+}
+
+fun testarBancoDeNomes() {
+    println("Testando o Banco de Nomes")
+    println()
+
+    val bancoDeNomes = BancoDeNomes()
+    bancoDeNomes.adicionar("João")
+    bancoDeNomes.adicionar("Felipe")
+    bancoDeNomes.adicionar("Joana")
+    println("Nomes do banco de nomes: ${bancoDeNomes.nomes}")
+    println()
+
+    val novoBancoDeNomes = BancoDeNomes()
+    println("Nomes do novo Banco de nomes: ${novoBancoDeNomes.nomes}")
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
 }
 
 fun testarLista() {
