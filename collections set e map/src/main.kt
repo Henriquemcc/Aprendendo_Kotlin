@@ -4,6 +4,7 @@ fun main() {
     testarCollection()
     testarIterable()
     testarBancoDeNomes()
+    testarBancoDeNomesCopia()
 }
 
 fun testarBancoDeNomes() {
@@ -19,6 +20,26 @@ fun testarBancoDeNomes() {
 
     val novoBancoDeNomes = BancoDeNomes()
     println("Nomes do novo Banco de nomes: ${novoBancoDeNomes.nomes}")
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
+}
+
+fun testarBancoDeNomesCopia() {
+    println("Testando a cópia do Banco de Nomes")
+    println()
+
+    val bancoDeNomes = BancoDeNomes()
+    bancoDeNomes.adicionar("João")
+    bancoDeNomes.adicionar("Felipe")
+    bancoDeNomes.adicionar("Joana")
+    println("Nomes do banco de nomes: ${bancoDeNomes.nomes}")
+    println()
+
+    val copiaNomesDoBancoDeNomes = bancoDeNomes.nomes as MutableCollection<String>
+    copiaNomesDoBancoDeNomes.add("Maria")
+    println("Cópia dos nomes do banco de nomes: $copiaNomesDoBancoDeNomes")
+    println("Nomes do banco de nomes: ${bancoDeNomes.nomes}")
     println()
 
     println("---------------------------------------------------------------------------------------------------------------")
