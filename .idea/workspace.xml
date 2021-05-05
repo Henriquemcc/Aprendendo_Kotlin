@@ -6,26 +6,11 @@
     <option name="CUSTOM_SCOPE_NAME" value="Selected directory" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5853b6ee-2f16-4cc1-8ee3-ed775850e278" name="Default Changelist" comment="Parte 7 da aula 5 do curso Kotlin: Desenvolva com coleções, arrays e listas.">
+    <list default="true" id="5853b6ee-2f16-4cc1-8ee3-ed775850e278" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/collections arrays listas/collections arrays listas.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collections set e map/src/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aprendendo_Kotlin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Aprendendo_Kotlin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.EN.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.EN.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/array/CompondoOperacoes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections arrays listas/src/array/CompondoOperacoes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/array/ConstruindoArrays.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections arrays listas/src/array/ConstruindoArrays.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/array/FuncoesBigDecimal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections arrays listas/src/array/FuncoesBigDecimal.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/array/IntroArrays.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections arrays listas/src/array/IntroArrays.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/array/ProcessandoColecoes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections arrays listas/src/array/ProcessandoColecoes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/array/Ranges.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections arrays listas/src/array/Ranges.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/array/SalariosComBigDecimal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections arrays listas/src/array/SalariosComBigDecimal.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/list/FuncoesListaLivro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections arrays listas/src/list/FuncoesListaLivro.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/list/ListaDeLivros.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections arrays listas/src/list/ListaDeLivros.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/list/Livro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections arrays listas/src/list/Livro.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/list/LivrosComAtributoNulo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections arrays listas/src/list/LivrosComAtributoNulo.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/list/Prateleira.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections arrays listas/src/list/Prateleira.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/list/TransformandoListas.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections arrays listas/src/list/TransformandoListas.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/list/UsaPrateleira.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections arrays listas/src/list/UsaPrateleira.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/src/list/livros.kt" beforeDir="false" afterPath="$PROJECT_DIR$/collections arrays listas/src/list/livros.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
