@@ -2,14 +2,14 @@
 
 # Learning how to program in Kotlin
 
-This repository contains the source code files of the Kotlin programs developed
-during the Kotlin course held on the [Alura Cursos Online](https://alura.com.br/)
+This repository contains the source code files of the Kotlin programs developed during the Kotlin course held on
+the [Alura Cursos Online](https://alura.com.br/)
 platform.
 
 ## Alura's Official Repository
 
-The official source code for the course, developed by the instructor, are available
-in the GitHub repository of this Alura course:
+The official source code for the course, developed by the instructor, are available in the GitHub repository of this
+Alura course:
 
 [Kotlin: primeiros passos e Orientação a Objetos](https://github.com/alura-cursos/kotlin-introducao-orientacao-a-objetos/)
 .

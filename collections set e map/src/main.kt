@@ -1,76 +1,209 @@
 fun main() {
-    testarMap()
-    testarMutableMap()
+
+    testarIndexingOperator()
+    testarMetodoGetValue()
+    testarMetodoGetOrElse()
+    testarMetodoGetOrDefault()
+    testarPropertiesKeysEValues()
+    testarMetodosFilterValuesEFilterKeys()
 }
 
-/**
- * Testa o comportamento do map.
- */
-private fun testarMap() {
-    println("Testando o Map")
+private fun testarIndexingOperator() {
+
+    println("Testando o indexing operator")
     println()
 
-    val pedidos = mapOf(Pair(1, 20.0), Pair(2, 34.0), 3 to 50.0)
+    val pedidos = mutableMapOf(
+        Pair(1, 20.0),
+        Pair(2, 34.0),
+        3 to 50.0,
+        4 to null
+    )
     println("Pedidos: $pedidos")
     println()
 
-    val pedido = pedidos[1]
-    pedido?.let {
-        println("Pedido 1: $pedido")
-        println()
-    }
+    val valorPedidosIndexingOperatorZero = pedidos[0]
+    println("Pedidos [0]: $valorPedidosIndexingOperatorZero")
+    println()
 
-    for (pedido in pedidos) {
-        println("Número do pedido: ${pedido.key}")
-        println("Valor do pedido: ${pedido.value}")
-        println()
+    val valorPedidosIndexingOperatorUm = pedidos[1]
+    println("Pedidos [1]: $valorPedidosIndexingOperatorUm")
+    println()
+
+    val valorPedidosIndexingOperatorQuatro = pedidos[4]
+    println("Pedidos [4]: $valorPedidosIndexingOperatorQuatro")
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
+}
+
+private fun testarMetodoGetValue() {
+
+    println("Testando o método get value")
+    println()
+
+    val pedidos = mutableMapOf(
+        Pair(1, 20.0),
+        Pair(2, 34.0),
+        3 to 50.0,
+        4 to null
+    )
+    println("Pedidos: $pedidos")
+    println()
+
+    print("Pedidos.getValue(0) = ")
+    try {
+        val valorPedidosGetZero = pedidos.getValue(0)
+        println(valorPedidosGetZero)
+    } catch (e: NoSuchElementException) {
+        println(e.stackTraceToString())
+    }
+    println()
+
+    print("Pedidos.getValue(1) = ")
+    try {
+        val valorPedidosGetUm = pedidos.getValue(1)
+        println(valorPedidosGetUm)
+    } catch (e: NoSuchElementException) {
+        println(e.stackTraceToString())
+
+    }
+    println()
+
+    print("Pedidos.getValue(4) = ")
+    try {
+        val valorPedidosGetQuatro = pedidos.getValue(4)
+        println(valorPedidosGetQuatro)
+    } catch (e: NoSuchElementException) {
+
+        println(e.stackTraceToString())
     }
     println()
 
     println("---------------------------------------------------------------------------------------------------------------")
 }
 
-/**
- * Testa o comportamento do mutable map.
- */
-private fun testarMutableMap() {
-    println("Testando o Mutable Map")
+private fun testarMetodoGetOrElse() {
+
+    println("Testando o método getOrElse")
     println()
 
-    val pedidos = mutableMapOf(Pair(1, 20.0), Pair(2, 34.0), 3 to 50.0)
+    val pedidos = mutableMapOf(
+        Pair(1, 20.0),
+        Pair(2, 34.0),
+        3 to 50.0,
+        4 to null
+    )
     println("Pedidos: $pedidos")
     println()
 
-    pedidos[4] = 70.00
+    val valorPedidoGetOrElseUm = pedidos.getOrElse(1) {
+        "Não tem o pedido"
+    }
+    println("pedidos.getOrElse(1, ...) = $valorPedidoGetOrElseUm")
+    println()
+
+    val valorPedidoGetOrElseZero = pedidos.getOrElse(0) {
+        "Não tem o pedido"
+    }
+    println("pedidos.getOrElse(0, ...) = $valorPedidoGetOrElseZero")
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
+}
+
+private fun testarMetodoGetOrDefault() {
+
+    println("Testando o método getOrDefault")
+    println()
+
+    val pedidos = mutableMapOf(
+        Pair(1, 20.0),
+        Pair(2, 34.0),
+        3 to 50.0,
+        4 to null
+    )
     println("Pedidos: $pedidos")
     println()
 
-    pedidos.put(5, 80.00)
+    val valorPedidoGetOrDefaultZero = pedidos.getOrDefault(0, -1)
+    println("pedidos.getOrDefault(0, -1) = $valorPedidoGetOrDefaultZero")
+    println()
+
+    val valorPedidoGetOrDefaultUm = pedidos.getOrDefault(1, -1)
+    println("pedidos.getOrDefault(1, -1) = $valorPedidoGetOrDefaultUm")
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
+}
+
+private fun testarPropertiesKeysEValues() {
+
+    println("Testando as properties Keys e Values")
+    println()
+
+    val pedidos = mutableMapOf(
+        Pair(1, 20.0),
+        Pair(2, 34.0),
+        3 to 50.0,
+        4 to null
+    )
     println("Pedidos: $pedidos")
     println()
 
-    pedidos[1] = 100.00
+    val chavesPedidos = pedidos.keys
+    println("Chave dos pedidos $chavesPedidos")
+    println()
+
+    for (numeroDePedido in pedidos.keys) {
+        println("Pedido $numeroDePedido")
+    }
+    println()
+
+    val valoresPedidos = pedidos.values
+    println("Valores dos pedidos $valoresPedidos")
+    println()
+
+    for (valorPedido in pedidos.values) {
+        println("Valor do pedido: $valorPedido")
+    }
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
+}
+
+fun testarMetodosFilterValuesEFilterKeys() {
+
+    println("Testando os métodos filterValues e filterKeys")
+    println()
+
+    val pedidos = mutableMapOf(
+        Pair(1, 20.0),
+        Pair(2, 34.0),
+        3 to 50.0,
+        4 to 100.0,
+        5 to 150.0,
+        6 to 80.0
+    )
     println("Pedidos: $pedidos")
     println()
 
-    pedidos.putIfAbsent(6, 200.00)
-    println("Pedidos: $pedidos")
+    val pedidosFiltrados = pedidos.filter { (numero, valor) ->
+        numero % 2 == 0 && valor > 50.0
+    }
+    println("Pedidos filtrados: $pedidosFiltrados")
     println()
 
-    pedidos.putIfAbsent(6, 300.00)
-    println("Pedidos: $pedidos")
+    val pedidosAcima = pedidos.filterValues { valor ->
+        valor > 70.0
+    }
+    println("Pedidos acima do valor de 70: $pedidosAcima")
     println()
 
-    pedidos.remove(6)
-    println("Pedidos: $pedidos")
-    println()
-
-    pedidos.remove(3, 100.00)
-    println("Pedidos: $pedidos")
-    println()
-
-    pedidos.remove(3, 50.00)
-    println("Pedidos: $pedidos")
+    val pedidosPares = pedidos.filterKeys { numero ->
+        numero % 2 == 0
+    }
+    println("Pedidos pares: $pedidosPares")
     println()
 
     println("---------------------------------------------------------------------------------------------------------------")
