@@ -26,5 +26,5 @@ fun List<Livro?>.printlnFormatted() {
  */
 fun List<Livro>.tituloPorAnoPublicacaoAutor(prefixoAutor: String): List<String> {
     return this.filter { it.autor.startsWith(prefixoAutor) }
-        .sortedBy { it.anoPublicacao }.map { it.titulo }
+            .sortedBy { it.anoPublicacao }.map { it.titulo }
 }

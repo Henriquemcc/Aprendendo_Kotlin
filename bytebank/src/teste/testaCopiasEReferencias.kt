@@ -17,11 +17,11 @@ fun testaCopiasEReferencias() {
     val contaJoao = ContaCorrente(joao, 1002)
     contaJoao.titular.nome = "João"
     val contaMaria = ContaPoupanca(
-        Cliente(
-            nome = "Maria",
-            cpf = "",
-            senha = "2"
-        ), 1003
+            Cliente(
+                    nome = "Maria",
+                    cpf = "",
+                    senha = "2"
+            ), 1003
     )
     contaMaria.titular.nome = "Maria"
     contaJoao.titular.nome = "João"

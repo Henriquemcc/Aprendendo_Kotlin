@@ -24,10 +24,10 @@ private fun testarIndexingOperator() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 34.0),
-        3 to 50.0,
-        4 to null
+            Pair(1, 20.0),
+            Pair(2, 34.0),
+            3 to 50.0,
+            4 to null
     )
     println("Pedidos: $pedidos")
     println()
@@ -53,10 +53,10 @@ private fun testarMetodoGetValue() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 34.0),
-        3 to 50.0,
-        4 to null
+            Pair(1, 20.0),
+            Pair(2, 34.0),
+            3 to 50.0,
+            4 to null
     )
     println("Pedidos: $pedidos")
     println()
@@ -99,10 +99,10 @@ private fun testarMetodoGetOrElse() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 34.0),
-        3 to 50.0,
-        4 to null
+            Pair(1, 20.0),
+            Pair(2, 34.0),
+            3 to 50.0,
+            4 to null
     )
     println("Pedidos: $pedidos")
     println()
@@ -128,10 +128,10 @@ private fun testarMetodoGetOrDefault() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 34.0),
-        3 to 50.0,
-        4 to null
+            Pair(1, 20.0),
+            Pair(2, 34.0),
+            3 to 50.0,
+            4 to null
     )
     println("Pedidos: $pedidos")
     println()
@@ -153,10 +153,10 @@ private fun testarPropertiesKeysEValues() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 34.0),
-        3 to 50.0,
-        4 to null
+            Pair(1, 20.0),
+            Pair(2, 34.0),
+            3 to 50.0,
+            4 to null
     )
     println("Pedidos: $pedidos")
     println()
@@ -188,12 +188,12 @@ fun testarMetodosFilterValuesEFilterKeys() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 34.0),
-        3 to 50.0,
-        4 to 100.0,
-        5 to 150.0,
-        6 to 80.0
+            Pair(1, 20.0),
+            Pair(2, 34.0),
+            3 to 50.0,
+            4 to 100.0,
+            5 to 150.0,
+            6 to 80.0
     )
     println("Pedidos: $pedidos")
     println()
@@ -225,12 +225,12 @@ private fun testarSomaMutableMapComPair() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 34.0),
-        3 to 50.0,
-        4 to 100.0,
-        5 to 150.0,
-        6 to 80.0
+            Pair(1, 20.0),
+            Pair(2, 34.0),
+            3 to 50.0,
+            4 to 100.0,
+            5 to 150.0,
+            6 to 80.0
     )
     println("Pedidos: $pedidos")
     println()
@@ -251,12 +251,12 @@ private fun testarSomaMutableMapComPairResultanteDoOperadorTo() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 34.0),
-        3 to 50.0,
-        4 to 100.0,
-        5 to 150.0,
-        6 to 80.0
+            Pair(1, 20.0),
+            Pair(2, 34.0),
+            3 to 50.0,
+            4 to 100.0,
+            5 to 150.0,
+            6 to 80.0
     )
     println("Pedidos: $pedidos")
     println()
@@ -275,12 +275,12 @@ private fun testarSubtracaoMutableMapComOPrimeiroValorDoPair() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 34.0),
-        3 to 50.0,
-        4 to 100.0,
-        5 to 150.0,
-        6 to 80.0
+            Pair(1, 20.0),
+            Pair(2, 34.0),
+            3 to 50.0,
+            4 to 100.0,
+            5 to 150.0,
+            6 to 80.0
     )
     println("Pedidos: $pedidos")
     println()
@@ -301,12 +301,12 @@ private fun testarSubtracaoMutableMapComUmaListaDosPrimeirosValores() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 34.0),
-        3 to 50.0,
-        4 to 100.0,
-        5 to 150.0,
-        6 to 80.0
+            Pair(1, 20.0),
+            Pair(2, 34.0),
+            3 to 50.0,
+            4 to 100.0,
+            5 to 150.0,
+            6 to 80.0
     )
     println("Pedidos: $pedidos")
     println()
@@ -328,12 +328,12 @@ private fun testarMetodoPutAllDeSet() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 34.0),
-        3 to 50.0,
-        4 to 100.0,
-        5 to 150.0,
-        6 to 80.0
+            Pair(1, 20.0),
+            Pair(2, 34.0),
+            3 to 50.0,
+            4 to 100.0,
+            5 to 150.0,
+            6 to 80.0
     )
     println("Pedidos: $pedidos")
     println()
@@ -352,12 +352,12 @@ private fun testarMetodoPutAllDeList() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 34.0),
-        3 to 50.0,
-        4 to 100.0,
-        5 to 150.0,
-        6 to 80.0
+            Pair(1, 20.0),
+            Pair(2, 34.0),
+            3 to 50.0,
+            4 to 100.0,
+            5 to 150.0,
+            6 to 80.0
     )
     println("Pedidos: $pedidos")
     println()
@@ -376,12 +376,12 @@ private fun testarSobrescritaNoMetodoPutAllDeList() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 34.0),
-        3 to 50.0,
-        4 to 100.0,
-        5 to 150.0,
-        6 to 80.0
+            Pair(1, 20.0),
+            Pair(2, 34.0),
+            3 to 50.0,
+            4 to 100.0,
+            5 to 150.0,
+            6 to 80.0
     )
     println("Pedidos: $pedidos")
     println()
@@ -400,12 +400,12 @@ private fun testarOperadorMaisIgual() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 34.0),
-        3 to 50.0,
-        4 to 100.0,
-        5 to 150.0,
-        6 to 80.0
+            Pair(1, 20.0),
+            Pair(2, 34.0),
+            3 to 50.0,
+            4 to 100.0,
+            5 to 150.0,
+            6 to 80.0
     )
     println("Pedidos: $pedidos")
     println()
@@ -424,12 +424,12 @@ private fun testarRemocaoDeChavesEValores() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 64.0),
-        3 to 50.0,
-        4 to 100.0,
-        5 to 100.0,
-        6 to 80.0
+            Pair(1, 20.0),
+            Pair(2, 64.0),
+            3 to 50.0,
+            4 to 100.0,
+            5 to 100.0,
+            6 to 80.0
     )
     println("Pedidos: $pedidos")
     println()
@@ -459,12 +459,12 @@ private fun testarOperadorMenosIgual() {
     println()
 
     val pedidos = mutableMapOf(
-        Pair(1, 20.0),
-        Pair(2, 34.0),
-        3 to 50.0,
-        4 to 100.0,
-        5 to 150.0,
-        6 to 80.0
+            Pair(1, 20.0),
+            Pair(2, 34.0),
+            3 to 50.0,
+            4 to 100.0,
+            5 to 150.0,
+            6 to 80.0
     )
     println("Pedidos: $pedidos")
     println()

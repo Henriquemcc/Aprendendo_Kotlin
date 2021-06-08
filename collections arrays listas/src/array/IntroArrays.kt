@@ -52,15 +52,15 @@ private fun parte1() {
 
 
     val maiorIdade =
-        if (idades[0] > idades[1] && idades[0] > idades[2] && idades[0] > idades[3]) {
-            idades[0]
-        } else if (idades[1] > idades[2] && idades[1] > idades[3]) {
-            idades[1]
-        } else if (idades[2] > idades[3]) {
-            idades[2]
-        } else {
-            idades[3]
-        }
+            if (idades[0] > idades[1] && idades[0] > idades[2] && idades[0] > idades[3]) {
+                idades[0]
+            } else if (idades[1] > idades[2] && idades[1] > idades[3]) {
+                idades[1]
+            } else if (idades[2] > idades[3]) {
+                idades[2]
+            } else {
+                idades[3]
+            }
 
     println("Maior idade: $maiorIdade")
     println("---------------------------------------------------------------------------------------------------------------")

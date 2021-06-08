@@ -5,7 +5,7 @@ fun main() {
 
     val listaLivrosOrdenadoPorAutor = prateleira.organizarLivrosPorAutor()
     val listaLivrosOrdenadoPorAnoPublicacao =
-        prateleira.organizarLivrosPorAnoPublicacao()
+            prateleira.organizarLivrosPorAnoPublicacao()
 
     listaLivrosOrdenadoPorAutor.printlnFormatted()
     listaLivrosOrdenadoPorAnoPublicacao.printlnFormatted()
