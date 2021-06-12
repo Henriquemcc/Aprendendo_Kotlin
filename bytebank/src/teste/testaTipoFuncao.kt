@@ -8,6 +8,50 @@ fun main() {
     testarFuncaoAnonima()
     testarAtribuicaoFuncaoComParametrosParaVariavel()
     testarAtribuicaoClasseFuncaoComParametrosParaVariavel()
+    testarFuncaoLambdaComParametros()
+    testarFuncaoAnonimaComParametros()
+}
+
+private fun testarFuncaoAnonimaComParametros() {
+
+    println("Testando a função anônima com parâmetros")
+    println()
+
+    val funcaoAnonimaSoma = fun(a: Int, b: Int): Int {
+        println("Executando a função anônima")
+        return a + b
+    }
+
+    println("Valor da variável funcaoAnonimaSoma:")
+    println(funcaoAnonimaSoma)
+    println()
+
+    println("Será executada a funcaoAnonimaSoma, passando como parâmetros 54 e 12:")
+    println(funcaoAnonimaSoma(54, 12))
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
+}
+
+private fun testarFuncaoLambdaComParametros() {
+
+    println("Testando a função lambda com parâmetros")
+    println()
+
+    val funcaoLambdaSoma = { a: Int, b: Int ->
+        println("Executando a função lambda")
+        a + b
+    }
+
+    println("Valor da variável funcaoLambdaSoma:")
+    println(funcaoLambdaSoma)
+    println()
+
+    println("Será executada a funcaoLambdaSoma, passando como parâmetros 13 e 45:")
+    println(funcaoLambdaSoma(13, 45))
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
 }
 
 private fun testarAtribuicaoClasseFuncaoComParametrosParaVariavel() {
