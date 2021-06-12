@@ -10,6 +10,67 @@ fun main() {
     testarAtribuicaoClasseFuncaoComParametrosParaVariavel()
     testarFuncaoLambdaComParametros()
     testarFuncaoAnonimaComParametros()
+    testarFuncaoLambdaComParametrosEMultiplusRetornos()
+    testarFuncaoAnonimaComParametrosEMultiplosRetornos()
+}
+
+private fun testarFuncaoAnonimaComParametrosEMultiplosRetornos() {
+
+    println("Testando a função anônima com parâmetros e múltiplos retornos")
+    println()
+
+    val funcaoAnonimaCalcularBonificacao = fun(salario: Double): Double {
+        println("Executando a função anônima")
+
+        if (salario > 1000.0)
+            return salario + 50
+
+        return salario + 100
+    }
+
+    println("Valor da variável funcaoAnonimaCalcularBonificacao:")
+    println(funcaoAnonimaCalcularBonificacao)
+    println()
+
+    println("Será executada a funcaoAnonimaCalcularBonificacao, passando como parâmetro 1000.0:")
+    println(funcaoAnonimaCalcularBonificacao(1000.0))
+    println()
+
+    println("Será executada a funcaoAnonimaCalcularBonificacao, passando como parâmetro 1100.0:")
+    println(funcaoAnonimaCalcularBonificacao(1100.0))
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
+}
+
+private fun testarFuncaoLambdaComParametrosEMultiplusRetornos() {
+
+    println("Testando a função lambda com parâmetros e múltiplos retornos")
+    println()
+
+    val funcaoLambdaCalcularBonificacao = lambda@{ salario: Double ->
+        println("Executando a função lambda")
+
+        if (salario > 1000.0)
+            return@lambda salario + 50
+
+        return@lambda salario + 100
+
+    }
+
+    println("Valor da variável funcaoLambdaCalcularBonificacao:")
+    println(funcaoLambdaCalcularBonificacao)
+    println()
+
+    println("Será executada a funcaoLambdaCalcularBonificacao, passando como parâmetros 1000.0:")
+    println(funcaoLambdaCalcularBonificacao(1000.0))
+    println()
+
+    println("Será executada a funcaoLambdaCalcularBonificacao, passando como parâmetros 1100.0:")
+    println(funcaoLambdaCalcularBonificacao(1100.0))
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
 }
 
 private fun testarFuncaoAnonimaComParametros() {
