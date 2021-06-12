@@ -6,6 +6,51 @@ fun main() {
     testarAtribuicaoClasseFuncaoParaVariavelComInvokeComoOperator()
     testarFuncaoLambda()
     testarFuncaoAnonima()
+    testarAtribuicaoFuncaoComParametrosParaVariavel()
+    testarAtribuicaoClasseFuncaoComParametrosParaVariavel()
+}
+
+private fun testarAtribuicaoClasseFuncaoComParametrosParaVariavel() {
+
+    println("Testando a atribuição de uma classe função com parâmetros para uma variável")
+    println()
+
+    val classeFuncaoSoma = ::Soma
+    println("classeFuncaoSoma:")
+    println(classeFuncaoSoma)
+    println()
+
+    println("Será executado o construtor da classeFuncaoSoma:")
+    val instanciaClasseFuncaoSoma = classeFuncaoSoma()
+    println()
+
+    println("Instância da classeFuncaoSoma:")
+    println(instanciaClasseFuncaoSoma)
+    println()
+
+    println("Será executado o método invoke da classeFuncaoSoma, passando como parâmetros 400 e 100:")
+    println(instanciaClasseFuncaoSoma.invoke(400, 100))
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
+}
+
+
+private fun testarAtribuicaoFuncaoComParametrosParaVariavel() {
+
+    println("Testando a atribuição de uma função com parâmetros para uma variável")
+    println()
+
+    val funcaoSoma = ::soma
+    println("Valor da variável funcaoSoma:")
+    println(funcaoSoma)
+    println()
+
+    println("Será executada a funcaoSoma, passando como parâmetros 200 e 150:")
+    println(funcaoSoma(200, 150))
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
 }
 
 private fun testarFuncaoAnonima() {
@@ -123,6 +168,11 @@ private fun teste() {
     println("Executando a função teste")
 }
 
+private fun soma(a: Int, b: Int): Int {
+    println("Executando a função soma")
+    return a + b
+}
+
 private class Teste0 : () -> Unit {
     override fun invoke() {
         println("Executando o método invoke da classe Teste0 que herda uma função '() -> Unit'")
@@ -139,4 +189,12 @@ private class Teste1 : () -> Unit {
         println("Executando o operator invoke da classe Teste1 que herda uma função '() -> Unit'")
         println(valor)
     }
+}
+
+private class Soma : (Int, Int) -> Int {
+    override fun invoke(p1: Int, p2: Int): Int {
+        println("Executando o método invoke da classe Soma que herda uma função '(Int, Int) -> Int'")
+        return p1 + p2
+    }
+
 }
