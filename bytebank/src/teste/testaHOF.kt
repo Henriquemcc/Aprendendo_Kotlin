@@ -1,6 +1,8 @@
 package teste
 
+import modelo.Autenticavel
 import modelo.Endereco
+import modelo.SistemaInterno
 
 fun main() {
     testarFuncaoLetDeUmaInstanciaDaClasseEndereco()
@@ -12,6 +14,9 @@ fun main() {
     testarCriacaoDeHigherOrderFunctionComParametroAdicionalPassandoUmaFuncaoComoParametro()
     testarImplementacaoDeCodigodSemAFuncaoLet()
     testarImplementacaoDeCodigodComAFuncaoLet()
+    testarImplementacaoDaHigherOrderFunctionSoma()
+    testarImplementacaoDeHigherOrderFunctionNoBytebank()
+
 }
 
 private fun testarFuncaoLetDeUmaInstanciaDaClasseEndereco() {
@@ -218,6 +223,53 @@ private fun testarImplementacaoDeCodigodComAFuncaoLet() {
     ).filter { endereco ->
         endereco.complemento.isNotBlank()
     }.let(::println)
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
+}
+
+private fun testarImplementacaoDaHigherOrderFunctionSoma() {
+
+    println("Testando a implementação da higher order function soma")
+    println()
+
+    println("Resultado da soma:")
+    soma(2784, 4589, ::println)
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
+}
+
+private fun soma(a: Int, b: Int, oQueFazerComOResultado: (Int) -> Unit = {}) {
+
+    println("Executando a função soma")
+
+    val resultado = a + b
+
+    println("Será executado a referência a função: oQueFazerComOResultado")
+    oQueFazerComOResultado(resultado)
+    println("Foi executado a referência a função: oQueFazerComOResultado")
+
+    println("Terminando a execução da função soma")
+}
+
+private fun testarImplementacaoDeHigherOrderFunctionNoBytebank() {
+
+    println("Testando a implementação de uma higher order function no Bytebank")
+    println()
+
+    val objetoAutenticavel = object : Autenticavel{
+
+        val senha = "UKazGhdRfcnkcp74!7fJE83GrSPtwpQ76rW^UaBSVYM&Q^TgE@"
+
+        override fun autentica(senha: String): Boolean {
+            return senha == this.senha
+        }
+    }
+
+    SistemaInterno().entra(objetoAutenticavel, "UKazGhdRfcnkcp74!7fJE83GrSPtwpQ76rW^UaBSVYM&Q^TgE@") {
+        println("Realizar pagamento:")
+    }
     println()
 
     println("---------------------------------------------------------------------------------------------------------------")
