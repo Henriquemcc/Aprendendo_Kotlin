@@ -1,16 +1,15 @@
 package teste
 
 import modelo.Endereco
-import kotlin.math.log
 
 fun main() {
     testarFuncaoLetDeUmaInstanciaDaClasseEndereco()
     testaFuncaoLetDeUmaString()
     testarFuncaoLetDeUmNumeroInteiro()
-    testarCriacaoDeHighOrderFunction()
-    testarCriacaoDeHighOrderFunctionPassandoUmaFuncaoComoParametro()
-    testarCriacaoDeHighOrderFunctionComParametroAdicional()
-    testarCriacaoDeHighOrderFunctionComParametroAdicionalPassandoUmaFuncaoComoParametro()
+    testarCriacaoDeHigherOrderFunction()
+    testarCriacaoDeHigherOrderFunctionPassandoUmaFuncaoComoParametro()
+    testarCriacaoDeHigherOrderFunctionComParametroAdicional()
+    testarCriacaoDeHigherOrderFunctionComParametroAdicionalPassandoUmaFuncaoComoParametro()
     testarImplementacaoDeCodigodSemAFuncaoLet()
     testarImplementacaoDeCodigodComAFuncaoLet()
 }
@@ -81,14 +80,14 @@ private fun testarFuncaoLetDeUmNumeroInteiro() {
     println("---------------------------------------------------------------------------------------------------------------")
 }
 
-private fun testarCriacaoDeHighOrderFunction() {
+private fun testarCriacaoDeHigherOrderFunction() {
 
-    println("Testando a criação de uma High Order Function")
+    println("Testando a criação de uma Higher Order Function")
     println()
 
-    println("Será executada a highOrderFunction:")
+    println("Será executada a higherOrderFunction:")
     println(
-            highOrderFunction {
+            higherOrderFunction {
 
             }
     )
@@ -97,34 +96,34 @@ private fun testarCriacaoDeHighOrderFunction() {
     println("---------------------------------------------------------------------------------------------------------------")
 }
 
-private fun testarCriacaoDeHighOrderFunctionPassandoUmaFuncaoComoParametro() {
+private fun testarCriacaoDeHigherOrderFunctionPassandoUmaFuncaoComoParametro() {
 
-    println("Testando a criação de uma High Order Function passando uma função como parâmetro")
+    println("Testando a criação de uma Higher Order Function passando uma função como parâmetro")
     println()
 
-    println("Será executada a highOrderFunction:")
-    println(highOrderFunction(::teste))
+    println("Será executada a higherOrderFunction:")
+    println(higherOrderFunction(::teste))
     println()
 
     println("---------------------------------------------------------------------------------------------------------------")
 }
 
-private fun highOrderFunction(bloco: () -> Unit) {
+private fun higherOrderFunction(bloco: () -> Unit) {
 
-    println("Executando a highOrderFunction:")
+    println("Executando a higherOrderFunction:")
     println("bloco: $bloco")
 }
 
 private fun teste() {}
 
-private fun testarCriacaoDeHighOrderFunctionComParametroAdicional() {
+private fun testarCriacaoDeHigherOrderFunctionComParametroAdicional() {
 
-    println("Testando a criação de uma High Order Function com parâmetro adicional")
+    println("Testando a criação de uma Higher Order Function com parâmetro adicional")
     println()
 
     println("Será executada a highOrderFunctionComParametro0:")
     println(
-            highOrderFunctionComParametro0(1476) {
+            higherOrderFunctionComParametro0(1476) {
 
             }
     )
@@ -141,13 +140,13 @@ private fun testarCriacaoDeHighOrderFunctionComParametroAdicional() {
     println("---------------------------------------------------------------------------------------------------------------")
 }
 
-private fun testarCriacaoDeHighOrderFunctionComParametroAdicionalPassandoUmaFuncaoComoParametro() {
+private fun testarCriacaoDeHigherOrderFunctionComParametroAdicionalPassandoUmaFuncaoComoParametro() {
 
-    println("Testando a criação de uma High Order Function com parâmetro adicional e passando como parâmetro uma função")
+    println("Testando a criação de uma Higher Order Function com parâmetro adicional e passando como parâmetro uma função")
     println()
 
     println("Será executada a highOrderFunctionComParametro0:")
-    println(highOrderFunctionComParametro0(1476, ::teste))
+    println(higherOrderFunctionComParametro0(1476, ::teste))
     println()
 
     println("Será executada a highOrderFunctionComParametro1:")
@@ -157,9 +156,9 @@ private fun testarCriacaoDeHighOrderFunctionComParametroAdicionalPassandoUmaFunc
     println("---------------------------------------------------------------------------------------------------------------")
 }
 
-private fun highOrderFunctionComParametro0(numero: Int, bloco: () -> Unit) {
+private fun higherOrderFunctionComParametro0(numero: Int, bloco: () -> Unit) {
 
-    println("Executando a highOrderFunctionComParametro0:")
+    println("Executando a higherOrderFunctionComParametro0:")
     println("numero: $numero")
     println("bloco: $bloco")
 }
