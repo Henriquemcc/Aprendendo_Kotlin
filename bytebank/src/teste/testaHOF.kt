@@ -1,6 +1,7 @@
 package teste
 
 import modelo.Endereco
+import kotlin.math.log
 
 fun main() {
     testarFuncaoLetDeUmaInstanciaDaClasseEndereco()
@@ -10,6 +11,8 @@ fun main() {
     testarCriacaoDeHighOrderFunctionPassandoUmaFuncaoComoParametro()
     testarCriacaoDeHighOrderFunctionComParametroAdicional()
     testarCriacaoDeHighOrderFunctionComParametroAdicionalPassandoUmaFuncaoComoParametro()
+    testarImplementacaoDeCodigodSemAFuncaoLet()
+    testarImplementacaoDeCodigodComAFuncaoLet()
 }
 
 private fun testarFuncaoLetDeUmaInstanciaDaClasseEndereco() {
@@ -166,4 +169,57 @@ private fun highOrderFunctionComParametro1(bloco: () -> Unit, numero: Int) {
     println("Executando a highOrderFunctionComParametro1:")
     println("numero: $numero")
     println("bloco: $bloco")
+}
+
+private fun testarImplementacaoDeCodigodSemAFuncaoLet() {
+
+    println("Testando a implementação de códigos sem a função let")
+    println()
+
+    val endereco = Endereco("rua vergueiro", numero = 3185)
+    val stringEnderecoEmMaiusculo = "${endereco.logradouro} - ${endereco.numero}".toUpperCase()
+
+    println("Endereço:")
+    println(stringEnderecoEmMaiusculo)
+    println()
+
+    val listaEnderecos = listOf(
+            Endereco(complemento = "casa"),
+            Endereco(),
+            Endereco(complemento = "apartamento")
+    )
+
+    val listaEnderecosComComplemento = listaEnderecos.filter { endereco1 ->
+        endereco1.complemento.isNotBlank()
+    }
+
+    println("Lista de endereços com complemento:")
+    println(listaEnderecosComComplemento)
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
+}
+
+private fun testarImplementacaoDeCodigodComAFuncaoLet() {
+
+    println("Testando a implementação de códigos com a função let")
+    println()
+
+    println("Endereço:")
+    Endereco("rua vergueiro", numero = 3185).let { endereco ->
+        "${endereco.logradouro} - ${endereco.numero}".toUpperCase()
+    }.let(::println)
+    println()
+
+    println("Lista de endereços com complemento:")
+    listOf(
+            Endereco(complemento = "casa"),
+            Endereco(),
+            Endereco(complemento = "apartamento")
+    ).filter { endereco ->
+        endereco.complemento.isNotBlank()
+    }.let(::println)
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
 }
