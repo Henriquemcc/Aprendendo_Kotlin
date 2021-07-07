@@ -1,7 +1,55 @@
-﻿import modelo.Endereco
+﻿import modelo.Cliente
+import modelo.ContaPoupanca
+import modelo.Endereco
 
 fun main() {
     testaWith()
+    testaRun()
+}
+
+fun testaRun() {
+
+    println("Testando a função de escopo run")
+    println()
+
+    val taxaAnual = 0.05
+    println("Taxa anual: $taxaAnual")
+    println()
+
+    val taxaMensal = taxaAnual / 12
+    println("Taxa mensal: $taxaMensal")
+    println()
+
+    val contaPoupanca = ContaPoupanca(
+        Cliente(nome = "João", cpf = "792.008.010-05", senha = "OcnU0L!yuYTiBkhUI%BcKj6lv9TtWjW8Bp39HO"),
+        numero = 18923
+    )
+
+    contaPoupanca.run {
+        println("Saldo antes do depósito: $saldo")
+        println()
+
+        deposita(5000.00)
+        println("Saldo depois do depósito: $saldo")
+        println()
+
+        saldo * taxaMensal
+    }.let { rendimentoMensal ->
+        println("Rendimento mensal: $rendimentoMensal")
+        println()
+    }
+
+    val rendimentoAnual = run {
+        var saldo = contaPoupanca.saldo
+        repeat(12) { indice ->
+            saldo += saldo * taxaMensal
+        }
+        saldo
+    }
+    println("Simulação rendimento anual: $rendimentoAnual")
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
 }
 
 fun testaWith() {
