@@ -7,7 +7,7 @@ fun main() {
     testaRun()
 }
 
-fun testaRun() {
+private fun testaRun() {
 
     println("Testando a função de escopo run")
     println()
@@ -52,7 +52,7 @@ fun testaRun() {
     println("---------------------------------------------------------------------------------------------------------------")
 }
 
-fun testaWith() {
+private fun testaWith() {
 
     println("Testando a função de escopo with ")
     println()

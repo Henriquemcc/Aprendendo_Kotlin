@@ -16,7 +16,8 @@ fun main() {
     testarImplementacaoDeCodigodComAFuncaoLet()
     testarImplementacaoDaHigherOrderFunctionSoma()
     testarImplementacaoDeHigherOrderFunctionNoBytebank()
-
+    testarImplementacaoDeHighOrderFunctionDeSomaReceiver()
+    testarImplementacaoDeHigherOrderFunctionReceiverNoBytebank()
 }
 
 private fun testarFuncaoLetDeUmaInstanciaDaClasseEndereco() {
@@ -237,12 +238,19 @@ private fun testarImplementacaoDaHigherOrderFunctionSoma() {
     soma(2784, 4589, ::println)
     println()
 
+    println("Resultado da soma:")
+    soma(2784, 4589, { valor ->
+        println(valor)
+    })
+    println()
+
     println("---------------------------------------------------------------------------------------------------------------")
 }
 
 private fun soma(a: Int, b: Int, oQueFazerComOResultado: (Int) -> Unit = {}) {
 
     println("Executando a função soma")
+    println()
 
     val resultado = a + b
 
@@ -251,6 +259,36 @@ private fun soma(a: Int, b: Int, oQueFazerComOResultado: (Int) -> Unit = {}) {
     println("Foi executado a referência a função: oQueFazerComOResultado")
 
     println("Terminando a execução da função soma")
+}
+
+private fun testarImplementacaoDeHighOrderFunctionDeSomaReceiver() {
+
+    println("Testando a implementação da função soma receiver")
+    println()
+
+    println("Resultado da soma:")
+    somaReceiver(4589, 2784, ::println)
+    println()
+
+    println("Resultado da soma:")
+    somaReceiver(4589, 2784, {
+        println(this)
+    })
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
+}
+
+private fun somaReceiver(a: Int, b: Int, oQueFazerComOResultado: Int.() -> Unit = {}) {
+
+    val resultado = a + b
+
+    println("Será executado a referência a função: oQueFazerComOResultado")
+    resultado.oQueFazerComOResultado()
+    println("Foi executado a referência a função: oQueFazerComOResultado")
+
+    println("Terminando a execução da função somaReceiver")
+
 }
 
 private fun testarImplementacaoDeHigherOrderFunctionNoBytebank() {
@@ -273,4 +311,27 @@ private fun testarImplementacaoDeHigherOrderFunctionNoBytebank() {
     println()
 
     println("---------------------------------------------------------------------------------------------------------------")
+}
+
+private fun testarImplementacaoDeHigherOrderFunctionReceiverNoBytebank() {
+
+    println("Testando a implementação de uma higher order function de tipo receiver no Bytebank")
+    println()
+
+    val objetoAutenticavel = object : Autenticavel {
+
+        val senha = "UKazGhdRfcnkcp74!7fJE83GrSPtwpQ76rW^UaBSVYM&Q^TgE@"
+
+        override fun autentica(senha: String): Boolean {
+            return senha == this.senha
+        }
+    }
+
+    SistemaInterno().entraReceiver(objetoAutenticavel, "UKazGhdRfcnkcp74!7fJE83GrSPtwpQ76rW^UaBSVYM&Q^TgE@") {
+        this.pagamento()
+    }
+    println()
+
+    println("---------------------------------------------------------------------------------------------------------------")
+
 }
