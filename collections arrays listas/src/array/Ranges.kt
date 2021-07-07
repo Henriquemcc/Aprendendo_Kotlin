@@ -50,7 +50,7 @@ private fun parte2() {
     println("Utilizando as funções do array para obter a maior e a menor idade, a média da idade, se todos são maiores de idade, se tem menor de idade, quais são os menores de idade, se tem idade igual a 10, e quais são as idades iguais a 10")
 
     val idades =
-            intArrayOf(25, 19, 33, 20, 6, 8, 10, 12, 14, 16, 18, 5, 22, 25, 31, 49)
+        intArrayOf(25, 19, 33, 20, 6, 8, 10, 12, 14, 16, 18, 5, 22, 25, 31, 49)
     println("Idades: ${idades.contentToString()}")
 
     val maiorIdade = idades.maxOrNull()

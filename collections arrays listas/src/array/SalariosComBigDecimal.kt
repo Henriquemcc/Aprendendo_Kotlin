@@ -17,15 +17,15 @@ private fun parte3() {
     val aumento = "1.1".toBigDecimal()
 
     val salariosComAumento =
-            salarios.map { calcularAumento(it, aumento) }.toTypedArray()
+        salarios.map { calcularAumento(it, aumento) }.toTypedArray()
     println("Salários com aumento: ${salariosComAumento.contentToString()}")
 
     val mediaTresMaioresSalarios =
-            salariosComAumento.sorted().takeLast(3).toTypedArray().average()
+        salariosComAumento.sorted().takeLast(3).toTypedArray().average()
     println("Média dos três maiores salários: $mediaTresMaioresSalarios")
 
     val mediaTresMenoresSalarios =
-            salariosComAumento.sorted().take(3).toTypedArray().average()
+        salariosComAumento.sorted().take(3).toTypedArray().average()
     println("Média dos três menores salários: $mediaTresMenoresSalarios")
 }
 
@@ -36,7 +36,7 @@ private fun parte2() {
     val aumento = "1.1".toBigDecimal()
 
     val salariosComAumento =
-            salarios.map { calcularAumento(it, aumento) }.toTypedArray()
+        salarios.map { calcularAumento(it, aumento) }.toTypedArray()
     println("Salários com aumento: ${salariosComAumento.contentToString()}")
 
     val gastoInicial = salariosComAumento.sum()
@@ -60,7 +60,7 @@ private fun parte1() {
     val aumento = "1.1".toBigDecimal()
 
     val salariosComAumento =
-            salarios.map { calcularAumento(it, aumento) }.toTypedArray()
+        salarios.map { calcularAumento(it, aumento) }.toTypedArray()
     println("Salários com aumento: ${salariosComAumento.contentToString()}")
 
     val gastoInicial = salariosComAumento.sum()
@@ -87,7 +87,7 @@ private fun parte0() {
     println("Aumento: $aumento")
 
     val salariosComAumento =
-            salarios.map { calcularAumento(it, aumento) }.toTypedArray()
+        salarios.map { calcularAumento(it, aumento) }.toTypedArray()
     println("Salários com aumento: ${salariosComAumento.contentToString()}")
 
     println("---------------------------------------------------------------------------------------------------------------")

@@ -6,8 +6,8 @@ package list
  * @param livros Lista de livros da prateleira
  */
 data class Prateleira(
-        val genero: String,
-        val livros: List<Livro>
+    val genero: String,
+    val livros: List<Livro>
 ) {
     /**
      * Obtém uma lista de livros ordenada por autor

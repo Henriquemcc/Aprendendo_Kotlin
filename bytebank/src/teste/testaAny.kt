@@ -5,14 +5,14 @@ import modelo.Endereco
 
 fun testaAny() {
     val endereco = Endereco(
-            logradouro = "Rua vergueiro",
-            complemento = "Alura",
-            cep = "00000-0700"
+        logradouro = "Rua vergueiro",
+        complemento = "Alura",
+        cep = "00000-0700"
     )
     val enderecoNovo = Endereco(
-            logradouro = "Rua vergueiro",
-            complemento = "Alura",
-            cep = "00000-0700"
+        logradouro = "Rua vergueiro",
+        complemento = "Alura",
+        cep = "00000-0700"
     )
 
     println(endereco == enderecoNovo)
@@ -24,9 +24,9 @@ fun testaAny() {
     println(enderecoNovo)
 
     println(
-            "${endereco.javaClass}@${
-                Integer.toHexString(endereco.hashCode())
-            }"
+        "${endereco.javaClass}@${
+            Integer.toHexString(endereco.hashCode())
+        }"
     )
 }
 

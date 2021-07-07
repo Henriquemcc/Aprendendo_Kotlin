@@ -101,7 +101,7 @@ private fun testarOutrasFuncoesDeEscopo() {
     println("Testando o with para computar e devolver algo utilizando os membros do objeto de contexto:")
     with(Endereco(cidade = "São Paulo", estado = "São Paulo", logradouro = "rua vegueiro", numero = 0)) {
         "$cidade - $estado".toUpperCase()
-    }.let {stringEnderecoCidadeEstado: String ->
+    }.let { stringEnderecoCidadeEstado: String ->
         println(stringEnderecoCidadeEstado)
     }
     println()

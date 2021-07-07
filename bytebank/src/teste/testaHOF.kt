@@ -31,10 +31,10 @@ private fun testarFuncaoLetDeUmaInstanciaDaClasseEndereco() {
 
     println("Será executado a função let de endereco:")
     println(
-            endereco.let {
-                println("Executando a função let de endereco:")
-                println(it)
-            }
+        endereco.let {
+            println("Executando a função let de endereco:")
+            println(it)
+        }
     )
     println()
 
@@ -53,10 +53,10 @@ private fun testaFuncaoLetDeUmaString() {
 
     println("Será executado a função let de str:")
     println(
-            str.let {
-                println("Executando a função let de str:")
-                println(it)
-            }
+        str.let {
+            println("Executando a função let de str:")
+            println(it)
+        }
     )
     println()
 
@@ -75,10 +75,10 @@ private fun testarFuncaoLetDeUmNumeroInteiro() {
 
     println("Será executado a função let de numeroInteiro:")
     println(
-            numeroInteiro.let {
-                println("Executando a função let de numeroInteiro:")
-                println(it)
-            }
+        numeroInteiro.let {
+            println("Executando a função let de numeroInteiro:")
+            println(it)
+        }
     )
     println()
 
@@ -92,9 +92,9 @@ private fun testarCriacaoDeHigherOrderFunction() {
 
     println("Será executada a higherOrderFunction:")
     println(
-            higherOrderFunction {
+        higherOrderFunction {
 
-            }
+        }
     )
     println()
 
@@ -128,17 +128,17 @@ private fun testarCriacaoDeHigherOrderFunctionComParametroAdicional() {
 
     println("Será executada a highOrderFunctionComParametro0:")
     println(
-            higherOrderFunctionComParametro0(1476) {
+        higherOrderFunctionComParametro0(1476) {
 
-            }
+        }
     )
     println()
 
     println("Será executada a highOrderFunctionComParametro1:")
     println(
-            highOrderFunctionComParametro1({
+        highOrderFunctionComParametro1({
 
-            }, 4678)
+        }, 4678)
     )
     println()
 
@@ -188,9 +188,9 @@ private fun testarImplementacaoDeCodigodSemAFuncaoLet() {
     println()
 
     val listaEnderecos = listOf(
-            Endereco(complemento = "casa"),
-            Endereco(),
-            Endereco(complemento = "apartamento")
+        Endereco(complemento = "casa"),
+        Endereco(),
+        Endereco(complemento = "apartamento")
     )
 
     val listaEnderecosComComplemento = listaEnderecos.filter { endereco1 ->
@@ -217,9 +217,9 @@ private fun testarImplementacaoDeCodigodComAFuncaoLet() {
 
     println("Lista de endereços com complemento:")
     listOf(
-            Endereco(complemento = "casa"),
-            Endereco(),
-            Endereco(complemento = "apartamento")
+        Endereco(complemento = "casa"),
+        Endereco(),
+        Endereco(complemento = "apartamento")
     ).filter { endereco ->
         endereco.complemento.isNotBlank()
     }.let(::println)
@@ -258,7 +258,7 @@ private fun testarImplementacaoDeHigherOrderFunctionNoBytebank() {
     println("Testando a implementação de uma higher order function no Bytebank")
     println()
 
-    val objetoAutenticavel = object : Autenticavel{
+    val objetoAutenticavel = object : Autenticavel {
 
         val senha = "UKazGhdRfcnkcp74!7fJE83GrSPtwpQ76rW^UaBSVYM&Q^TgE@"
 

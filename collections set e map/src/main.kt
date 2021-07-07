@@ -15,10 +15,10 @@ private fun testarMetodoAssociate() {
     println()
 
     val pedidos = listOf(
-            Pedido(1, 20.0),
-            Pedido(2, 60.0),
-            Pedido(3, 30.0),
-            Pedido(4, 70.0)
+        Pedido(1, 20.0),
+        Pedido(2, 60.0),
+        Pedido(3, 30.0),
+        Pedido(4, 70.0)
     )
     println("Pedidos: $pedidos")
     println()
@@ -38,10 +38,10 @@ private fun testarMetodoAssociateByComONumeroDoPedido() {
     println()
 
     val pedidos = listOf(
-            Pedido(1, 20.0),
-            Pedido(2, 60.0),
-            Pedido(3, 30.0),
-            Pedido(4, 70.0)
+        Pedido(1, 20.0),
+        Pedido(2, 60.0),
+        Pedido(3, 30.0),
+        Pedido(4, 70.0)
     )
     println("Pedidos: $pedidos")
     println()
@@ -61,10 +61,10 @@ private fun testarMetodoAssociateWith() {
     println()
 
     val pedidos = listOf(
-            Pedido(1, 20.0),
-            Pedido(2, 60.0),
-            Pedido(3, 30.0),
-            Pedido(4, 70.0)
+        Pedido(1, 20.0),
+        Pedido(2, 60.0),
+        Pedido(3, 30.0),
+        Pedido(4, 70.0)
     )
     println("Pedidos: $pedidos")
     println()
@@ -94,10 +94,10 @@ private fun testarMetodoAssociateByComOValorBooleanoIndicandoSeTemFreteGratis() 
     println()
 
     val pedidos = listOf(
-            Pedido(1, 20.0),
-            Pedido(2, 60.0),
-            Pedido(3, 30.0),
-            Pedido(4, 70.0)
+        Pedido(1, 20.0),
+        Pedido(2, 60.0),
+        Pedido(3, 30.0),
+        Pedido(4, 70.0)
     )
     println("Pedidos: $pedidos")
     println()
@@ -117,10 +117,10 @@ private fun testarMetodoGroupBy() {
     println()
 
     val pedidos = listOf(
-            Pedido(1, 20.0),
-            Pedido(2, 60.0),
-            Pedido(3, 30.0),
-            Pedido(4, 70.0)
+        Pedido(1, 20.0),
+        Pedido(2, 60.0),
+        Pedido(3, 30.0),
+        Pedido(4, 70.0)
     )
     println("Pedidos: $pedidos")
     println()
@@ -146,14 +146,14 @@ private fun testarMetodoGroupByAgenda() {
     println()
 
     val nomes = listOf(
-            "Alex",
-            "Fran",
-            "Gui",
-            "Ana",
-            "Paulo",
-            "Maria",
-            "Mario",
-            "Gisele"
+        "Alex",
+        "Fran",
+        "Gui",
+        "Ana",
+        "Paulo",
+        "Maria",
+        "Mario",
+        "Gisele"
     )
     println("Nomes: $nomes")
     println()
