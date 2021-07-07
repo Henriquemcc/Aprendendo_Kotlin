@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Aprendendo_Kotlin.iml" filepath="$PROJECT_DIR$/.idea/Aprendendo_Kotlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bytebank/bytebank.iml" filepath="$PROJECT_DIR$/bytebank/bytebank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collections arrays listas/collections arrays listas.iml" filepath="$PROJECT_DIR$/collections arrays listas/collections arrays listas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collections set e map/collections set e map.iml" filepath="$PROJECT_DIR$/collections set e map/collections set e map.iml" />
+    </modules>
+  </component>
+</project>
